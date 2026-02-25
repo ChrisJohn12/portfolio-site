@@ -1,6 +1,6 @@
 import Anthropic from '@anthropic-ai/sdk';
 
-const client = new Anthropic();
+const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
 const SYSTEM_PROMPT = `You are an AI assistant on Chris Michalak's portfolio website. Your job is to help visitors — recruiters, hiring managers, potential collaborators — learn about Chris's work, skills, experience, and availability.
 
