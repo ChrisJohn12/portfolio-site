@@ -23,38 +23,38 @@ const experience = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen pt-28 pb-24 px-6 max-w-6xl mx-auto">
+    <div className="min-h-screen pt-28 pb-20 px-6 max-w-7xl mx-auto">
       {/* Header */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-start">
         <div>
-          <p className="text-[#C8641A] text-sm font-medium tracking-widest uppercase mb-3">
+          <p className="text-[#2563EB] text-sm font-medium tracking-widest uppercase mb-3">
             About
           </p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight text-gray-900">
+          <h1 className="text-[48px] font-semibold mb-6 leading-tight text-[#1A1A1A]">
             Designing for the hard problems.
           </h1>
-          <p className="text-gray-600 text-lg leading-relaxed mb-4">
+          <p className="text-[#555555] text-lg leading-relaxed mb-4">
             I&apos;m Chris Michalak, a Senior Product Designer who specializes in
             enterprise complexity. My work lives in the space where business systems,
             human workflows, and organizational reality collide.
           </p>
-          <p className="text-gray-500 text-base leading-relaxed mb-4">
+          <p className="text-[#555555] text-base leading-relaxed mb-4">
             Over the past decade, I&apos;ve led UX research and design across Fortune 500 companies
             including T-Mobile and Union Pacific Railroad, and built products from zero at
             early-stage startups. I bring a researcher&apos;s rigor and a designer&apos;s
             craft. I use AI tools to move faster without cutting corners.
           </p>
-          <p className="text-gray-500 text-base leading-relaxed">
+          <p className="text-[#555555] text-base leading-relaxed">
             Based in Salt Lake City. Available for staff-level and senior product design roles.
           </p>
         </div>
 
         {/* Headshot */}
         <div className="flex justify-center md:justify-end">
-          <div className="relative w-64 h-72 rounded-2xl overflow-hidden border border-gray-200">
+          <div className="relative w-64 h-72 rounded-2xl overflow-hidden border border-[#E5E5E5]">
             <Image
               src="/assets/profile/headshot.jpg"
-              alt="Chris Michalak"
+              alt="Chris Michalak, Senior Product Designer"
               fill
               className="object-cover object-top"
             />
@@ -63,47 +63,47 @@ export default function AboutPage() {
       </div>
 
       {/* Experience */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-bold mb-8 pb-3 border-b-2 border-[#C8641A] text-gray-900">
+      <section className="mb-20" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" className="text-[32px] font-semibold mb-8 pb-4 border-b border-[#E5E5E5] text-[#1A1A1A]">
           Experience
         </h2>
         <div className="space-y-4">
           {experience.map((job) => (
             <div
               key={job.company}
-              className="flex flex-col md:flex-row md:items-center justify-between p-5 rounded-xl bg-white border border-gray-200 shadow-sm"
+              className="flex flex-col md:flex-row md:items-center justify-between p-6 rounded-xl bg-white border border-[#E5E5E5]"
             >
               <div>
-                <h3 className="text-gray-900 font-semibold">{job.company}</h3>
-                <p className="text-gray-500 text-sm">{job.role}</p>
+                <h3 className="text-[#1A1A1A] font-semibold">{job.company}</h3>
+                <p className="text-[#555555] text-sm mt-0.5">{job.role}</p>
               </div>
-              <div className="mt-2 md:mt-0 text-right">
-                <p className="text-[#C8641A] text-sm font-medium">{job.period}</p>
-                <p className="text-gray-400 text-xs">{job.type}</p>
+              <div className="mt-2 md:mt-0 md:text-right">
+                <p className="text-[#2563EB] text-sm font-medium">{job.period}</p>
+                <p className="text-[#717171] text-xs mt-0.5">{job.type}</p>
               </div>
             </div>
           ))}
         </div>
-        <p className="text-gray-400 text-sm mt-4">
+        <p className="text-[#717171] text-sm mt-4">
           Earlier experience in service design, enterprise consulting, and digital strategy available on request.
         </p>
       </section>
 
       {/* Skills */}
-      <section className="mb-20">
-        <h2 className="text-2xl font-bold mb-8 pb-3 border-b-2 border-[#C8641A] text-gray-900">
-          Skills & Tools
+      <section className="mb-20" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" className="text-[32px] font-semibold mb-8 pb-4 border-b border-[#E5E5E5] text-[#1A1A1A]">
+          Skills &amp; Tools
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {skills.map((group) => (
-            <div key={group.category} className="p-5 rounded-xl bg-white border border-gray-200 shadow-sm">
-              <h3 className="text-[#C8641A] text-xs font-medium tracking-widest uppercase mb-3">
+            <div key={group.category} className="p-6 rounded-xl bg-white border border-[#E5E5E5]">
+              <h3 className="text-[#2563EB] text-xs font-medium tracking-widest uppercase mb-3">
                 {group.category}
               </h3>
               <ul className="space-y-1.5">
                 {group.items.map((item) => (
-                  <li key={item} className="text-gray-600 text-sm flex items-center gap-2">
-                    <span className="w-1 h-1 rounded-full bg-[#C8641A] flex-shrink-0" />
+                  <li key={item} className="text-[#555555] text-sm flex items-center gap-2">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#2563EB] flex-shrink-0" aria-hidden="true" />
                     {item}
                   </li>
                 ))}
@@ -114,15 +114,15 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="rounded-2xl border border-[#C8641A]/30 bg-[#C8641A]/5 p-8 text-center">
-        <h2 className="text-2xl font-bold mb-3 text-gray-900">Let&apos;s work together.</h2>
-        <p className="text-gray-500 mb-6 max-w-md mx-auto">
+      <section className="rounded-xl border border-[#2563EB]/20 bg-[#EFF6FF] p-8 text-center" aria-labelledby="cta-heading">
+        <h2 id="cta-heading" className="text-[32px] font-semibold mb-3 text-[#1A1A1A]">Let&apos;s work together.</h2>
+        <p className="text-[#555555] mb-6 max-w-md mx-auto leading-relaxed">
           I&apos;m open to staff product design roles, principal UX researcher positions, and strategic design consulting.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a
             href="mailto:cjmichalak@gmail.com"
-            className="inline-flex items-center gap-2 bg-[#C8641A] hover:bg-[#e07820] text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-medium px-6 py-3 rounded-lg transition-colors min-h-[44px]"
           >
             Email Me →
           </a>
@@ -130,13 +130,14 @@ export default function AboutPage() {
             href="https://www.linkedin.com/in/cjmichalak12/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 font-medium px-6 py-3 rounded-lg transition-colors"
+            aria-label="Connect with Chris on LinkedIn (opens in new tab)"
+            className="inline-flex items-center gap-2 border border-[#E5E5E5] hover:bg-[#F3F2EF] text-[#1A1A1A] font-medium px-6 py-3 rounded-lg transition-colors min-h-[44px]"
           >
             Connect on LinkedIn
           </a>
           <Link
             href="/work"
-            className="inline-flex items-center gap-2 border border-gray-300 hover:border-gray-400 text-gray-700 hover:text-gray-900 font-medium px-6 py-3 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 border border-[#E5E5E5] hover:bg-[#F3F2EF] text-[#1A1A1A] font-medium px-6 py-3 rounded-lg transition-colors min-h-[44px]"
           >
             View My Work
           </Link>

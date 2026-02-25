@@ -7,14 +7,14 @@ import NextImage from 'next/image';
 export default function MarkdownRenderer({ content }: { content: string }) {
   return (
     <div className="prose prose-lg max-w-none
-      prose-headings:font-semibold prose-headings:text-gray-900
-      prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4
-      prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
-      prose-p:leading-relaxed prose-p:text-gray-600
-      prose-li:text-gray-600
-      prose-strong:text-gray-900
-      prose-hr:border-gray-200
-      prose-a:text-[#C8641A] hover:prose-a:text-[#e07820]">
+      prose-headings:font-semibold prose-headings:text-[#1A1A1A]
+      prose-h2:text-[32px] prose-h2:mt-12 prose-h2:mb-4 prose-h2:font-semibold
+      prose-h3:text-[22px] prose-h3:mt-8 prose-h3:mb-3 prose-h3:font-medium
+      prose-p:leading-relaxed prose-p:text-[#555555]
+      prose-li:text-[#555555]
+      prose-strong:text-[#1A1A1A]
+      prose-hr:border-[#E5E5E5]
+      prose-a:text-[#2563EB] prose-a:underline hover:prose-a:text-[#1D4ED8]">
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
@@ -22,7 +22,7 @@ export default function MarkdownRenderer({ content }: { content: string }) {
             if (!src) return null;
             return (
               <figure className="not-prose my-10">
-                <div className="rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50">
+                <div className="rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF]">
                   <NextImage
                     src={src}
                     alt={alt ?? ''}
@@ -33,7 +33,7 @@ export default function MarkdownRenderer({ content }: { content: string }) {
                   />
                 </div>
                 {alt && (
-                  <figcaption className="text-gray-400 text-sm mt-3 text-center">
+                  <figcaption className="text-[#717171] text-sm mt-3 text-center">
                     {alt}
                   </figcaption>
                 )}

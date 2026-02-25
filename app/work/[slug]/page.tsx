@@ -38,19 +38,19 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       <article className="min-h-screen pb-20">
 
         {/* ── Hero Banner ── */}
-        <div className="bg-gray-50 pt-28 pb-12">
+        <div className="bg-[#F3F2EF] pt-28 pb-12">
           <div className="max-w-4xl mx-auto px-6">
             <Link
               href="/work"
-              className="inline-flex items-center gap-1 text-gray-400 hover:text-gray-700 text-sm transition-colors mb-10"
+              className="inline-flex items-center gap-1 text-[#717171] hover:text-[#1A1A1A] text-sm transition-colors mb-10 min-h-[44px]"
             >
               ← All Work
             </Link>
 
-            <p className="text-[#C8641A] text-sm font-medium tracking-widest uppercase mb-3">
+            <p className="text-[#2563EB] text-sm font-medium tracking-widest uppercase mb-3">
               {cs.company}
             </p>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
+            <h1 className="text-[48px] font-semibold text-[#1A1A1A] mb-8 leading-tight">
               {cs.title}
             </h1>
 
@@ -59,21 +59,21 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               {metaItems.map((item) => (
                 <div
                   key={item.label}
-                  className="flex items-center gap-2 bg-white border border-gray-200 rounded-full px-4 py-2 shadow-sm"
+                  className="flex items-center gap-2 bg-white border border-[#E5E5E5] rounded-full px-4 py-2"
                 >
-                  <span className="text-gray-400 text-xs font-medium uppercase tracking-wide">
+                  <span className="text-[#717171] text-xs font-medium uppercase tracking-wide">
                     {item.label}
                   </span>
-                  <span className="text-gray-700 text-sm">{item.value}</span>
+                  <span className="text-[#1A1A1A] text-sm">{item.value}</span>
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Cover image — bleeds out of hero */}
+          {/* Cover image */}
           {coverImage && (
             <div className="max-w-4xl mx-auto px-6 mt-10">
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-gray-200 shadow-md">
+              <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm">
                 <Image
                   src={coverImage.src}
                   alt={coverImage.alt}
@@ -88,16 +88,16 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
         {/* ── TL;DR ── */}
         <div className="max-w-4xl mx-auto px-6 mt-12 mb-14">
-          <div className="rounded-2xl border border-[#C8641A]/30 bg-[#C8641A]/5 p-6 md:p-8">
-            <p className="text-[#C8641A] text-xs font-semibold tracking-widest uppercase mb-3">
+          <div className="rounded-xl border border-[#2563EB]/20 bg-[#EFF6FF] p-6 md:p-8">
+            <p className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase mb-3">
               TL;DR
             </p>
-            <p className="text-gray-700 text-lg leading-relaxed mb-5">
+            <p className="text-[#555555] text-lg leading-relaxed mb-5">
               {cs.description}
             </p>
             {cs.stat && (
-              <div className="flex items-center gap-3 pt-5 border-t border-[#C8641A]/20">
-                <span className="text-[#C8641A] text-3xl md:text-4xl font-bold">{cs.stat}</span>
+              <div className="flex items-center gap-3 pt-5 border-t border-[#2563EB]/20">
+                <span className="text-[#2563EB] text-3xl md:text-4xl font-semibold">{cs.stat}</span>
               </div>
             )}
           </div>
@@ -112,17 +112,17 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
         {galleryImages.length > 0 && (
           <div className="max-w-4xl mx-auto px-6 mb-16">
             <div className="flex items-center gap-3 mb-8">
-              <div className="h-px flex-1 bg-gray-200" />
-              <p className="text-gray-400 text-xs uppercase tracking-widest font-medium whitespace-nowrap">
+              <div className="h-px flex-1 bg-[#E5E5E5]" aria-hidden="true" />
+              <p className="text-[#717171] text-xs uppercase tracking-widest font-medium whitespace-nowrap">
                 Project Gallery
               </p>
-              <div className="h-px flex-1 bg-gray-200" />
+              <div className="h-px flex-1 bg-[#E5E5E5]" aria-hidden="true" />
             </div>
 
             <div className="space-y-10">
               {galleryImages.map((img) => (
                 <figure key={img.src}>
-                  <div className="relative w-full rounded-xl overflow-hidden border border-gray-200 shadow-sm bg-gray-50">
+                  <div className="relative w-full rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF]">
                     <Image
                       src={img.src}
                       alt={img.alt}
@@ -131,7 +131,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                       className="w-full object-cover object-top"
                     />
                   </div>
-                  <figcaption className="text-gray-400 text-sm mt-3 text-center">
+                  <figcaption className="text-[#717171] text-sm mt-3 text-center">
                     {img.alt}
                   </figcaption>
                 </figure>
@@ -142,36 +142,36 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
         {/* ── Next Project ── */}
         {next && (
-          <div className="max-w-4xl mx-auto px-6 mt-16 pt-10 border-t border-gray-200">
-            <p className="text-gray-400 text-xs uppercase tracking-widest font-medium mb-4">
+          <div className="max-w-4xl mx-auto px-6 mt-16 pt-10 border-t border-[#E5E5E5]">
+            <p className="text-[#717171] text-xs uppercase tracking-widest font-medium mb-4">
               Next Project
             </p>
             <Link
               href={`/work/${next.slug}`}
-              className="group flex items-center justify-between p-6 rounded-2xl bg-white border border-gray-200 hover:border-[#C8641A]/50 hover:shadow-lg transition-all duration-300"
+              className="group flex items-center justify-between p-6 rounded-xl bg-white border border-[#E5E5E5] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-200"
             >
               <div className="flex items-center gap-5">
                 {projectImages[next.slug]?.[0] && (
-                  <div className="relative w-16 h-16 rounded-xl overflow-hidden border border-gray-200 flex-shrink-0 hidden sm:block">
+                  <div className="relative w-16 h-16 rounded-xl overflow-hidden border border-[#E5E5E5] flex-shrink-0 hidden sm:block">
                     <Image
                       src={projectImages[next.slug][0].src}
-                      alt={next.title}
+                      alt={`${next.title} thumbnail`}
                       fill
                       className="object-cover object-top"
                     />
                   </div>
                 )}
                 <div>
-                  <p className="text-[#C8641A] text-xs font-medium tracking-wide uppercase mb-1">
+                  <p className="text-[#2563EB] text-xs font-medium tracking-wide uppercase mb-1">
                     {next.company}
                   </p>
-                  <h3 className="text-gray-900 font-bold text-xl group-hover:text-[#C8641A] transition-colors">
+                  <h3 className="text-[#1A1A1A] font-semibold text-xl group-hover:text-[#2563EB] transition-colors">
                     {next.title}
                   </h3>
-                  <p className="text-gray-400 text-sm mt-0.5">{next.description}</p>
+                  <p className="text-[#717171] text-sm mt-0.5">{next.description}</p>
                 </div>
               </div>
-              <span className="text-[#C8641A] text-2xl group-hover:translate-x-1 transition-transform flex-shrink-0 ml-4">
+              <span className="text-[#2563EB] text-2xl group-hover:translate-x-1 transition-transform flex-shrink-0 ml-4" aria-hidden="true">
                 →
               </span>
             </Link>

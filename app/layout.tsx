@@ -28,9 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="font-sans antialiased bg-brand-dark text-white">
+      <body className="font-sans antialiased">
+        <a href="#main" className="skip-link">Skip to main content</a>
         <Nav />
-        <main>{children}</main>
+        <main id="main">{children}</main>
         <Footer />
       </body>
     </html>
