@@ -1,7 +1,5 @@
 import Anthropic from '@anthropic-ai/sdk';
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
-
 const SYSTEM_PROMPT = `You are an AI assistant on Chris Michalak's portfolio website. Your job is to help visitors — recruiters, hiring managers, potential collaborators — learn about Chris's work, skills, experience, and availability.
 
 ## Who is Chris Michalak?
@@ -88,6 +86,8 @@ Use these to show work samples when a visitor asks to see designs, wireframes, o
 export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
+
+    const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
     const response = await client.messages.create({
       model: 'claude-haiku-4-5-20251001',
