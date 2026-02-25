@@ -87,6 +87,10 @@ export async function POST(req: Request) {
   try {
     const { messages } = await req.json();
 
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return Response.json({ error: 'MISSING_KEY: ANTHROPIC_API_KEY is not set on this deployment.' }, { status: 500 });
+    }
+
     const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
 
     const response = await client.messages.create({
