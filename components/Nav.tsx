@@ -20,10 +20,22 @@ export default function Nav() {
         </Link>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-6">
           <NavLink href="/work" active={pathname?.startsWith('/work')}>Work</NavLink>
           <NavLink href="/ai-fluency" active={pathname === '/ai-fluency'}>AI Fluency</NavLink>
           <NavLink href="/about" active={pathname === '/about'}>About</NavLink>
+
+          {/* AI Assistant link */}
+          <a
+            href="/#ai-assistant"
+            className="text-sm font-medium text-[#555555] hover:text-[#1A1A1A] transition-colors min-h-[44px] inline-flex items-center gap-1.5"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            AI Assistant
+          </a>
+
           <a
             href="mailto:cjmichalak@gmail.com"
             className="text-sm font-medium bg-[#2563EB] hover:bg-[#1D4ED8] text-white px-4 py-2.5 rounded-lg transition-colors min-h-[44px] inline-flex items-center"
@@ -55,6 +67,16 @@ export default function Nav() {
           <NavLink href="/work" active={pathname?.startsWith('/work')} onClick={() => setMenuOpen(false)}>Work</NavLink>
           <NavLink href="/ai-fluency" active={pathname === '/ai-fluency'} onClick={() => setMenuOpen(false)}>AI Fluency</NavLink>
           <NavLink href="/about" active={pathname === '/about'} onClick={() => setMenuOpen(false)}>About</NavLink>
+          <a
+            href="/#ai-assistant"
+            onClick={() => setMenuOpen(false)}
+            className="text-sm font-medium text-[#555555] min-h-[44px] flex items-center gap-2"
+          >
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            AI Assistant
+          </a>
           <a
             href="mailto:cjmichalak@gmail.com"
             className="text-sm font-medium text-[#2563EB] min-h-[44px] flex items-center"

@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { getAllCaseStudies } from '@/lib/case-studies';
+import InlineChat from '@/components/InlineChat';
 
 const testimonials = [
   {
@@ -83,7 +84,7 @@ export default function HomePage() {
             ))}
           </div>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3">
             <Link
               href="/work"
               className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-medium px-6 py-3 rounded-lg transition-colors min-h-[44px]"
@@ -92,10 +93,19 @@ export default function HomePage() {
               <span aria-hidden="true">→</span>
             </Link>
             <a
+              href="#ai-assistant"
+              className="inline-flex items-center gap-2 border border-[#E5E5E5] hover:bg-[#F3F2EF] text-[#1A1A1A] font-medium px-6 py-3 rounded-lg transition-colors min-h-[44px]"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+              </svg>
+              Ask My AI Assistant
+            </a>
+            <a
               href="mailto:cjmichalak@gmail.com"
               className="inline-flex items-center gap-2 border border-[#E5E5E5] hover:bg-[#F3F2EF] text-[#1A1A1A] font-medium px-6 py-3 rounded-lg transition-colors min-h-[44px]"
             >
-              Contact
+              Contact Me
             </a>
           </div>
         </div>
@@ -175,7 +185,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative w-full max-w-sm mx-auto md:mx-0 rounded-2xl overflow-hidden aspect-[3/4]">
                 <Image
-                  src="/assets/profile/headshot.jpg"
+                  src="/assets/profile/Headshot-Antelope-island.jpeg"
                   alt="Chris Michalak, Senior Product Designer"
                   fill
                   className="object-cover object-top"
@@ -195,7 +205,7 @@ export default function HomePage() {
                 and organizational reality collide.
               </p>
               <p className="text-[#555555] leading-relaxed mb-8">
-                Over the past decade, I&apos;ve led UX research and design across Fortune 500 companies
+                Over the past 7+ years, I&apos;ve led UX research and design across Fortune 500 companies
                 including T-Mobile and Union Pacific Railroad, and built products from zero
                 at early-stage startups.
               </p>
@@ -203,7 +213,7 @@ export default function HomePage() {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-6 mb-8 py-6 border-t border-b border-[#E5E5E5]">
                 <div>
-                  <p className="text-3xl font-semibold text-[#1A1A1A]">6+</p>
+                  <p className="text-3xl font-semibold text-[#1A1A1A]">7+</p>
                   <p className="text-sm text-[#717171] mt-1">Years experience</p>
                 </div>
                 <div>
@@ -295,6 +305,30 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* AI Assistant */}
+      <section id="ai-assistant" aria-labelledby="ai-heading" className="py-20 px-6 max-w-7xl mx-auto">
+        <div className="max-w-2xl mx-auto text-center mb-10">
+          <div className="inline-flex items-center gap-2 bg-[#EFF6FF] text-[#2563EB] text-xs font-semibold px-3 py-1.5 rounded-full mb-5 border border-[#2563EB]/20 uppercase tracking-wider">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 17l-6.2 4.3 2.4-7.4L2 9.4h7.6z" />
+            </svg>
+            AI Assistant
+          </div>
+          <h2 id="ai-heading" className="text-[32px] font-semibold text-[#1A1A1A] leading-tight mb-3">
+            Ask My AI Assistant
+          </h2>
+          <p className="text-[#555555] leading-relaxed">
+            Get instant answers about my experience, skills, and work. The assistant is trained on my
+            portfolio and can help you find relevant information quickly.
+          </p>
+        </div>
+        <InlineChat />
+        <p className="text-center text-[12px] text-[#A0A0A0] mt-4 max-w-xl mx-auto">
+          This AI assistant is powered by Claude and trained on my complete portfolio, resume, and work samples.
+          It will provide instant, accurate answers to your questions.
+        </p>
       </section>
 
       {/* CTA Banner */}
