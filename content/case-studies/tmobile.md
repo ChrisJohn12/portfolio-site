@@ -127,3 +127,9 @@ The tool surfaced dense technical data: coverage layers (4G Commercial, Resident
 The T-Mobile work taught me something that has shaped every project since: the most impactful research doesn't just answer the question you were asked — it reframes the question entirely. The bill comparison project started as "test this prototype" and ended as "here's why your billing experience is broken at a systemic level and where to focus." The CNV project started as "validate this layout" and ended as "here's what metadata your reps actually need and what you should remove."
 
 Working across both CARE (call center) and Retail (in-store) channels also reinforced that the same product can have completely different usability profiles depending on the context. A rep sitting at a desk with a headset navigates differently than a rep standing in a store with a tablet and a customer watching. Designing for both requires going to both places and observing both realities — not assuming one research study covers everything.
+
+## Additional contributions (from portfolio brain dump)
+
+- Conducted on-floor research in physical T-Mobile stores — observed live checkouts and interviewed customers and Mobile Experts to surface concrete friction points.
+- Documented observed workflows with enough specificity to feed a time-boxed design sprint and inform engineering priorities.
+- Brought research findings to project leads and cross-functional teams to reframe problem statements and align on measurable success criteria.

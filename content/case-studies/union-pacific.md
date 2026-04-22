@@ -161,3 +161,9 @@ The key wasn't using AI to replace analysis — it was using it to compress the 
 Union Pacific was a masterclass in designing within constraints — not the fun kind of creative constraints, but real enterprise complexity: legacy systems with decades of accumulated logic, thousands of internal users with deeply ingrained workflows, and technology decisions that had to work within SAP's capabilities.
 
 The most valuable thing I brought to this work wasn't visual design — it was the ability to sit in a warehouse in Fort Worth, watch someone use a Zebra handheld to scan parts bins, and translate what I observed into design decisions that a development team in another state could implement. That bridge between field reality and system design is where research-driven product design creates the most value in enterprise contexts.
+
+## Cross-team influence & additional notes
+
+- Helped evangelize UX across multiple teams, increasing visibility into UX work and aligning team goals.
+- Delivered a SAP Basic Navigation Quick Reference Guide used by cross-functional teams during rollout and training.
+- Used AI-assisted synthesis (Dovetail AI) to accelerate research clustering and insight delivery, shortening decision cycles.

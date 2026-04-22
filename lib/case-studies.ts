@@ -23,6 +23,13 @@ function extract(content: string, key: string): string {
 }
 
 const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'description' | 'stat'>> = {
+  'first-step-ai': {
+    coverImage: '/assets/first-step-ai/First Step AI logo design.png',
+    tags: ['AI Product', 'Claude API', 'React'],
+    description:
+      'Built an AI-powered onboarding agent that walks e-commerce sellers through a 4-question intake and generates a personalized automation recommendation using Claude.',
+    stat: 'Live product — try it at first-step-ai-ten.vercel.app',
+  },
   shipdeez: {
     coverImage: '/assets/shipdeez/landing-page.png',
     tags: ['UX Design', 'Brand Identity', 'Design System', 'Webflow'],
@@ -82,7 +89,7 @@ export function getCaseStudy(slug: string): CaseStudy | null {
   }
 }
 
-const slugOrder = ['shipdeez', 'union-pacific', 'tmobile'] as const;
+const slugOrder = ['first-step-ai', 'shipdeez', 'union-pacific', 'tmobile'] as const;
 
 export function getAllCaseStudies(): CaseStudy[] {
   return [...slugOrder]
@@ -98,6 +105,10 @@ export function getNextCaseStudy(currentSlug: string): CaseStudy | null {
 }
 
 export const projectImages: Record<string, { src: string; alt: string }[]> = {
+  'first-step-ai': [
+    { src: '/assets/first-step-ai/First Step AI logo design.png', alt: 'First Step AI logo' },
+    { src: '/assets/first-step-ai/cover.svg', alt: 'First Step AI cover' },
+  ],
   // ShipDeez images are embedded inline in the markdown — only the cover is needed here
   // for the hero banner and the "Next project" thumbnail on other case study pages.
   shipdeez: [

@@ -199,6 +199,8 @@ AI tools were part of the process from day one — not as a shortcut, but as a w
 
 **Analytics taxonomy.** The full funnel event tracking plan (20+ events from landing to label download) was architected with Claude to make sure there were no gaps.
 
+**Notes from brain dump:** I used Claude to map platform integration responsibilities (ShipDeez vs ShipBlink vs EasyPost) and GPT to stress-test failure states (insufficient wallet funds, address verification failures, payment abandonment), which helped tighten UX before handoff.
+
 What I didn't use AI for: the actual design judgment. Deciding what the product should be, what to cut, what users actually need — that's still the work.
 
 ---
