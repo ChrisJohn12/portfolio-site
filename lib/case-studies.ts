@@ -107,7 +107,9 @@ export function getNextCaseStudy(currentSlug: string): CaseStudy | null {
 export const projectImages: Record<string, { src: string; alt: string }[]> = {
   'first-step-ai': [
     { src: '/assets/first-step-ai/First Step AI logo design.png', alt: 'First Step AI logo' },
-    { src: '/assets/first-step-ai/cover.svg', alt: 'First Step AI cover' },
+    { src: '/assets/first-step-ai/first_step_ai_userflow_1.png', alt: 'First Step AI user flow — intake questions' },
+    { src: '/assets/first-step-ai/First_step_ai_userflow_2.png', alt: 'First Step AI user flow — recommendation result' },
+    { src: '/assets/first-step-ai/First_step_ai_userflow_3.png', alt: 'First Step AI user flow — email capture' },
   ],
   // ShipDeez images are embedded inline in the markdown — only the cover is needed here
   // for the hero banner and the "Next project" thumbnail on other case study pages.
