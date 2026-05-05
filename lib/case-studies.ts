@@ -28,7 +28,7 @@ const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'descr
     tags: ['AI Product', 'Claude API', 'React'],
     description:
       'An AI onboarding agent that meets e-commerce sellers where they are. Answer 4 questions, get a specific automation recommendation built for your store.',
-    stat: 'Live product — working end to end',
+    stat: 'Live product, working end to end',
   },
   shipdeez: {
     coverImage: '/assets/shipdeez/landing-page.png',
