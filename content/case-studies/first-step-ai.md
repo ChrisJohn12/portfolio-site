@@ -1,7 +1,7 @@
 # First Step AI — AI Onboarding Agent
 
-**Company:** Independent Project
 **Role:** Solo Product Designer + Engineer
+**Company:** Independent Project
 **Timeline:** 6 weeks
 **Tools:** React, Claude API, Vercel, Node.js, Tailwind CSS, Express, Vite
 
