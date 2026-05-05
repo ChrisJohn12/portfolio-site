@@ -9,7 +9,7 @@ import { getNextCaseStudy, projectImages } from '@/lib/case-studies'
 export const metadata = {
   title: 'First Step AI, Chris Michalak',
   description:
-    'An AI-powered onboarding agent that walks e-commerce sellers through 4 questions and delivers a personalized automation recommendation, built and shipped in 6 weeks.',
+    'An AI-powered onboarding agent that walks e-commerce sellers through 4 questions and delivers a personalized automation recommendation. Built in 6 weeks with 4 Anthropic certifications.',
 }
 
 const PRODUCT_URL = 'https://first-step-ai-ten.vercel.app'
@@ -24,7 +24,7 @@ const badges = [
 const insightCards = [
   {
     label: 'The gap',
-    body: 'Not technology - translation. Getting from "AI exists" to "here is what you do on Monday morning."',
+    body: 'Not technology. Translation. Getting from "AI exists" to "here is what you do on Monday morning."',
   },
   {
     label: 'The user',
@@ -63,7 +63,7 @@ const learnedCards = [
   {
     num: '02',
     title: 'Ship early, learn from reality',
-    body: 'A working product on Vercel surfaced problems no prototype would catch - CORS errors, API key exposure, port conflicts. Shipping fast is a research method.',
+    body: 'A working product on Vercel surfaced problems no prototype would catch: CORS errors, API key exposure, and port conflicts. Shipping fast is a research method.',
   },
   {
     num: '03',
@@ -81,7 +81,7 @@ const resultCards = [
       </svg>
     ),
     title: 'Shipped',
-    body: 'Live product deployed to Vercel. Working end to end - intake, Claude API call, personalized recommendation, email capture.',
+    body: 'Live product deployed to Vercel. Working end to end: intake, Claude API call, personalized recommendation, email capture.',
   },
   {
     icon: (
@@ -108,15 +108,15 @@ const resultCards = [
 const galleryItems = [
   {
     src: '/assets/first-step-ai/first_step_ai_userflow_1.png',
-    caption: 'Landing page - hero, value proposition, and feature cards',
+    caption: 'Landing page: hero, value proposition, and feature cards',
   },
   {
     src: '/assets/first-step-ai/First_step_ai_userflow_2.png',
-    caption: 'Intake flow - Step 3 of 4, one question at a time',
+    caption: 'Intake flow: Step 3 of 4, one question at a time',
   },
   {
     src: '/assets/first-step-ai/First_step_ai_userflow_3.png',
-    caption: 'AI Action Plan - tool recommendation, 3 steps, ROI stats, and email capture',
+    caption: 'AI Action Plan: tool recommendation, 3 steps, ROI stats, and email capture',
   },
 ]
 
@@ -158,8 +158,7 @@ export default function FirstStepAICaseStudy() {
 
             <p className="text-[#555555] text-[16px] leading-relaxed mb-8 max-w-2xl">
               An AI onboarding agent that walks e-commerce sellers through 4 questions and delivers a
-              personalized automation recommendation - built and shipped in 6 weeks alongside 4 Anthropic
-              certifications.
+              personalized automation recommendation. Built in 6 weeks with 4 Anthropic certifications.
             </p>
 
             <a
@@ -273,7 +272,7 @@ export default function FirstStepAICaseStudy() {
               <h3 className="text-[16px] font-semibold text-[#1A1A1A] mb-2">Discovery</h3>
               <p className="text-[15px] text-[#555555] leading-relaxed">
                 The target user was the solo Shopify seller doing 50-500 orders a month, running operations
-                largely alone. Key insight: the problem wasn&apos;t awareness - sellers knew AI existed.
+                largely alone. Key insight: the problem wasn&apos;t awareness. Sellers knew AI existed.
                 They didn&apos;t know which tool, for which workflow, set up in which order.
               </p>
             </div>
@@ -282,7 +281,7 @@ export default function FirstStepAICaseStudy() {
               <p className="text-[15px] text-[#555555] leading-relaxed">
                 The core product decision was to deliver one recommendation, not many. Every competing
                 product gives users a list of AI tools to explore. First Step AI gives them one specific
-                thing to do today - which shaped the entire intake and output design.
+                thing to do today, which shaped the entire intake and output design.
               </p>
             </div>
           </div>
@@ -317,7 +316,7 @@ export default function FirstStepAICaseStudy() {
 
           <p className="text-[15px] text-[#555555] leading-relaxed">
             Removing business name and email from the intake reduced it from 6 fields to 4 questions.
-            Moving email capture to after the recommendation - when value has already been delivered -
+            Moving email capture to after the recommendation, when value has already been delivered,
             produced a higher-quality list. Both decisions came from the same principle: earn trust before
             asking for anything.
           </p>
@@ -329,7 +328,7 @@ export default function FirstStepAICaseStudy() {
             <h2 className="text-[22px] font-semibold text-[#1A1A1A] mb-4">How I built it</h2>
 
             <p className="text-[15px] text-[#555555] leading-relaxed mb-10">
-              Built with React and the Claude API, deployed on Vercel - with one significant architectural
+              Built with React and the Claude API, deployed on Vercel, with one significant architectural
               challenge to solve.
             </p>
 
@@ -340,7 +339,7 @@ export default function FirstStepAICaseStudy() {
                 <h3 className="text-[16px] font-semibold text-[#1A1A1A] mb-3">The CORS problem</h3>
                 <p className="text-[15px] text-[#555555] leading-relaxed">
                   Browsers block direct API calls to Anthropic for security reasons. The fix was a Vercel
-                  serverless function that proxies requests server-side - keeping the API key out of the
+                  serverless function that proxies requests server-side, keeping the API key out of the
                   browser bundle entirely. Local dev uses an Express proxy on port 3001; production uses
                   the Vercel function automatically.
                 </p>
