@@ -43,7 +43,6 @@ const skills = [
 
 export default function HomePage() {
   const projects = getAllCaseStudies();
-  console.log('Projects length:', projects.length, 'First project tags:', projects[0]?.tags);
 
   return (
     <div>
@@ -143,26 +142,23 @@ export default function HomePage() {
               </div>
 
               <div className="p-6 flex flex-col h-full">
-                <div>
-                  <p className="text-[#2563EB] text-xs font-medium tracking-wide uppercase mb-1">
-                    {project.company}
+                <p className="text-[#2563EB] text-xs font-medium tracking-wide uppercase mb-1">
+                  {project.company}
+                </p>
+                <h3 className="text-[#1A1A1A] font-semibold text-[22px] leading-snug mb-2 group-hover:text-[#2563EB] transition-colors">
+                  {project.title}
+                </h3>
+                <p className="text-[#555555] text-sm leading-relaxed mb-3">
+                  {project.description}
+                </p>
+                {project.stat && (
+                  <p className="text-[#2563EB] text-xs font-semibold mb-4 tracking-wide">
+                    {project.stat}
                   </p>
-                  <h3 className="text-[#1A1A1A] font-semibold text-[22px] leading-snug mb-2 group-hover:text-[#2563EB] transition-colors">
-                    {project.title}
-                  </h3>
-                  <p className="text-[#555555] text-sm leading-relaxed mb-3">
-                    {project.description}
-                  </p>
-                  {project.stat && (
-                    <p className="text-[#2563EB] text-xs font-semibold mb-4 tracking-wide">
-                      {project.stat}
-                    </p>
-                  )}
-                </div>
-
+                )}
                 <div className="mt-auto flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
-                    {(project.tags || []).map((tag) => (
+                    {project.tags.map((tag) => (
                       <span
                         key={tag}
                         className="text-[13px] font-medium px-[14px] py-[6px] rounded-full bg-[#F3F2EF] text-[#555555]"
@@ -171,7 +167,7 @@ export default function HomePage() {
                       </span>
                     ))}
                   </div>
-                  <span className="text-[#2563EB] text-xs font-semibold">
+                  <span className="text-[#2563EB] text-xs font-medium">
                     Read case study →
                   </span>
                 </div>
