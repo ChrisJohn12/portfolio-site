@@ -141,7 +141,7 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="p-6 flex flex-col h-full justify-between">
+              <div className="p-6 flex flex-col h-full">
                 <div>
                   <p className="text-[#2563EB] text-xs font-medium tracking-wide uppercase mb-1">
                     {project.company}
@@ -159,7 +159,7 @@ export default function HomePage() {
                   )}
                 </div>
 
-                <div className="flex items-center justify-between mt-6">
+                <div className="mt-auto flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
