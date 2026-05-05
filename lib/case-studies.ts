@@ -24,11 +24,11 @@ function extract(content: string, key: string): string {
 
 const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'description' | 'stat'>> = {
   'first-step-ai': {
-    coverImage: '/assets/first-step-ai/First Step AI logo design.png',
+    coverImage: '/assets/first-step-ai/first_step_ai_userflow_3.png',
     tags: ['AI Product', 'Claude API', 'React'],
     description:
-      'Built an AI-powered onboarding agent that walks e-commerce sellers through a 4-question intake and generates a personalized automation recommendation using Claude.',
-    stat: 'Live product — try it at first-step-ai-ten.vercel.app',
+      'An AI onboarding agent that meets e-commerce sellers where they are. Answer 4 questions, get a specific automation recommendation built for your store.',
+    stat: 'Live product — working end to end',
   },
   shipdeez: {
     coverImage: '/assets/shipdeez/landing-page.png',
