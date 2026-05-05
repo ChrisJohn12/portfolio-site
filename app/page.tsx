@@ -158,7 +158,7 @@ export default function HomePage() {
                 )}
                 <div className="mt-auto flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
+                    {(project.tags ?? []).map((tag) => (
                       <span
                         key={tag}
                         className="text-[13px] font-medium px-[14px] py-[6px] rounded-full bg-[#F3F2EF] text-[#555555]"
