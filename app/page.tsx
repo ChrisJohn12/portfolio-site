@@ -128,7 +128,7 @@ export default function HomePage() {
             <Link
               key={project.slug}
               href={`/work/${project.slug}`}
-              className="group block rounded-xl overflow-hidden border border-[#E5E5E5] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-200 hover:-translate-y-1 bg-white"
+              className="group block rounded-xl overflow-hidden border border-[#E5E5E5] hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)] transition-all duration-200 hover:-translate-y-1 bg-white h-full"
             >
               <div className="relative h-52 bg-[#F3F2EF] overflow-hidden">
                 {project.coverImage && (
@@ -141,7 +141,7 @@ export default function HomePage() {
                 )}
               </div>
 
-              <div className="p-6">
+              <div className="p-6 flex flex-col h-full">
                 <p className="text-[#2563EB] text-xs font-medium tracking-wide uppercase mb-1">
                   {project.company}
                 </p>
@@ -156,7 +156,7 @@ export default function HomePage() {
                     {project.stat}
                   </p>
                 )}
-                <div className="flex items-center justify-between">
+                <div className="mt-auto flex items-center justify-between">
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag) => (
                       <span
