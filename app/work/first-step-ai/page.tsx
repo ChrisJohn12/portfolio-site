@@ -23,16 +23,16 @@ const badges = [
 
 const insightCards = [
   {
-    label: 'The gap',
-    body: 'Not technology. Translation. Getting from "AI exists" to "here is what you do on Monday morning."',
+    label: 'THE CONFUSION',
+    body: 'Which tool do I even start with? Sellers faced dozens of AI options with no clear way to evaluate which one fit their specific situation.',
   },
   {
-    label: 'The user',
-    body: 'Solo Shopify and Etsy sellers. 50-500 orders per month. Running everything alone.',
+    label: 'THE FEAR',
+    body: 'What if I spend money on the wrong thing? Without a trusted guide, the risk of a bad investment felt higher than the cost of doing nothing.',
   },
   {
-    label: 'The opportunity',
-    body: 'No trusted, plain-language guide existed. Every competitor was either too generic or too technical.',
+    label: 'THE TIME PROBLEM',
+    body: 'I don\'t have hours to figure this out. Solo sellers running fulfillment, customer service, and marketing simultaneously have no margin for trial and error.',
   },
 ]
 
@@ -237,9 +237,7 @@ export default function FirstStepAICaseStudy() {
           </p>
 
           <p className="text-[15px] text-[#555555] leading-relaxed mb-8 max-w-2xl">
-            That number isn&apos;t about capability - it&apos;s about clarity. E-commerce sellers running
-            Shopify and Etsy stores know AI could help. They just don&apos;t know which tool, for which
-            workflow, set up in which order.
+            That number stopped me. I was working on ShipDeez, a B2B shipping platform for e-commerce sellers, when I kept hearing the same thing from small store owners. They knew AI existed. They had tried ChatGPT once. Nothing changed. The problem was not awareness. It was the gap between knowing AI could help and knowing exactly what to do about it. No one was building the translation layer.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
