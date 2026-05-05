@@ -24,7 +24,7 @@ function extract(content: string, key: string): string {
 
 const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'description' | 'stat'>> = {
   'first-step-ai': {
-    coverImage: '/assets/first-step-ai/first_step_ai_userflow_3.png',
+    coverImage: '/assets/first-step-ai/First_step_ai_userflow_3.png',
     tags: ['AI Product', 'Claude API', 'React'],
     description:
       'An AI onboarding agent that meets e-commerce sellers where they are. Answer 4 questions, get a specific automation recommendation built for your store.',
