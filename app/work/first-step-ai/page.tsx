@@ -172,14 +172,53 @@ export default function FirstStepAICaseStudy() {
           </div>
 
           <div className="max-w-4xl mx-auto px-6 mt-10">
-            <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm">
-              <Image
-                src="/assets/first-step-ai/cover.svg"
-                alt="First Step AI - AI onboarding agent for e-commerce sellers"
-                fill
-                className="object-cover object-center"
-                priority
-              />
+            <div className="rounded-[16px] bg-[#F0F4FF] p-[40px] overflow-hidden">
+              <div className="rounded-[12px] bg-[#1A1D27] p-[12px] flex items-center gap-3">
+                <div className="flex items-center gap-2">
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#FF5F57]" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#FFBD2E]" />
+                  <span className="h-2.5 w-2.5 rounded-full bg-[#28C840]" />
+                </div>
+                <div className="mx-auto rounded-full bg-[#2B2F3C] px-3 py-1 text-[12px] text-[#CBD5E1]">
+                  first-step-ai-ten.vercel.app
+                </div>
+              </div>
+
+              <div className="bg-[#0F1117] px-[40px] pb-[40px] pt-[32px] text-center">
+                <div className="mx-auto inline-flex items-center justify-center rounded-[20px] border border-[rgba(108,99,255,0.3)] bg-[rgba(108,99,255,0.15)] px-[16px] py-[4px] text-[11px] uppercase tracking-[0.05em] text-[#6C63FF] font-semibold mb-4">
+                  AI AUDIT FOR ONLINE SELLERS
+                </div>
+
+                <h3 className="text-[28px] font-bold leading-tight text-white max-w-2xl mx-auto">
+                  Find your best <span className="text-[#6C63FF]">automation opportunity</span> in minutes
+                </h3>
+
+                <p className="mt-4 text-[14px] text-[rgba(255,255,255,0.5)] max-w-xl mx-auto leading-relaxed">
+                  Answer 4 questions and get a specific, actionable recommendation to save you the most time this week.
+                </p>
+
+                <button className="mt-5 inline-flex items-center justify-center rounded-[8px] bg-[linear-gradient(135deg,#6C63FF,#00D4FF)] px-[28px] py-[12px] text-[14px] font-semibold text-white">
+                  Get Started
+                </button>
+
+                <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                  <div className="rounded-[8px] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.04)] p-4 text-left">
+                    <div className="mb-3 h-[28px] w-[28px] rounded-[6px] bg-[#6C63FF]" />
+                    <p className="font-semibold text-white mb-1 text-sm">AI-Powered Insights</p>
+                    <p className="text-[13px] text-[rgba(255,255,255,0.7)]">Personalized to your store</p>
+                  </div>
+                  <div className="rounded-[8px] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.04)] p-4 text-left">
+                    <div className="mb-3 h-[28px] w-[28px] rounded-[6px] bg-[#00D4FF]" />
+                    <p className="font-semibold text-white mb-1 text-sm">Quick & Simple</p>
+                    <p className="text-[13px] text-[rgba(255,255,255,0.7)]">Just 4 questions</p>
+                  </div>
+                  <div className="rounded-[8px] border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.04)] p-4 text-left">
+                    <div className="mb-3 h-[28px] w-[28px] rounded-[6px] bg-[#FF6AA3]" />
+                    <p className="font-semibold text-white mb-1 text-sm">Actionable Results</p>
+                    <p className="text-[13px] text-[rgba(255,255,255,0.7)]">Steps you can take today</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
