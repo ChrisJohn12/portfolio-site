@@ -32,7 +32,7 @@ const insightCards = [
   },
   {
     label: 'THE TIME PROBLEM',
-    body: 'I don\'t have hours to figure this out. Solo sellers running fulfillment, customer service, and marketing simultaneously have no margin for trial and error.',
+    body: 'I don\'t have hours to figure this out. Solo Shopify, Etsy, and WooCommerce sellers running fulfillment, customer service, and marketing simultaneously have no margin for trial and error.',
   },
 ]
 
@@ -257,6 +257,34 @@ export default function FirstStepAICaseStudy() {
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-[22px] font-semibold text-[#1A1A1A] mb-8">The product</h2>
 
+            <h3 className="text-[16px] font-semibold text-[#1A1A1A] mb-4">What it actually recommends</h3>
+            <p className="text-[15px] text-[#555555] leading-relaxed mb-6 max-w-2xl">
+              First Step AI maps each seller&apos;s answers to one of several automation categories, then recommends the specific tool best suited to their situation.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
+              <div className="bg-white border border-[#E5E5E5] rounded-xl p-5">
+                <div className="text-2xl mb-3">💬</div>
+                <h4 className="text-[14px] font-bold text-[#1A1A1A] mb-2">Customer support automation</h4>
+                <p className="text-[13px] text-[#555555] leading-relaxed">For sellers spending hours answering the same questions. Tools like Tidio handle shipping status, returns, and FAQs automatically.</p>
+              </div>
+              <div className="bg-white border border-[#E5E5E5] rounded-xl p-5">
+                <div className="text-2xl mb-3">🛒</div>
+                <h4 className="text-[14px] font-bold text-[#1A1A1A] mb-2">Abandoned cart recovery</h4>
+                <p className="text-[13px] text-[#555555] leading-relaxed">For sellers losing revenue at checkout. Email sequences that recover 5-15% of abandoned carts with no manual effort.</p>
+              </div>
+              <div className="bg-white border border-[#E5E5E5] rounded-xl p-5">
+                <div className="text-2xl mb-3">⭐</div>
+                <h4 className="text-[14px] font-bold text-[#1A1A1A] mb-2">Review generation</h4>
+                <p className="text-[13px] text-[#555555] leading-relaxed">For sellers with low review counts hurting their store ranking. Automated post-purchase sequences that turn happy customers into reviewers.</p>
+              </div>
+              <div className="bg-white border border-[#E5E5E5] rounded-xl p-5">
+                <div className="text-2xl mb-3">📦</div>
+                <h4 className="text-[14px] font-bold text-[#1A1A1A] mb-2">Shipping cost optimization</h4>
+                <p className="text-[13px] text-[#555555] leading-relaxed">For sellers overpaying on postage. Rate comparison tools that identify the cheapest carrier for each order type automatically.</p>
+              </div>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
               <div>
                 <p className="text-[17px] font-semibold text-[#1A1A1A] mb-5">
@@ -274,6 +302,39 @@ export default function FirstStepAICaseStudy() {
                     </li>
                   ))}
                 </ul>
+
+                <p className="text-[12px] font-semibold text-[#2563EB] uppercase tracking-wide mb-3">Example output</p>
+                <div className="bg-[#1A1D27] border border-[#2A2D3E] rounded-xl p-6 mb-6">
+                  <div className="mb-4">
+                    <p className="text-[10px] uppercase text-[rgba(255,255,255,0.4)] mb-1">RECOMMENDED TOOL</p>
+                    <p className="text-[16px] font-bold text-[#6C63FF]">Tidio</p>
+                  </div>
+                  <div className="border-t border-[rgba(255,255,255,0.08)] pt-4 mb-4">
+                    <p className="text-[10px] uppercase text-[rgba(255,255,255,0.4)] mb-2">THE PROBLEM</p>
+                    <p className="text-[13px] text-[rgba(255,255,255,0.7)]">You are manually answering the same customer questions instead of letting a chatbot handle them automatically.</p>
+                  </div>
+                  <div className="border-t border-[rgba(255,255,255,0.08)] pt-4 mb-4">
+                    <p className="text-[10px] uppercase text-[rgba(255,255,255,0.4)] mb-2">3 STEPS TO GET STARTED</p>
+                    <ol className="text-[13px] text-[rgba(255,255,255,0.7)] space-y-1 list-decimal list-inside">
+                      <li>Sign up at tidio.com and connect to your Shopify, Etsy, or WooCommerce store in under 10 minutes</li>
+                      <li>Use their pre-built FAQ templates to answer your top 5 repeated questions automatically</li>
+                      <li>Turn on Lyro AI to handle questions in your store&apos;s voice around the clock</li>
+                    </ol>
+                  </div>
+                  <div className="border-t border-[rgba(255,255,255,0.08)] pt-4">
+                    <div className="grid grid-cols-2 gap-3">
+                      <div className="bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] rounded-lg p-3 text-center">
+                        <p className="text-[#6C63FF] font-bold text-sm">6 to 8 hours</p>
+                        <p className="text-[11px] text-[rgba(255,255,255,0.4)]">Weekly time saved</p>
+                      </div>
+                      <div className="bg-[rgba(255,255,255,0.04)] border border-[rgba(255,255,255,0.08)] rounded-lg p-3 text-center">
+                        <p className="text-[#6C63FF] font-bold text-sm">Free to start</p>
+                        <p className="text-[11px] text-[rgba(255,255,255,0.4)]">$29/mo to scale</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <a
                   href={PRODUCT_URL}
                   target="_blank"
@@ -308,17 +369,13 @@ export default function FirstStepAICaseStudy() {
             <div>
               <h3 className="text-[16px] font-semibold text-[#1A1A1A] mb-2">Discovery</h3>
               <p className="text-[15px] text-[#555555] leading-relaxed">
-                The target user was the solo Shopify seller doing 50-500 orders a month, running operations
-                largely alone. Key insight: the problem wasn&apos;t awareness. Sellers knew AI existed.
-                They didn&apos;t know which tool, for which workflow, set up in which order.
+                The target user was the solo Shopify, Etsy, or WooCommerce seller doing 50-500 orders a month, running operations largely alone. I came to this project through two lenses: market research showing 82% of small businesses believe AI does not apply to them, and direct exposure to e-commerce operators through my freelance work on ShipDeez, a B2B shipping platform. The pattern was consistent. Sellers knew AI existed. They had tried something once. Nothing stuck. The problem was not the tools. It was the absence of a trusted, plain-language starting point.
               </p>
             </div>
             <div>
               <h3 className="text-[16px] font-semibold text-[#1A1A1A] mb-2">Define</h3>
               <p className="text-[15px] text-[#555555] leading-relaxed">
-                The core product decision was to deliver one recommendation, not many. Every competing
-                product gives users a list of AI tools to explore. First Step AI gives them one specific
-                thing to do today, which shaped the entire intake and output design.
+                The core product decision came from that insight. Every competitor gives sellers a list of AI tools to explore. First Step AI gives them one specific thing to do today. One tool. Three steps. A time savings estimate. A cost. That constraint shaped every downstream design decision from the intake questions to the output format to the system prompt.
               </p>
             </div>
           </div>
