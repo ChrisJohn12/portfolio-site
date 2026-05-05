@@ -253,7 +253,7 @@ export default function FirstStepAICaseStudy() {
         </div>
 
         {/* ── 4. THE PRODUCT ── */}
-        <div className="bg-[#F3F2EF] py-16 mb-16">
+        <div className="bg-[#F3F2EF] pt-16 pb-20 mb-16">
           <div className="max-w-4xl mx-auto px-6">
             <h2 className="text-[22px] font-semibold text-[#1A1A1A] mb-8">The product</h2>
 
@@ -285,9 +285,9 @@ export default function FirstStepAICaseStudy() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
               <div>
-                <p className="text-[17px] font-semibold text-[#1A1A1A] mb-5">
+                <p className="text-[17px] font-semibold text-[#1A1A1A] mb-5 mt-12">
                   Answer 4 questions. Get a specific action plan.
                 </p>
                 <ul className="space-y-3 mb-8">
@@ -303,8 +303,8 @@ export default function FirstStepAICaseStudy() {
                   ))}
                 </ul>
 
-                <p className="text-[12px] font-semibold text-[#2563EB] uppercase tracking-wide mb-3">Example output</p>
-                <div className="bg-[#1A1D27] border border-[#2A2D3E] rounded-xl p-6 mb-6">
+                <p className="text-[12px] font-semibold text-[#2563EB] uppercase tracking-wide mb-3 mt-12">Example output</p>
+                <div className="bg-[#1A1D27] border border-[#2A2D3E] rounded-xl p-8 mb-6">
                   <div className="mb-4">
                     <p className="text-[10px] uppercase text-[rgba(255,255,255,0.4)] mb-1">RECOMMENDED TOOL</p>
                     <p className="text-[16px] font-bold text-[#6C63FF]">Tidio</p>
@@ -339,7 +339,7 @@ export default function FirstStepAICaseStudy() {
                   href={PRODUCT_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[14px] font-semibold px-5 py-2.5 rounded-lg transition-colors"
+                  className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white text-[14px] font-semibold px-5 py-2.5 rounded-lg transition-colors mt-12"
                 >
                   Try First Step AI →
                 </a>
