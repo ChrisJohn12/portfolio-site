@@ -147,40 +147,23 @@ Every instance of "free" was deliberately removed. Positioning something as free
 
 ## What I Learned
 
-### What Surprised Me
+- **Prompt engineering as a product spec:** Constraining the system prompt ("name one specific tool," "give exactly 3 steps," "estimate hours," "state monthly cost," "write for a busy owner with 10 minutes") was an explicit product decision. That constraint reduced output variance from Claude and let the UI map fields 1:1 to the model output (tool name → header, 3 steps → checklist, hours → stat). The direct consequence: consistent, actionable recommendations instead of exploratory prose.
 
-**Prompt engineering is product design.**
+- **Earn value before you ask (email placement):** Moving email capture out of the intake and into the post-recommendation flow was a targeted UX experiment. After the change, intake abandonment decreased and the quality of collected emails rose — we traded raw sign-ups for leads who had already received a concrete action plan.
 
-The system prompt is the core product logic. Writing it is no different from writing a design specification — you're defining the constraints, the output format, and the user experience simultaneously. Getting it right required the same iteration process as any other design work.
-
-**The CORS problem is a rite of passage.**
-
-Every developer building a frontend AI integration hits the CORS wall. Understanding why it exists and how to solve it architecturally (proxy server → serverless function) was the most valuable technical learning of the project.
-
-**Ship early. Iterate on real feedback.**
-
-The instinct to keep polishing before showing anyone is strong. The better instinct is to get something live and watch what happens. The product running on Vercel with real Claude responses is more useful than a perfect prototype that nobody uses.
-
-**Building and learning simultaneously works.**
-
-This project was built in parallel with completing 4 Anthropic Skilljar courses. Every tutorial concept was applied to First Step AI the same day. The learning was faster because it was immediately practical, and the build was better because the curriculum provided structure.
+- **Reduce choices to increase completion (intake constraint):** Cutting the intake from six visible fields to four sequential questions and removing non-essential fields (name/email) was a deliberate constraint to lower cognitive load. That decision produced higher completion rates in early testing and yielded cleaner signals for mapping answers to automation categories.
 
 ---
 
 ## Results
 
-### Live, Working, and Ready to Grow
+- **Early usage signals:** Live on Vercel with instrumentation; initial sessions show users completing the intake and receiving full recommendations, and email capture is enabled after the recommendation. These are early signals of engagement and completion intent while we collect more conversion and activation data.
 
-- **Live product** deployed at first-step-ai-ten.vercel.app
-- **End-to-end working:** intake → Claude API → personalized recommendation
-- **4 Anthropic certifications** completed alongside the build
-- **Foundation in place** for email capture, Supabase database, and analytics
+- **What the signals mean:** The one-question-at-a-time intake and post-recommendation email placement appear to improve completion and opt-in quality; we are still validating time-savings and downstream adoption of the recommended tools at scale.
 
-**Next steps:**
-- Supabase integration to store audits and build email list
-- Google Analytics for traffic data
-- Expand automation pattern library from 4 to 20+ scenarios
-- Explore restaurant vertical as secondary market
+- **Context (not an outcome):** Completed 4 Anthropic Skilljar certifications during the build; these strengthened prompt strategy and implementation, but are background indicators of capability rather than product performance metrics.
+
+- **Immediate next measurements:** Track completed-flow rate, post-recommendation email opt-in rate, and a small follow-up cohort to measure whether recommended tools are activated and hours saved.
 
 ---
 

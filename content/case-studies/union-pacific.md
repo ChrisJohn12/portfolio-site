@@ -1,4 +1,4 @@
-# Union Pacific Railroad — Enterprise SAP & Web Modernization
+# Union Pacific Railroad — SAP Mass Contract Create/Change & Enterprise Modernization
 
 ## Project Overview
 
@@ -10,160 +10,93 @@
 
 ---
 
-## The Problem
+## Project Focus
 
-Union Pacific is one of America's largest Class I railroads — a 160-year-old company covering 23 states, moving 1.6 billion tons of freight annually with 8 million carloads per year. Behind the locomotives, the company runs on SAP ERP for everything from parts procurement to contract management to warehouse operations.
+The primary engagement was the SAP Mass Contract Create/Change workflow for Asset Disposition. Union Pacific users were managing contracts with thousands of unique line items, but the legacy SAP flow only supported very small batches. That forced users into copy/paste workarounds and manual reconciliation, which created hours of operational overhead and high error risk.
 
-The challenge: these enterprise workflows had grown organically over decades. Procurement teams were managing contracts with 2,500+ line items through manual processes and copy-paste workarounds. Warehouse teams tracked parts using handheld Zebra devices running SAP interfaces that hadn't been redesigned for modern use. And the customer-facing website (UP.com) needed a full content and navigation overhaul to match the company's digital transformation goals.
-
-I was brought in to lead UX research and design strategy across three interconnected workstreams: SAP ERP workflow optimization, a major enterprise web redesign, and supply chain transformation support.
+Related modernization work included UP.com supplier content and supply chain research for Zebra handheld workflows, but those were supporting initiatives rather than the main story.
 
 ---
 
-## Workstream 1: SAP Mass Contract Create/Change (SAPPHO-23648)
+## Workstream 1: SAP Mass Contract Create/Change
 
-### The Problem
+### The problem
 
-Union Pacific's Asset Disposition team managed equipment contracts containing a minimum of 2,500 line items each — with unique combinations of customer, pool number, car type, indicator codes, and state. Creating or modifying these contracts was a manual nightmare. The existing process forced users to copy and paste data 100 lines at a time, then manually update each tab. The Scrap Sales Process had similar issues with 20+ line item contracts across unique combinations of customer, material, bin location, and oil type.
+The Asset Disposition team managed contracts with more than 2,500 line items each, each row requiring a unique combination of customer, pool number, car type, indicator codes, and state. The SAP workflow supported only small batches, so users copied and pasted 100 rows at a time across multiple tabs, then manually updated and reconciled the data.
 
-Error rates were high. The workflow was slow. And the team was spending hours on data entry that should have been automated.
+The same issue appeared in the Scrap Sales Process for 20+ line item contracts across customer, material, bin location, and oil type. The result was slow, error-prone work that made exact data precision difficult to sustain.
 
-### My Role
+### My role
 
-I owned the end-to-end research and design strategy for this project, working with business partners, the SAP development team (frontend and backend leads), and the UX lead.
+I led end-to-end UX research and design strategy, partnering with business owners, SAP frontend/back-end development leads, and the UX lead.
 
 ### Discovery
 
-I started by mapping the complete business process — from initial material requirement through procurement, contract creation, supplier fulfillment, warehouse receipt, to final payment. This produced a detailed process flow that identified every decision point, manual step, and system handoff in the current state.
+I mapped the full business process from material requirement through procurement, contract creation, supplier fulfillment, warehouse receipt, and final payment. That work surfaced every decision point, manual handoff, and source of error in the current state.
 
-I then facilitated discussions with the Asset Disposition team to understand their pain points at a granular level: where they lost time, where errors occurred, and what workarounds they'd built.
+I also facilitated sessions with the Asset Disposition team to capture where they lost time, where workarounds occurred, and which system constraints were most damaging.
 
-### Design Options Evaluated
+### Design options evaluated
 
-Working with the development team, I evaluated four approaches:
-
-1. **Excel Upload** — Custom Fiori app with Excel import UI. Easy for users but requires ongoing maintenance.
-2. **Data Load Program** — One-time development, but requires users to interact with backend systems. Poor UX and high error potential.
-3. **Copy/Paste from Existing** — No development work, but limited to 100 lines at a time. Users still had to manually update each tab.
-4. **Custom Fiori Application** — Full custom app allowing users to create and modify contracts at scale with the level of detail they need.
+1. **Excel upload** — easy for users, but required continuous custom maintenance.
+2. **Data load program** — a backend-heavy approach that exposed users to system complexity and error risk.
+3. **Copy/paste from existing** — minimal development, but still limited to 100 rows at a time and retained manual reconciliation.
+4. **Custom Fiori application** — scalable, validation-driven, and aligned with users' mental models.
 
 ### Recommendation
 
-I recommended the custom Fiori application as the best path — both from a UX perspective and for long-term operational efficiency. The Excel upload option, while technically simpler, created a poor user experience. The data load program exposed users to backend complexity and error risk. The copy/paste approach simply couldn't handle the scale (2,500+ items at 100 per batch).
+I recommended the custom Fiori application as the long-term solution. It was the best fit for scale, precision, and usability. The Excel upload option was technically simpler, but it created a brittle experience. The data load program exposed users to backend complexity. The copy/paste approach could not support 2,500+ line item contracts.
 
-The custom Fiori app would let users manage contracts at full scale with validation, error prevention, and a workflow that matched their mental model — not the system's limitations.
+The Fiori app would allow users to create and modify contracts at scale with built-in validation, error prevention, and workflow support that aligned with their real process.
 
 ### Deliverables
 
-- End-to-end business process flow mapping
-- Project brief with problem definition, constraints, and success metrics
-- Technical specification document (TSD)
-- Four design option evaluations with UX rationale
-- Figma design files for the Fiori application
-- Stakeholder presentation with recommendation
+- end-to-end business process flow map
+- project brief with problem definition, constraints, and success criteria
+- technical specification document (TSD)
+- design option evaluation with UX rationale
+- Figma designs for the custom Fiori application
+- stakeholder presentation with recommendation
 
 ---
 
-## Workstream 2: UP.com Website Modernization
+## Supporting Initiatives
 
-### The Problem
+### UP.com Website Modernization
 
-Union Pacific's public website served multiple audiences — shippers, suppliers, investors, job seekers, and community members — but the information architecture had become unwieldy. Content was hard to find, pages lacked clear hierarchy, and the site wasn't optimized for modern search or mobile use.
+I led UX design and content strategy for supplier-facing sections of UP.com, focusing on scalable content matrices, responsive layouts, and navigation that supported multiple audiences. The work prioritized findability, publishability within AEM, and accessibility while aligning with Union Pacific’s strict brand standards.
 
-The company initiated a full redesign built on Adobe Experience Manager (AEM), requiring a complete rethink of content strategy, page templates, navigation, and SEO.
+### Supply Chain & Warehouse Research
 
-### My Role
-
-I led the UX design and content strategy for key sections of the redesign, including the Suppliers hub (Existing Suppliers, Supplier Advancement & Expansion, New Supplier) and supporting interior pages. I worked directly with the UP.com content team on design sessions and content matrix development.
-
-### Process
-
-**Content Matrix Development:** I created and managed content matrices for complex landing pages — structured templates that mapped every module, content block, navigation path, SEO tagging, and asset requirement for each page. These matrices became the bridge between design decisions and AEM implementation, ensuring nothing was lost in translation between UX and engineering.
-
-**Page Design:** I designed responsive page layouts using UP's modular component system (Hero banners, icon pillars, alternating content blocks, feature cards, contact modules). Each page needed to work across desktop and mobile while maintaining UP's brand standards — the distinctive blue/yellow palette, strict typography hierarchy, and accessibility requirements.
-
-**Supplier Pages:** The Existing Suppliers page consolidated information for Carriers, Material Suppliers, and Service Suppliers into a single navigable hub with video integration, statistics modules, and categorized entry points. The Supplier Advancement & Expansion page highlighted UP's 40+ year diversity program with clear calls to action for prospective suppliers.
-
-### Deliverables
-
-- Content matrices for all assigned pages
-- High-fidelity page designs (desktop + mobile responsive)
-- Component specifications aligned to AEM module library
-- Navigation path definitions (L1→L2→L3 hierarchy)
-- SEO keyword tagging and meta descriptions
-- Stakeholder design review sessions
-
----
-
-## Workstream 3: Supply Chain & Warehouse Research
-
-### The Problem
-
-Union Pacific's supply chain transformation (Project FAST) involved migrating procurement and inventory systems to SAP S/4HANA with Ariba and Icertis integrations. Warehouse workers across the network used Zebra handheld devices to manage parts — scanning bins, checking inventory, processing receipts, and managing stock transfers. These workflows needed to work reliably in physical environments (warehouses, rail yards) with real operational constraints.
-
-### My Role
-
-I conducted contextual research to understand how warehouse teams actually used the SAP interfaces on their Zebra devices, identified usability issues, and provided design recommendations for improved workflows.
-
-### Research Methods
-
-**Contextual Inquiry:** I conducted field research at the Fort Worth facility, observing warehouse workers using Zebra handhelds in their actual work environment. This revealed usability issues that wouldn't surface in a lab setting — small screen constraints, glove-friendly tap targets, ambient lighting conditions, and the reality of interruption-heavy workflows.
-
-**Process Flow Mapping:** I mapped the end-to-end procurement-to-payment flow: from material requirements planning (MRP) generating purchase orders, through supplier fulfillment, goods receipt, quality inspection, bin assignment, and final payment via ARMS (UP's payment system). This mapping identified every touchpoint where warehouse workers interacted with the system and where the process broke down.
-
-**User Role Cards:** I developed comprehensive persona-style user role cards that captured not just demographics, but the user's perspective, goals, tasks, jobs to be done, network mapping, and synthesized user feedback. These became shared reference documents across the product team.
-
-**Stakeholder Synthesis:** I used Dovetail AI to accelerate research synthesis, cutting turnaround time by approximately 40%. Combined with Quantum Metrics for behavioral analytics and Tableau for data visualization, this gave the team a multi-layered view of both qualitative insights and quantitative usage patterns.
-
-### Key Findings
-
-- Warehouse workers relied heavily on workarounds that the system didn't officially support — these needed to be designed into the new workflows, not eliminated
-- The goods receipt process had critical handoff points between warehouse clerks and inventory systems where data was frequently lost or mismatched
-- Zebra device interfaces needed larger tap targets, simplified navigation, and confirmation steps that accounted for the physical environment (noise, movement, gloves)
-- The scrap/return process was particularly pain-heavy, with workers needing to navigate multiple system steps to initiate what should be a simple vendor return
-
-### Deliverables
-
-- Contextual inquiry findings and field research report
-- End-to-end supply chain process flow documentation
-- User role cards for key warehouse personas
-- SAP Basic Navigation Quick Reference Guide (for Ariba and Icertis)
-- Usability recommendations for Zebra handheld interfaces
-- Research synthesis via Dovetail AI
+I conducted contextual field research at Fort Worth to validate how SAP and Zebra handheld workflows performed in real operational conditions. This surfaced usability issues around tap targets, confirmation flows, interruption-friendly navigation, and the actual constraints of frontline warehouse work.
 
 ---
 
 ## AI in My Workflow
 
-AI tools were integrated throughout my two years at Union Pacific:
+AI tools supported the work without replacing analysis:
 
-- **Dovetail AI** for research synthesis — tagging, clustering, and surfacing patterns across interview transcripts and field notes. This cut my synthesis cycles by roughly 40%.
-- **GPT systems** for drafting technical specification documents, generating initial content for user role cards, and accelerating the creation of content matrices.
-- **Quantum Metrics** (analytics AI) for identifying behavioral patterns across the digital properties, helping prioritize which pages and flows had the highest impact usability issues.
+- **Dovetail AI** for research synthesis, tagging, and clustering insights, which cut synthesis cycles by roughly 40%
+- **GPT systems** for drafting technical specifications, user role cards, and content matrices
+- **Quantum Metrics** for identifying UX patterns across digital properties and prioritizing high-impact pages and flows
 
-The key wasn't using AI to replace analysis — it was using it to compress the time between raw data and shareable insight, which let me run more research cycles in the same timeframe.
+The result was faster insight delivery and more research iterations across business units.
 
 ---
 
 ## Impact
 
-- **Reduced manual errors** in contract creation workflows by designing a scalable Fiori application to replace copy/paste workarounds for 2,500+ line item contracts
-- **Task completion improvement of ~30%** through streamlined SAP ERP interfaces based on contextual research findings
-- **Research turnaround reduced by 40%** through AI-assisted synthesis (Dovetail AI), enabling faster decision cycles across multiple business units
-- **Personas, journey maps, and service blueprints adopted across multiple business units** as standard reference documents for enterprise product decisions
-- **Accessibility improvements** driven through AEM content optimization and WCAG 2.1 compliance reviews across customer-facing pages
-- **Content matrix framework** scaled as a repeatable template across the UP.com redesign, used by multiple content teams
+- **Replaced copy/paste workarounds** in contract creation with a scalable Fiori design for 2,500+ line item contracts
+- **Stakeholder-reported task completion improvement of ~30%** in early validation versus the legacy SAP workflow
+- **Shortened research turnaround by 40%** using AI-assisted synthesis
+- **Delivered personas, journey maps, and blueprints** adopted by multiple business units as reference artifacts
+- **Improved accessibility** across AEM content and supplier-facing pages
+- **Scaled a repeatable content matrix framework** across the UP.com redesign
 
 ---
 
 ## Reflection
 
-Union Pacific was a masterclass in designing within constraints — not the fun kind of creative constraints, but real enterprise complexity: legacy systems with decades of accumulated logic, thousands of internal users with deeply ingrained workflows, and technology decisions that had to work within SAP's capabilities.
+This engagement reinforced that the most valuable design work in enterprise systems is often about eliminating the work users should never have been asked to do. The design challenge was not just making SAP prettier — it was replacing a fragile, manual process with a scalable workflow that respected the precision and volume of Union Pacific's contract data.
 
-The most valuable thing I brought to this work wasn't visual design — it was the ability to sit in a warehouse in Fort Worth, watch someone use a Zebra handheld to scan parts bins, and translate what I observed into design decisions that a development team in another state could implement. That bridge between field reality and system design is where research-driven product design creates the most value in enterprise contexts.
-
-## Cross-team influence & additional notes
-
-- Helped evangelize UX across multiple teams, increasing visibility into UX work and aligning team goals.
-- Delivered a SAP Basic Navigation Quick Reference Guide used by cross-functional teams during rollout and training.
-- Used AI-assisted synthesis (Dovetail AI) to accelerate research clustering and insight delivery, shortening decision cycles.
+Watching a frontline user move from hand-copying rows to a validated contract flow was the clearest evidence that the biggest design levers in enterprise work are often the ones that remove unnecessary labor.

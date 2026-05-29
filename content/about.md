@@ -17,4 +17,4 @@ What energizes me
 - Projects where field research shifts direction and clarifies opportunity.
 - Building AI products grounded in user need, not trend-chasing.
 
-Roles I'm targeting: Senior Product Designer, Staff Product Designer, Principal UX Designer. Remote-first or Utah-based preferred.
+Roles I'm targeting: Senior UX Designer & Researcher, Staff Product Designer, Principal UX Designer. Remote-first or Utah-based preferred.

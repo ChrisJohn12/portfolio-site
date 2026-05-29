@@ -22,6 +22,7 @@ export default function Nav() {
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6">
           <NavLink href="/work" active={pathname?.startsWith('/work')}>Work</NavLink>
+          <NavLink href="/research-process" active={pathname === '/research-process'}>Research Process</NavLink>
           <NavLink href="/ai-fluency" active={pathname === '/ai-fluency'}>AI Fluency</NavLink>
           <NavLink href="/about" active={pathname === '/about'}>About</NavLink>
 
@@ -65,6 +66,7 @@ export default function Nav() {
       {menuOpen && (
         <div className="md:hidden border-t border-[#E5E5E5] bg-[#FAFAF9] px-6 py-4 flex flex-col gap-1">
           <NavLink href="/work" active={pathname?.startsWith('/work')} onClick={() => setMenuOpen(false)}>Work</NavLink>
+          <NavLink href="/research-process" active={pathname === '/research-process'} onClick={() => setMenuOpen(false)}>Research Process</NavLink>
           <NavLink href="/ai-fluency" active={pathname === '/ai-fluency'} onClick={() => setMenuOpen(false)}>AI Fluency</NavLink>
           <NavLink href="/about" active={pathname === '/about'} onClick={() => setMenuOpen(false)}>About</NavLink>
           <a

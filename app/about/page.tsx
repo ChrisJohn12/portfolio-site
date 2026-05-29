@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'About, Chris Michalak',
   description:
-    'Senior Product Designer specializing in enterprise UX, AI-enhanced research, and complex systems.',
+    'Senior UX Designer and Researcher specializing in enterprise UX, AI product thinking, and research-driven design.',
 };
 
 const skills = [
@@ -34,18 +34,18 @@ export default function AboutPage() {
             Designing for the hard problems.
           </h1>
           <p className="text-[#555555] text-lg leading-relaxed mb-4">
-            I&apos;m Chris Michalak, a Senior Product Designer who specializes in
+            I&apos;m Chris Michalak, a Senior UX Designer and Researcher who specializes in
             enterprise complexity. My work lives in the space where business systems,
             human workflows, and organizational reality collide.
           </p>
           <p className="text-[#555555] text-base leading-relaxed mb-4">
-            Over the past decade, I&apos;ve led UX research and design across Fortune 500 companies
-            including T-Mobile and Union Pacific Railroad, and built products from zero at
-            early-stage startups. I bring a researcher&apos;s rigor and a designer&apos;s
-            craft. I use AI tools to move faster without cutting corners.
+            Over the past 7+ years, I&apos;ve led research and design across Fortune 500 companies
+            including T-Mobile and Union Pacific Railroad, and built products from zero
+            at early-stage startups — most recently shipping First Step AI, an onboarding agent built on the Claude API.
           </p>
           <p className="text-[#555555] text-base leading-relaxed">
-            Based in Salt Lake City. Available for staff-level and senior product design roles.
+            Based in Salt Lake City. Available for UX research and product design roles at AI-native or AI-adjacent companies —
+            especially where research depth is treated as a product lever, not a support function.
           </p>
         </div>
 
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="relative w-64 h-72 rounded-2xl overflow-hidden border border-[#E5E5E5]">
             <Image
               src="/assets/profile/headshot.jpg"
-              alt="Chris Michalak, Senior Product Designer"
+              alt="Chris Michalak, Senior UX Designer & Researcher"
               fill
               className="object-cover object-top"
             />
@@ -117,7 +117,8 @@ export default function AboutPage() {
       <section className="rounded-xl border border-[#2563EB]/20 bg-[#EFF6FF] p-8 text-center" aria-labelledby="cta-heading">
         <h2 id="cta-heading" className="text-[32px] font-semibold mb-3 text-[#1A1A1A]">Let&apos;s work together.</h2>
         <p className="text-[#555555] mb-6 max-w-md mx-auto leading-relaxed">
-          I&apos;m open to staff product design roles, principal UX researcher positions, and strategic design consulting.
+          I&apos;m open to UX research and product design roles at AI-native or AI-adjacent companies —
+          especially where research depth is treated as a product lever, not a support function.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
           <a

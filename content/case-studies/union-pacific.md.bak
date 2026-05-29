@@ -1,0 +1,61 @@
+# Union Pacific Railroad — SAP Mass Contract Create/Change & Enterprise Modernization
+
+## Project Overview
+
+**Role:** UX Researcher & Design Strategist
+**Company:** Union Pacific Railroad (Remote, Contract)
+**Duration:** May 2023 – May 2025 (2 years)
+**Tools:** Figma, FigJam, SAP Fiori, Adobe Experience Manager (AEM), Dovetail AI, Quantum Metrics, Tableau, GPT
+**Platforms:** SAP S/4HANA, Fiori, Ariba, Icertis, Adobe Experience Manager
+
+---
+
+## Project Focus
+
+The primary engagement was the SAP Mass Contract Create/Change workflow for Asset Disposition. Union Pacific users were managing contracts with thousands of unique line items, but the legacy SAP flow only supported very small batches. That forced users into copy/paste workarounds and manual reconciliation, which created hours of operational overhead and high error risk.
+
+Related modernization work included UP.com supplier content and supplyRelated modernization work included UP.com supplier content and supplyRelated modernization work included UP.co
+
+
+elated modernization work included UP.com supplier content and supplyRelated modernsposielated modernized conelated modernization work included UP.com h, each row requiring a unique combination of customer, pool number, car type, indicator codes, and state. The SAP workflow supported only small batches, so users copied and pasted 100 rows at a time across multiple tabs, then manually updated and reconciled the data.
+
+The same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issiness process from material requirement through procurement, contract creation, supplier fulfillment, warehouse receipt, and final payment. That work surfaced every decision point, manuaThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issue appeared in the Scrap Sales PrThe same issitem complexity and error risk.
+3. **Copy/paste from existing** — minimal development, but still limited to 100 rows at a time and retained manual reconciliation.
+4. **Custom Fiori application** — scalable, validation-driven, and aligned with users' mental models.
+
+### Recommendation
+
+I recommended the custom Fiori application as the long-term solution. It was the best fit for scale, precision, and usability. The Excel upload option was technically simpler, but it created a brittle experience. The data load program exposed users to backend complexity. The copy/paste approach could not support 2,500+ line item contracts.
+
+The Fiori app would allow users to create and modify contracts at scale with built-in validation, error prevention, and workflow support that aligned with their real process.
+
+### Deliverables
+
+- end-to-end business process flow map
+- project brief with problem definition, constraints, and success criteria
+- technical specification document (TSD)
+- design option evaluation with UX rationale
+---------------------------tom Fiori application
+- stakeholder presentation with recommendation
+
+---
+
+## Supporting Initiatives
+
+### UP.com Website Modernization
+### UP.com Website Modernization
+ecommendation
+n
+nts, and success criteria
+h built-in validation, erontenh built-in valiponsive layouts, and navigation that supported multiple audiences. The work prioritized findability, publishability within AEM, and accessibility while aligning with Union Pacific’s strict brand standards.
+
+### Supply Chain & Warehouse Research
+
+I conducted contextual field research at Fort Worth to validate how SAP and Zebra handheld workflowsI conducted contextual field research at Fort Worth to validate how SAP and Zebra handheld workflowsI conducted contextual field research at Fort Worth to validate how SAP as oI conducted corehoI conducted contextual field researc
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA* for research synthesis, tagging, and clustAAAAAAAAAAAAAAAAAAAAAAAAt synthesis cycles by roughly 40%
+- **GPT systems** for drafting techn- **GPT systems** for drafting techn- **GPTonten- mat- **GPT systems** for dcs**- **GPT systems** for drafting ross digital properties and priorit- **GPT sysimpact pages and flows
+
+The resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe reompThe resThe resThe resThe resThe resTy vThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe reompThe resThe resThe resThe resThe resTy vThe resThe resThe resThe resTt mThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe rinThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe resThe lume of Union Pacific's contract data.
+
+Watching a frontline user move from hand-copying rows to a validated contract flow was the clearest evidence that the biggest design levers in enterprise work are often the ones that remove unnecessary labor.

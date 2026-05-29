@@ -37,7 +37,17 @@ const skills = [
     icon: '◇',
     title: 'AI & Technical',
     description: 'AI tools integrated across the full research and design workflow.',
-    items: ['Claude', 'GPT', 'Dovetail AI', 'Quantum Metrics', 'SAP Fiori', 'EasyPost'],
+    items: [
+      { label: 'AI Onboarding Patterns', type: 'competency' },
+      { label: 'Designing for Non-Deterministic Outputs', type: 'competency' },
+      { label: 'Trust & Transparency in AI Interfaces', type: 'competency' },
+      { label: 'Prompt Engineering as UX Specification', type: 'competency' },
+      { label: 'AI-Assisted Research Synthesis', type: 'competency' },
+      { label: 'Claude API', type: 'tool' },
+      { label: 'GPT', type: 'tool' },
+      { label: 'Dovetail AI', type: 'tool' },
+      { label: 'Quantum Metrics', type: 'tool' },
+    ],
   },
 ];
 
@@ -67,13 +77,13 @@ export default function HomePage() {
           </h1>
 
           <p className="text-[#555555] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-            Senior Product Designer specializing in enterprise UX, AI-enhanced research,
-            and the space where business requirements meet human reality.
+            Senior UX Designer and Researcher specializing in enterprise UX, AI product thinking,
+            and the space where user behavior meets business reality.
           </p>
 
           {/* Skill pills */}
           <div className="flex flex-wrap gap-2 mb-10" role="list" aria-label="Specializations">
-            {['Enterprise UX', 'AI-Enhanced Research', 'Systems Thinking', 'SAP Fiori', 'Stakeholder Research'].map((skill) => (
+            {['Enterprise UX', 'UX Research', 'AI Product Thinking', 'Systems Thinking', 'Figma', 'SAP Fiori'].map((skill) => (
               <span
                 key={skill}
                 role="listitem"
@@ -186,7 +196,7 @@ export default function HomePage() {
               <div className="relative w-full max-w-sm mx-auto md:mx-0 rounded-2xl overflow-hidden aspect-[3/4]">
                 <Image
                   src="/assets/profile/Headshot-Antelope-island.jpeg"
-                  alt="Chris Michalak, Senior Product Designer"
+                  alt="Chris Michalak, Senior UX Designer & Researcher"
                   fill
                   className="object-cover object-top"
                 />
@@ -200,14 +210,14 @@ export default function HomePage() {
                 Designing for the hard problems.
               </h2>
               <p className="text-[#555555] leading-relaxed mb-4">
-                I&apos;m Chris Michalak, a Senior Product Designer who specializes in enterprise complexity.
+                I&apos;m Chris Michalak, a Senior UX Designer and Researcher who specializes in enterprise complexity.
                 My work lives in the space where business systems, human workflows,
                 and organizational reality collide.
               </p>
               <p className="text-[#555555] leading-relaxed mb-8">
-                Over the past 7+ years, I&apos;ve led UX research and design across Fortune 500 companies
+                Over the past 7+ years, I&apos;ve led research and design across Fortune 500 companies
                 including T-Mobile and Union Pacific Railroad, and built products from zero
-                at early-stage startups.
+                at early-stage startups — most recently shipping First Step AI, an onboarding agent built on the Claude API.
               </p>
 
               {/* Stats */}
@@ -254,13 +264,23 @@ export default function HomePage() {
               <h3 className="text-[#1A1A1A] font-medium text-[22px] leading-snug mb-2">{skill.title}</h3>
               <p className="text-[#555555] text-sm leading-relaxed mb-4">{skill.description}</p>
               <ul className="flex flex-wrap gap-2" aria-label={`${skill.title} skills`}>
-                {skill.items.map((item) => (
-                  <li key={item}>
-                    <span className="text-[13px] font-medium px-[14px] py-[6px] rounded-full bg-[#F3F2EF] text-[#555555]">
-                      {item}
-                    </span>
-                  </li>
-                ))}
+                {skill.items.map((item) => {
+                  const label = typeof item === 'string' ? item : item.label;
+                  const isTool = typeof item !== 'string' && item.type === 'tool';
+                  return (
+                    <li key={label}>
+                      <span
+                        className={`font-medium px-[14px] py-[6px] rounded-full ${
+                          isTool
+                            ? 'text-[11px] text-[#6B7280] bg-[#F9FAFB]'
+                            : 'text-[13px] text-[#555555] bg-[#F3F2EF]'
+                        }`}
+                      >
+                        {label}
+                      </span>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
@@ -341,8 +361,8 @@ export default function HomePage() {
             Let&apos;s work together.
           </h2>
           <p className="text-white/70 leading-relaxed mb-8 max-w-xl mx-auto">
-            I&apos;m open to staff product design roles, principal UX researcher positions,
-            and strategic design consulting.
+            I&apos;m open to UX research and product design roles at AI-native or AI-adjacent companies —
+            especially where research depth is treated as a product lever, not a support function.
           </p>
           <div className="flex flex-wrap gap-4 justify-center">
             <a

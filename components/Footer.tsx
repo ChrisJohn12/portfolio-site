@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Column 1: About blurb */}
         <div>
           <p className="text-[#1A1A1A] font-semibold text-lg">Chris Michalak</p>
-          <p className="text-[#717171] text-sm mt-1 mb-4">Senior Product Designer</p>
+          <p className="text-[#717171] text-sm mt-1 mb-4">Senior UX Designer & Researcher</p>
           <p className="text-[#717171] text-sm leading-relaxed">
             Specializing in enterprise UX, AI-enhanced research, and complex system design.
           </p>
@@ -21,6 +21,7 @@ export default function Footer() {
           <p className="text-[#1A1A1A] font-semibold text-sm uppercase tracking-wide mb-4">Quick Links</p>
           <nav aria-label="Footer navigation" className="flex flex-col gap-3">
             <Link href="/work" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">Work</Link>
+            <Link href="/research-process" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">Research Process</Link>
             <Link href="/ai-fluency" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">AI Fluency</Link>
             <Link href="/about" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">About</Link>
           </nav>

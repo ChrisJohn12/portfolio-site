@@ -10,11 +10,17 @@
 
 ---
 
+## Research Insight
+
+The most impactful research doesn't just answer the question you were asked — it reframes the problem entirely. Early in the engagement, I discovered that billing transparency was the highest-volume pain point for frontline teams, but the real opportunity was to turn that insight into a coherent experience thread across CARE and retail.
+
+---
+
 ## The Problem
 
-T-Mobile's CARE Experts (call center reps) and Mobile Experts (retail associates) serve millions of customers daily using internal tools that hadn't kept pace with the complexity of T-Mobile's products. Billing questions alone drove 10.3 million calls per year into CARE, with 30% of those requiring reps to compare two or more bills — a process averaging 20 minutes per call and ranking as one of the longest call resolution times across all call types.
+T-Mobile's CARE Experts (call center reps) and Mobile Experts (retail associates) serve millions of customers daily using internal tools that hadn't kept pace with the complexity of T-Mobile's products. Reps were forced to navigate disconnected workflows across ATLAS, SAMSON, DASH, REMO, and legacy systems, which made routine tasks slow, error-prone, and stressful.
 
-Beyond billing, reps lacked visibility into customer communications (SMS notifications sent by T-Mobile), struggled with network troubleshooting tools that required jumping between multiple disconnected systems, and operated within a platform (ATLAS) that wasn't designed for the speed and context-switching their jobs demanded.
+The highest-volume issue was billing: reps regularly needed to explain charges, reconcile unexpected totals, and trace plan changes. Beyond billing, they lacked visibility into customer communications (SMS notifications), struggled with fragmented troubleshooting tools, and operated in an environment where system crashes and context switching were baked into the workflow.
 
 I was hired as the UX Researcher on the Enterprise Technology Solutions team, responsible for leading research that directly informed product decisions across multiple workstreams.
 
@@ -22,114 +28,128 @@ I was hired as the UX Researcher on the Enterprise Technology Solutions team, re
 
 ## Project 1: Bill Comparison Tool
 
-### The Problem
+### The problem
 
-When customers called about unexpected bill changes, CARE Experts had no effective way to compare bills side-by-side. The existing bill comparison tool in ATLAS was so cumbersome that most reps didn't even know it existed — or had abandoned it after training. Instead, reps were pulling up individual PDF bills manually, a process that added significant time to every call.
+Billing questions drove 10.3 million calls per year into CARE, and 30% of those calls required reps to compare two or more bills. The existing bill comparison experience in ATLAS was hidden, confusing, and so cumbersome that many reps bypassed it entirely and built manual workarounds.
 
-The biggest call drivers were bill shock (customers seeing a total without understanding what changed), mid-cycle plan changes where dates weren't clear, adjustments that didn't appear immediately, and international charges that surprised customers.
+Reps were dealing with bill shock, mid-cycle plan changes, delayed adjustments, and surprise international charges. The existing tools made it hard to see what changed, when it changed, and how it affected the customer’s total.
 
 ### Research
 
-I designed and led user feedback sessions with 7 CARE Experts in August 2022, testing prototype designs for a new bill comparison experience. My goal wasn't just to validate the UI — it was to understand how reps actually investigated billing questions in practice, so the new tool could match their real workflow rather than an idealized one.
+I designed and led user feedback sessions with 7 CARE Experts in August 2022, testing prototypes that combined the side-by-side structure of SAMSON, the customer-facing familiarity of PDF bills, and the contextual integration of ATLAS.
 
-### Key Findings
+The goal was not just to validate UI patterns but to understand the real investigation workflow behind billing questions.
 
-I discovered that reps had developed three distinct workaround strategies, each with different strengths. Most reps preferred pulling PDF bills because they could see exactly what the customer sees. Senior reps (4-5+ years) gravitated toward SAMSON's columned three-bill view. Almost nobody used the existing ATLAS comparison tool. This told us the new design needed to combine the best of all three: the customer-matching detail of PDFs, the side-by-side structure of SAMSON, and the contextual integration of ATLAS.
+### Key findings
 
-Other critical findings: charge category labels were confusing (customers and reps both struggled with terms like "one-time charges" vs. "services"), the UI didn't make it clear that itemized categories were clickable for drill-down, and reps needed at minimum three bills to compare — not just two — since most customer confusion spans multiple billing cycles.
+Reps had developed three distinct workaround strategies:
+
+- Most preferred pulling PDF bills because they matched the customer's view.
+- Senior reps gravitated to SAMSON's columned three-bill view.
+- Almost nobody used the existing ATLAS comparison tool.
+
+This told us the new design needed to default to a three-bill comparison and combine customer-facing detail with quick, contextual drill-down.
+
+Other findings included:
+
+- charge categories like “one-time charges” and “services” were confusing
+- itemized categories were not clearly revealed as click targets
+- reps needed at least three bills to compare because confusion often spanned multiple billing cycles
 
 ### Recommendations
 
-My research led to specific, implementable recommendations: use clear iconography (arrows, color coding) to surface increases and decreases in charges; spell out one-time charges with specific dates, amounts, and line attribution; make bill cycle dates prominent; show payment arrangement status; and ensure the three-bill comparison view was the default — not a hidden feature.
+I recommended the new experience:
 
-These recommendations directly shaped the design direction for the bill comparison tool within ATLAS.
+- default to a three-bill comparison view
+- surface bill cycle dates and payment arrangement status prominently
+- use clear iconography for charge increases and decreases
+- spell out one-time charges with dates, amounts, and line attribution
+- keep the comparison flow integrated within the ATLAS workflow
+
+These recommendations shaped the bill comparison design direction and helped the team focus on the actual workflow, not just a cleaner UI.
 
 ---
 
 ## Project 2: Customer Notification Visibility (CNV)
 
-### The Problem
+### The problem
 
-Customers regularly called CARE about SMS messages they received (or claimed they didn't receive) from T-Mobile — billing alerts, order updates, roaming notifications, plan changes, and more. But CARE Experts had no centralized way to see what messages had been sent to a customer. Their only option was to search through the memo history tab, which was unreliable and time-consuming.
+CARE Experts were fielding calls about SMS alerts, order notifications, and plan messages without any centralized way to see what had been sent. The memo history tab was unreliable, and reps often had to ask customers to search their phones for details.
 
 ### Research
 
-I led user feedback sessions with 6 CARE Experts in July 2022, testing UXPin prototypes of a new Customer Notification Visibility tool. The prototypes explored different approaches for displaying outbound message history — including an accordion layout, a blade (card) layout, and variations on how much metadata to expose per message.
+I led user feedback sessions with 6 CARE Experts in July 2022, testing UXPin prototypes that explored accordion and blade layouts and different levels of message metadata.
 
-### Key Findings
+### Key findings
 
-Reps overwhelmingly preferred the accordion model because it was consistent with existing ATLAS interaction patterns and required fewer clicks than the blade approach. They wanted to see who sent the message (automated vs. another CARE Expert) and what number it came from, so they could help customers locate the specific message on their phone.
+Reps preferred an accordion model because it matched ATLAS patterns and reduced click overhead. They needed to know who sent the message (automated system vs. another rep) and what number it came from.
 
-A critical insight: most reps had no idea what "Dynamic Tag Field" or "Source System ID" meant — metadata that engineers assumed would be useful was actually noise. The Short Code, however, was valuable and should stay. Reps also wanted the ability to cross-reference SMS messages with related memos, linking communication history to action history.
+A major insight: engineers assumed fields like “Dynamic Tag Field” and “Source System ID” were useful, but reps saw them as noise. Short Code mattered. Linkage to related memos mattered even more.
 
 ### Recommendations
 
-I recommended removing source system ID, dynamic tag field, and language fields (irrelevant to reps), keeping Short Code, adding sender identification, implementing the accordion model, and creating the ability to link SMS records to related memos. I also provided a comprehensive taxonomy of message categories (billing, insurance, order status, promotions, suspensions, plan changes, and more) to enable filtering.
+I recommended:
+
+- removing nonessential metadata fields
+- keeping Short Code and sender attribution
+- using an accordion interface
+- linking SMS records to related memos
+- adding a taxonomy for message categories to support filtering
+
+This research shaped a new visibility tool that reduced guesswork in message-related calls.
 
 ---
 
-## Project 3: Omni-Channel Billing Transparency Journey Mapping
+## Project 3: Omni-channel Billing Transparency Journey Mapping
 
-### The Problem
+### The challenge
 
-Billing confusion wasn't just a tool problem — it was a systemic experience problem that started the moment a customer walked into a store or called CARE and extended through their third bill cycle. T-Mobile needed to understand the full journey to identify where expectations were being set (or broken).
+Billing confusion was not limited to a single tool. It began in-store or on the phone and extended through the third bill cycle. The team needed a full journey perspective to identify where expectations were set, broken, or left unspoken.
 
 ### Research
 
-I was one of three researchers on this initiative, conducting ethnographic observations of device upgrades across seven T-Mobile retail stores (in Washington and Illinois) in December 2022. We observed 5 customers and interviewed 8 Mobile Experts across locations ranging from mall flagship stores to neighborhood shops.
+I co-led ethnographic research across seven T-Mobile retail stores in Washington and Illinois in December 2022. We observed 5 customers and interviewed 8 Mobile Experts in settings ranging from mall flagship stores to neighborhood shops.
 
-The field research was paired with cross-functional working sessions that brought together UX design, customer experience, system engineering, product management, and strategy teams to collaboratively map the journey from the perspectives of customers, CARE Experts, and Mobile Experts simultaneously.
+I also helped facilitate cross-functional working sessions with UX, CX, systems engineering, product, and strategy teams to map the customer, CARE Expert, and Mobile Expert journeys together.
 
-### Key Findings
+### Findings
 
-Billing transparency issues started far earlier than the bill itself. During the add-a-line or upgrade flow, customers wanted to know their total cost impact immediately — but that information wasn't available until the very end of the transaction. Promotion selection was a manual process prone to errors. There was no automated method for verifying promotion eligibility, meaning promos could "fall out" of the process after order entry, causing billing confusion and follow-up calls.
+Billing transparency problems surfaced well before the bill itself. During upgrade and add-a-line flows, customers wanted total cost impact immediately, but that information was only available at the end of the transaction.
 
-The journey mapping revealed eight distinct phases where trust was either built or broken, from initial contact through the third bill cycle. We identified that billing transparency wasn't a feature to add — it was a thread that needed to run through every phase of the customer and employee experience.
+Promotion selection was manual, error-prone, and susceptible to falling out of the process after order entry. That created follow-up calls and damaged trust.
 
-System instability compounded everything: crashes during calls interrupted flow and increased frustration, and reps had to jump between DASH, SAMSON, and Grand Central just to complete basic transactions.
+The journey map surfaced eight phases where trust was gained or lost, showing that billing transparency needed to be a thread woven through every phase of the customer and employee experience.
+
+System instability made the problem worse: crashes and context switching between DASH, SAMSON, and Grand Central interrupted flow and increased frustration.
 
 ---
 
 ## Project 4: Accessibility Journey Map Framework
 
-### Research
+I helped develop a reusable accessibility-focused journey map framework for T-Mobile products. The template tracked customer and Expert phases in parallel, captured emotions, jobs to be done, moments that matter, and transparency touchpoints, and exposed accessibility gaps consistently.
 
-I contributed to developing an accessibility-focused customer journey map framework — a structured template for mapping the end-to-end experience of customers with accessibility needs across T-Mobile's products and services.
-
-The framework tracked customer phases and T-Mobile Expert phases in parallel, capturing emotions, jobs to be done, enhancement opportunities, moments that matter, and onboarding/transparency touchpoints — all through an accessibility lens. This wasn't a one-off audit; it was a reusable research tool designed to systematically surface accessibility gaps across any T-Mobile product journey.
-
-I also contributed to exploratory research around VRS (Video Relay Service) customer onboarding, exploring the question: "How might we help the deaf and hard of hearing population simplify their calling experience, while making their daily calls?" This work mapped the full VRS onboarding flow from initial engagement through set-up, follow-up, and retention, identifying pain points specific to accessibility-dependent customers.
+I also contributed to exploratory work on VRS (Video Relay Service) onboarding, mapping the flow from initial engagement through set-up, follow-up, and retention.
 
 ---
 
 ## Project 5: Network Troubleshooting Research
 
-### Context
+I researched how frontline reps used T-Mobile’s ATLAS network troubleshooting tool during real calls. The tool surfaced dense technical data — coverage layers, device band compatibility, tower maintenance, site congestion, and local outage information.
 
-T-Mobile's internal network troubleshooting tool (within ATLAS) allowed CARE and retail reps to diagnose customer connectivity issues — checking device compatibility, viewing coverage maps, identifying local site issues, and reviewing tower status. I conducted research on this tool to understand how frontline reps used it during real troubleshooting calls.
-
-The tool surfaced dense technical data: coverage layers (4G Commercial, Residential, In-Vehicle, Outdoor), device band compatibility (LTE 600/700/850/1900/2100, 5G NSA/SA), tower maintenance history, site congestion status, and local outage information. Understanding how reps parsed this information — and where they got stuck — was critical for improving the troubleshooting workflow.
+The work helped uncover where reps got stuck and informed simplification strategies for the tool's information hierarchy and visual cues.
 
 ---
 
 ## Impact
 
-- **Bill Comparison research directly influenced the redesign** of ATLAS's billing tools, addressing the #1 call driver (10.3M annual calls, 30% requiring bill comparison) with specific, research-backed design recommendations
-- **CNV research shaped a new tool** that gave CARE Experts visibility into all customer-facing SMS communications for the first time, reducing the guesswork in message-related calls
-- **Journey mapping identified systemic billing transparency gaps** across eight customer journey phases, influencing roadmap priorities for billing, promotions, and checkout experiences
-- **Accessibility framework created a reusable research tool** for systematically evaluating T-Mobile products through an accessibility lens, including VRS onboarding research
-- **Field research across 7 retail locations** provided ethnographic evidence that informed both the journey map and retail-specific tool improvements
+- **Focused the highest-volume problem:** Bill comparison research anchored the redesign of ATLAS billing tools and addressed the top CARE call driver.
+- **Improved message visibility:** CNV research shaped a tool that gave CARE Experts first-time visibility into outbound SMS communications.
+- **Exposed systemic transparency gaps:** Journey mapping revealed billing failures across eight experience phases, influencing roadmap priorities for billing, promotions, and checkout.
+- **Created reusable accessibility tooling:** The framework became a repeatable way to evaluate products through an accessibility lens.
+- **Validated troubleshooting priorities:** Network research surfaced key simplification opportunities for frontline diagnostics.
 
 ---
 
 ## Reflection
 
-The T-Mobile work taught me something that has shaped every project since: the most impactful research doesn't just answer the question you were asked — it reframes the question entirely. The bill comparison project started as "test this prototype" and ended as "here's why your billing experience is broken at a systemic level and where to focus." The CNV project started as "validate this layout" and ended as "here's what metadata your reps actually need and what you should remove."
-
-Working across both CARE (call center) and Retail (in-store) channels also reinforced that the same product can have completely different usability profiles depending on the context. A rep sitting at a desk with a headset navigates differently than a rep standing in a store with a tablet and a customer watching. Designing for both requires going to both places and observing both realities — not assuming one research study covers everything.
-
-## Additional contributions (from portfolio brain dump)
-
-- Conducted on-floor research in physical T-Mobile stores — observed live checkouts and interviewed customers and Mobile Experts to surface concrete friction points.
-- Documented observed workflows with enough specificity to feed a time-boxed design sprint and inform engineering priorities.
-- Brought research findings to project leads and cross-functional teams to reframe problem statements and align on measurable success criteria.
+This engagement reinforced that the best research is not a feature validation exercise — it is a way to reframe the problem and align teams around the bigger opportunity. By leading both detailed billing research and broader journey work, I helped shift the focus from isolated tools to a more coherent frontline experience.

@@ -10,9 +10,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Chris Michalak, Senior Product Designer",
+  title: "Chris Michalak, Senior UX Designer & Researcher",
   description:
-    "Portfolio of Chris Michalak, a Senior Product Designer specializing in enterprise UX, AI-enhanced design, and complex systems.",
+    "Portfolio of Chris Michalak, a Senior UX Designer and Researcher specializing in enterprise UX, AI product thinking, and research-driven design.",
   icons: {
     icon: [
       { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   },
   manifest: "/site.webmanifest",
   openGraph: {
-    title: "Chris Michalak, Senior Product Designer",
+    title: "Chris Michalak, Senior UX Designer & Researcher",
     description:
-      "Enterprise UX · AI-Enhanced Design · Systems Thinking",
+      "Portfolio of Chris Michalak, a Senior UX Designer and Researcher specializing in enterprise UX, AI product thinking, and research-driven design.",
     type: "website",
   },
 };

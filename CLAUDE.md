@@ -1,7 +1,7 @@
 # CLAUDE.md — Project Instructions
 
 ## About This Project
-This is a portfolio website for Chris Michalak, a Senior Product Designer
+This is a portfolio website for Chris Michalak, a Senior UX Designer & Researcher
 specializing in enterprise workflows, complex systems, and AI-enhanced
 product design. The site should position Chris for Staff-level product
 design roles.

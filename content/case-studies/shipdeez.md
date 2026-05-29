@@ -103,6 +103,8 @@ Key decisions:
 - Optional fields are actually optional (company name, second address line)
 - Full-width "Get Rates" CTA at the bottom so the next step is obvious
 
+This screen was built to keep a first-time shipper moving forward with as little friction as possible. By limiting the form to the essentials and pre-setting a balanced service choice, the design avoids decision paralysis and makes the next step feel fast and reliable.
+
 ![Guest quick label form](/assets/shipdeez/Guest-Quick-Label-form.png)
 
 ### Rate Results
@@ -113,6 +115,8 @@ This is where ShipDeez's value proposition becomes tangible. Users see their act
 - Lowest price pre-selected with a green "Selected" badge to reduce decision fatigue
 - Promo code field for affiliate and marketing campaigns
 - Persistent order summary so the running total is always visible
+
+The rate results screen was designed to make savings obvious without requiring people to understand shipping jargon. By highlighting the best option and keeping the summary visible, the UI supports confident selection in a category that normally feels overwhelming.
 
 ![Rate results comparison](/assets/shipdeez/rate-results.png)
 
@@ -136,13 +140,76 @@ The payoff.
 - Tracking info shown immediately: tracking number, carrier, estimated delivery
 - The conversion moment at the bottom: "Ship Often? Save Even More." with a free account CTA
 
+Success had to feel immediate and earned. This screen makes the experience concrete with a dominant download action and instant tracking details, then uses that positive outcome as the right moment to invite users into a repeatable relationship.
+
 ![Success and label download](/assets/shipdeez/success.png)
+
+## Design Decisions
+
+### The reasoning behind key choices across the guest flow
+
+#### Screen 1 — Landing page
+
+![Landing page — dual entry point structure](/assets/shipdeez/landing-page.png)
+
+1. **Two entry points, separated from the first interaction**  
+   The most important decision on the landing page was splitting guest and authenticated paths from the hero. Most shipping platforms funnel all users through account creation before showing any value. Guest shippers who hit a sign-up form before generating a label will leave. Separating the two paths removes that friction at the exact moment it would cause the most drop-off.
+
+2. **Dark hero anchors the brand without competing with the UI**  
+   The ShipDeez brand dark (#2B1408) is used exclusively for the hero and navigation. Every subsequent screen runs on white. This creates a clear visual handoff from marketing to product so users know when they've entered the tool.
+
+3. **Feature lists written for the user's decision, not the product's capabilities**  
+   "No account required" and "Pay once with credit card" speak directly to the guest shipper's concern about commitment. "Wallet funding" and "bulk actions" speak to the regular shipper's workflow needs. The same feature set, filtered through two different mental models.
+
+#### Screen 2 — Rate results
+
+![Rate results — pre-selection and persistent total](/assets/shipdeez/rate-results.png)
+
+4. **Lowest price pre-selected, not fastest or most popular**  
+   The product's value proposition is savings. Pre-selecting the lowest rate makes that promise tangible the moment the screen loads. Users who want faster delivery can opt up — but the default anchors to the core reason they chose ShipDeez over their carrier's website.
+
+5. **Selected state uses brand accent plus a semantic success color**  
+   The orange border and green "Selected" badge on the chosen card create a two-signal confirmation. A first-time user unfamiliar with the brand still reads the green as confirmation. A returning user builds association with the orange.
+
+6. **Running total stays visible without a sidebar**  
+   On a single-column layout, a persistent sidebar would push content below the fold on most viewports. The total row at the bottom achieves the same function — users always know what they're about to pay — without requiring a two-column layout that breaks on mobile.
+
+7. **Promo code placed after rate selection, not before**  
+   Placing the promo field at the top creates a pattern where users pause before seeing rates, hunting for a code they may not have. Positioning it after selection means the promo becomes a bonus, not a gating question.
+
+#### Screen 3 — Payment
+
+![Payment — trust design and constraint disclosure](/assets/shipdeez/payment.png)
+
+8. **Order summary at the top, not the bottom**  
+   A first-time user on a brand they discovered 90 seconds ago is entering card details on trust alone. Showing exactly what they're paying for before the card fields reaffirms the decision they just made and removes any moment of uncertainty before they commit.
+
+9. **Trust signals are specific, not generic**  
+   "Secured by AVS, CVC, and Stripe" names the actual mechanisms rather than a vague "secure checkout" badge. Users who know what AVS and 3D Secure mean are reassured by the specificity. Users who don't still read it as institutional credibility.
+
+10. **$500/day cap disclosed at the point of entry**  
+   EasyPost requires a daily cap on guest checkouts for fraud risk management. Rather than surface this as an error after someone tries to pay more, the cap is disclosed as a note below the CTA. It sets expectations and doubles as a nudge — high-volume shippers see immediately that an account removes the restriction.
+
+#### Screen 4 — Success
+
+![Success screen — primary action hierarchy and conversion timing](/assets/shipdeez/success.png)
+
+11. **Download is the dominant action, not tracking**  
+   The user came to print a label. Getting that label into their hands is the only thing that matters on this screen. Tracking information is present but secondary — it answers the natural follow-up question without competing with the primary action.
+
+12. **Conversion prompt placed after value delivery, not before**  
+   The account creation CTA sits at the bottom of the success screen — after the label is downloaded and tracking is visible. The user has already experienced the product's value. Asking for account creation here converts on demonstrated experience, not a promise.
+
+13. **Conversion copy frames the account in terms of the user's next problem**  
+   "Saved addresses, shipment history, and wallet checkout" names the friction the guest shipper just experienced. The CTA doesn't sell features, it names the problems a returning user would face without an account.
 
 ---
 
 ## The Authenticated Flow
 
 ### Create Account
+
+The account creation screen had to feel low-friction while still establishing the customer relationship and wallet model. I kept the form short, surfaced the benefits of saved addresses and faster future shipments, and used simple language to explain why the account exists before asking for any payment or wallet details.
 
 ![Create account screen](/assets/shipdeez/create-account.png)
 
@@ -154,6 +221,8 @@ For regular shippers, the dashboard is home base. Design decisions:
 - Quick access to Account Settings and ShipBlink invite status
 - Recent Shipments table with status pills: Delivered, In Transit, Pending
 - Navigation organized around task frequency, not system architecture
+
+The dashboard is built for repeat work rather than discovery. By making wallet status and shipment actions immediately visible, the design supports business users who need to move quickly through the next shipment without hunting for the controls they use every day.
 
 ![Authenticated user dashboard](/assets/shipdeez/dashboard.png)
 
@@ -169,13 +238,19 @@ Built from scratch alongside the product. Not after — alongside.
 - Cream (#F6E4C2) — Section backgrounds
 - Surface White / Light Gray — Cards and page backgrounds
 
+Orange was chosen as the primary brand accent because shipping tools are usually dominated by blue and gray. The warm accent creates a distinct, high-energy signal for action and makes CTAs feel more urgent and confident in a flow where users are comparing rates, paying, and tracking deliveries.
+
 **Semantic colors:** Success green (#2FBF71), warning gold (#F3C969), error red (#E85B4F)
+
+These semantic colors map directly to shipping states: green for label creation and delivered shipments, gold for low wallet balance and rate sensitivity, and red for address validation or payment failures. That state-based coloring helps users scan operational screens instantly, instead of decoding generic status labels.
 
 **Type scale:** H1 36/44 Bold → H2 24/32 Bold → Body 16/24 Regular → Label 14/20 Medium
 
 **Spacing:** 4px base unit — scale: 4, 8, 12, 16, 24, 32, 48
 
-One constraint worth noting: the system had to work across both ShipDeez-owned screens and ShipBlink's white-label environment. Not every token translated cleanly — some choices were deliberate compromises between ideal and feasible.
+A 4px base unit was selected to support dense, data-rich interfaces like shipment tables and payment summaries while still preserving breathing room across mobile and desktop. The tight rhythm makes form fields, cards, and status pills align cleanly without feeling cramped.
+
+One constraint worth noting: the system had to work across both ShipDeez-owned screens and ShipBlink's white-label environment. That meant prioritizing legibility, contrast, and functional spacing over decorative detail. The tokens were built to be usable by engineers in an environment where not every style could be customized.
 
 ![Design system style tile](/assets/shipdeez/Design-System.png)
 

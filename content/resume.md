@@ -5,7 +5,7 @@ date: 2026-04-14
 
 # Resume (Highlights)
 
-- Roles targeted: Senior Product Designer, Staff Product Designer, Principal UX Designer
+- Roles targeted: Senior UX Designer & Researcher, Staff Product Designer, Principal UX Designer
 - Location: Remote-first (Utah-based preferred)
 
 ## Skills
