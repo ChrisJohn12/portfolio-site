@@ -1,47 +1,35 @@
-# CLAUDE.md — Project Instructions
+# CLAUDE.md: Project Instructions
 
 ## About This Project
-This is a portfolio website for Chris Michalak, a Senior UX Designer & Researcher
-specializing in enterprise workflows, complex systems, and AI-enhanced
-product design. The site should position Chris for Staff-level product
-design roles.
+Portfolio website for Chris Michalak, a UX Researcher & Product Designer who
+specializes in enterprise workflows, complex systems, and AI product thinking.
+The site shows how he works: the decisions, trade-offs, and handoffs behind the
+product, not only finished screens.
 
 ## Tech Stack
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
+- Next.js 14 (App Router), TypeScript, Tailwind CSS
 - Deployed on Vercel
 
 ## Design Direction
-- Clean, minimal, modern, professional
-- Dark backgrounds (#1a1a1a) with warm accents
-- Typography: Inter or similar clean sans-serif
-- Subtle animations (fade-in, scroll-triggered)
-- Mobile-first responsive design
-- NO generic AI aesthetic — this should feel crafted and intentional
+The source of truth is `design-system.md`. In short:
+- Light, warm, and calm. Page background #FAFAF9, alternate sections #F3F2EF
+- Inter for type, blue accent #2563EB
+- No em dashes anywhere in copy
+- No blue-to-purple gradients, gradient text, or other generic AI aesthetics
+- Mobile-first and accessible (WCAG 2.2 AA)
 
-## Content Structure
-- Case study content lives in /content/case-studies/ as markdown files
-- Images live in /assets/{project-name}/
-- Each case study should have its own page route at /work/{project-name}
+## Content Rules
+- Case study text lives in `/content/case-studies/` as markdown. The first line is the title; `**Role:**`, `**Company:**`, `**Duration:**` lines feed the page header
+- Images live in `/public/assets/{project-name}/`
+- Voice: direct, thoughtful, grounded. Lead with context, not a bold claim
+- Label every number as measured, estimated, or reasoning. Never invent metrics
+- Do not claim results Chris did not see. Say what he did and what he would do next
+- Recreated visuals are labeled "Recreation. Client names and data removed."
 
 ## Pages
-- / (homepage with hero + project previews)
-- /work (project index)
-- /work/shipdeez
-- /work/union-pacific
-- /work/tmobile
-- /ai-fluency
-- /about
-
-## Brand Colors
-- Primary accent: #C8641A (warm orange)
-- Dark: #1a1a1a
-- Light: #f5f5f5
-- Text: #ffffff on dark, #1a1a1a on light
+- `/`, `/work`, `/work/[slug]`, `/ai-fluency`, `/about`
 
 ## Important
-- Always ask before deleting files
-- Commit frequently with descriptive messages
-- Keep components modular and reusable
-- Use semantic HTML for accessibility
+- Always ask before deleting files. Move them to `docs-source/` instead
+- Commit with descriptive messages
+- Keep components modular and use semantic HTML

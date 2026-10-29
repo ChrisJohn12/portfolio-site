@@ -1,155 +1,43 @@
-# T-Mobile — Frontline Employee Tools & Billing Transparency
-
-## Project Overview
+# T-Mobile: making bill comparison faster for the people who answer the calls
 
 **Role:** UX Researcher, Enterprise Technology Solutions
-**Company:** T-Mobile (Remote + Field, Contract)
-**Duration:** March 2022 – April 2023 (13 months)
-**Tools:** UXPin, Figma, FigJam, UserZoom, SurveyMonkey, Dovetail, Miro
-**Platform:** ATLAS (T-Mobile's primary frontline CRM), SAMSON, DASH, REMO
+**Company:** T-Mobile (contract)
+**Duration:** March 2022 to April 2023
 
----
+I was the UX researcher on the team looking at how T-Mobile's frontline care reps explain bills to customers. This case study follows one question: how do you make it faster for a rep to see what changed between bills?
 
-## Research Insight
+- **Context:** ATLAS, T-Mobile's main frontline CRM, plus the related tools SAMSON and DASH
+- **What I owned:** the research. I planned and ran the sessions, wrote the report, and made the recommendations. A UX designer on the team built the prototypes
 
-The most impactful research doesn't just answer the question you were asked — it reframes the problem entirely. Early in the engagement, I discovered that billing transparency was the highest-volume pain point for frontline teams, but the real opportunity was to turn that insight into a coherent experience thread across CARE and retail.
+## The problem
 
----
+Over the previous year, roughly 10.3 million calls came into T-Mobile's care center with questions about a bill. Of those, 30% needed the rep to compare two or more bills to explain why a customer's total had changed. On average it took a rep about 20 minutes to review a bill with the customer, and bill review had one of the longest resolution times of any call reason. Those figures come from my August 2022 research report, and the 20-minute average came from T-Mobile call data.
 
-## The Problem
+The tool meant to help was the bill comparison in ATLAS. Most reps found it cumbersome and confusing. Many did not know it existed, or had met it once in training and never used it. So the highest-volume call type was being handled with workarounds.
 
-T-Mobile's CARE Experts (call center reps) and Mobile Experts (retail associates) serve millions of customers daily using internal tools that hadn't kept pace with the complexity of T-Mobile's products. Reps were forced to navigate disconnected workflows across ATLAS, SAMSON, DASH, REMO, and legacy systems, which made routine tasks slow, error-prone, and stressful.
+## What reps told us
 
-The highest-volume issue was billing: reps regularly needed to explain charges, reconcile unexpected totals, and trace plan changes. Beyond billing, they lacked visibility into customer communications (SMS notifications), struggled with fragmented troubleshooting tools, and operated in an environment where system crashes and context switching were baked into the workflow.
+In August 2022 I ran user feedback sessions with 7 care experts, using prototypes that borrowed from three places: the side-by-side layout in SAMSON, the familiar look of the customer's PDF bill, and the in-context placement of ATLAS. I wanted to understand how a rep actually investigates a bill question, not only whether a layout tested well.
 
-I was hired as the UX Researcher on the Enterprise Technology Solutions team, responsible for leading research that directly informed product decisions across multiple workstreams.
+Reps had settled on three ways of working:
 
----
+- **PDF bills:** most reps pulled these, even though it took extra time, because the itemized breakdown matched what the customer was looking at.
+- **SAMSON:** reps with more than four or five years of experience preferred its columned, three-bill view. Several newer reps did not know it existed.
+- **ATLAS comparison:** almost nobody used it.
 
-## Project 1: Bill Comparison Tool
+A few other findings shaped the recommendations:
 
-### The problem
+- Reps needed at least three bills to compare, because confusion often spanned more than one billing cycle.
+- Charge categories like one-time charges and services were confusing, and the same item could be either.
+- It was not clear that the itemized breakdown could be clicked.
+- Adjustments did not always show up right away, which left customers paying current rates while a past due balance sat unseen.
 
-Billing questions drove 10.3 million calls per year into CARE, and 30% of those calls required reps to compare two or more bills. The existing bill comparison experience in ATLAS was hidden, confusing, and so cumbersome that many reps bypassed it entirely and built manual workarounds.
+## The design argument
 
-Reps were dealing with bill shock, mid-cycle plan changes, delayed adjustments, and surprise international charges. The existing tools made it hard to see what changed, when it changed, and how it affected the customer’s total.
+The recommendations came straight from those findings. The comparison should default to three bills, show bill cycle dates and payment arrangement status clearly, use icons for charges going up or down, spell out one-time charges with dates and amounts, give international charges a clear breakdown, and stay inside the ATLAS workflow so reps do not leave the screen they are in.
 
-### Research
+The reasoning behind all of it was about scale. With millions of billing calls a year, taking even a few seconds off each one adds up to a large amount of rep time. That time can go to more customers or to other work, and less friction on a call tends to help both the rep and the customer. This is my reasoning for why the work mattered. It is not a measured saving, and I do not present it as one.
 
-I designed and led user feedback sessions with 7 CARE Experts in August 2022, testing prototypes that combined the side-by-side structure of SAMSON, the customer-facing familiarity of PDF bills, and the contextual integration of ATLAS.
+## What happened next
 
-The goal was not just to validate UI patterns but to understand the real investigation workflow behind billing questions.
-
-### Key findings
-
-Reps had developed three distinct workaround strategies:
-
-- Most preferred pulling PDF bills because they matched the customer's view.
-- Senior reps gravitated to SAMSON's columned three-bill view.
-- Almost nobody used the existing ATLAS comparison tool.
-
-This told us the new design needed to default to a three-bill comparison and combine customer-facing detail with quick, contextual drill-down.
-
-Other findings included:
-
-- charge categories like “one-time charges” and “services” were confusing
-- itemized categories were not clearly revealed as click targets
-- reps needed at least three bills to compare because confusion often spanned multiple billing cycles
-
-### Recommendations
-
-I recommended the new experience:
-
-- default to a three-bill comparison view
-- surface bill cycle dates and payment arrangement status prominently
-- use clear iconography for charge increases and decreases
-- spell out one-time charges with dates, amounts, and line attribution
-- keep the comparison flow integrated within the ATLAS workflow
-
-These recommendations shaped the bill comparison design direction and helped the team focus on the actual workflow, not just a cleaner UI.
-
----
-
-## Project 2: Customer Notification Visibility (CNV)
-
-### The problem
-
-CARE Experts were fielding calls about SMS alerts, order notifications, and plan messages without any centralized way to see what had been sent. The memo history tab was unreliable, and reps often had to ask customers to search their phones for details.
-
-### Research
-
-I led user feedback sessions with 6 CARE Experts in July 2022, testing UXPin prototypes that explored accordion and blade layouts and different levels of message metadata.
-
-### Key findings
-
-Reps preferred an accordion model because it matched ATLAS patterns and reduced click overhead. They needed to know who sent the message (automated system vs. another rep) and what number it came from.
-
-A major insight: engineers assumed fields like “Dynamic Tag Field” and “Source System ID” were useful, but reps saw them as noise. Short Code mattered. Linkage to related memos mattered even more.
-
-### Recommendations
-
-I recommended:
-
-- removing nonessential metadata fields
-- keeping Short Code and sender attribution
-- using an accordion interface
-- linking SMS records to related memos
-- adding a taxonomy for message categories to support filtering
-
-This research shaped a new visibility tool that reduced guesswork in message-related calls.
-
----
-
-## Project 3: Omni-channel Billing Transparency Journey Mapping
-
-### The challenge
-
-Billing confusion was not limited to a single tool. It began in-store or on the phone and extended through the third bill cycle. The team needed a full journey perspective to identify where expectations were set, broken, or left unspoken.
-
-### Research
-
-I co-led ethnographic research across seven T-Mobile retail stores in Washington and Illinois in December 2022. We observed 5 customers and interviewed 8 Mobile Experts in settings ranging from mall flagship stores to neighborhood shops.
-
-I also helped facilitate cross-functional working sessions with UX, CX, systems engineering, product, and strategy teams to map the customer, CARE Expert, and Mobile Expert journeys together.
-
-### Findings
-
-Billing transparency problems surfaced well before the bill itself. During upgrade and add-a-line flows, customers wanted total cost impact immediately, but that information was only available at the end of the transaction.
-
-Promotion selection was manual, error-prone, and susceptible to falling out of the process after order entry. That created follow-up calls and damaged trust.
-
-The journey map surfaced eight phases where trust was gained or lost, showing that billing transparency needed to be a thread woven through every phase of the customer and employee experience.
-
-System instability made the problem worse: crashes and context switching between DASH, SAMSON, and Grand Central interrupted flow and increased frustration.
-
----
-
-## Project 4: Accessibility Journey Map Framework
-
-I helped develop a reusable accessibility-focused journey map framework for T-Mobile products. The template tracked customer and Expert phases in parallel, captured emotions, jobs to be done, moments that matter, and transparency touchpoints, and exposed accessibility gaps consistently.
-
-I also contributed to exploratory work on VRS (Video Relay Service) onboarding, mapping the flow from initial engagement through set-up, follow-up, and retention.
-
----
-
-## Project 5: Network Troubleshooting Research
-
-I researched how frontline reps used T-Mobile’s ATLAS network troubleshooting tool during real calls. The tool surfaced dense technical data — coverage layers, device band compatibility, tower maintenance, site congestion, and local outage information.
-
-The work helped uncover where reps got stuck and informed simplification strategies for the tool's information hierarchy and visual cues.
-
----
-
-## Impact
-
-- **Focused the highest-volume problem:** Bill comparison research anchored the redesign of ATLAS billing tools and addressed the top CARE call driver.
-- **Improved message visibility:** CNV research shaped a tool that gave CARE Experts first-time visibility into outbound SMS communications.
-- **Exposed systemic transparency gaps:** Journey mapping revealed billing failures across eight experience phases, influencing roadmap priorities for billing, promotions, and checkout.
-- **Created reusable accessibility tooling:** The framework became a repeatable way to evaluate products through an accessibility lens.
-- **Validated troubleshooting priorities:** Network research surfaced key simplification opportunities for frontline diagnostics.
-
----
-
-## Reflection
-
-This engagement reinforced that the best research is not a feature validation exercise — it is a way to reframe the problem and align teams around the bigger opportunity. By leading both detailed billing research and broader journey work, I helped shift the focus from isolated tools to a more coherent frontline experience.
+The research was finished by the end of summer 2022, and its recommendations shaped the design direction. The design went to engineering shortly after the August 2022 testing. If the project had allowed for it, my next step would have been to track the ATLAS satisfaction scores and bill review call times after launch, to see whether reps spent less time on bill comparison calls.

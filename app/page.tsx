@@ -77,7 +77,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-[#555555] text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-            Senior UX Designer and Researcher specializing in enterprise UX, AI product thinking,
+            UX Researcher and Product Designer specializing in enterprise UX, AI product thinking,
             and the space where user behavior meets business reality.
           </p>
 
@@ -126,7 +126,8 @@ export default function HomePage() {
         <div className="flex items-baseline justify-between mb-10">
           <div>
             <p className="text-[#2563EB] text-sm font-medium tracking-widest uppercase mb-2">Portfolio</p>
-            <h2 id="work-heading" className="text-[32px] font-semibold text-[#1A1A1A] leading-tight">Featured Work</h2>
+            <h2 id="work-heading" className="text-[32px] font-semibold text-[#1A1A1A] leading-tight">How the work really happens</h2>
+            <p className="text-[#555555] mt-3 max-w-xl">Case studies on the decisions, trade-offs, and handoffs behind enterprise software, not only the finished screens.</p>
           </div>
           <Link href="/work" className="text-sm text-[#2563EB] hover:text-[#1D4ED8] transition-colors font-medium underline underline-offset-2">
             View all
@@ -196,7 +197,7 @@ export default function HomePage() {
               <div className="relative w-full max-w-sm mx-auto md:mx-0 rounded-2xl overflow-hidden aspect-[3/4]">
                 <Image
                   src="/assets/profile/Headshot-Antelope-island.jpeg"
-                  alt="Chris Michalak, Senior UX Designer & Researcher"
+                  alt="Chris Michalak, UX Researcher & Product Designer"
                   fill
                   className="object-cover object-top"
                 />
@@ -210,7 +211,7 @@ export default function HomePage() {
                 Designing for the hard problems.
               </h2>
               <p className="text-[#555555] leading-relaxed mb-4">
-                I&apos;m Chris Michalak, a Senior UX Designer and Researcher who specializes in enterprise complexity.
+                I&apos;m Chris Michalak, a UX Researcher and Product Designer who specializes in enterprise complexity.
                 My work lives in the space where business systems, human workflows,
                 and organizational reality collide.
               </p>

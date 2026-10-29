@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
+import ZoomableImage from '@/components/ZoomableImage';
 import { getCaseStudy, getAllCaseStudies, getNextCaseStudy, projectImages } from '@/lib/case-studies';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import StickyContact from '@/components/StickyContact';
@@ -122,13 +123,17 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             <div className="space-y-10">
               {galleryImages.map((img) => (
                 <figure key={img.src}>
-                  <div className="relative w-full rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF]">
-                    <Image
+                  <div
+                    className={`relative w-full rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF] ${
+                      img.small ? 'max-w-[260px] mx-auto' : ''
+                    }`}
+                  >
+                    <ZoomableImage
                       src={img.src}
                       alt={img.alt}
                       width={1200}
                       height={800}
-                      className="w-full object-cover object-top"
+                      className={img.small ? 'w-full h-auto' : 'w-full object-cover object-top'}
                     />
                   </div>
                   <figcaption className="text-[#717171] text-sm mt-3 text-center">
