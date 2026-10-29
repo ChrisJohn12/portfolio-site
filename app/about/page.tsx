@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'About, Chris Michalak',
   description:
-    'Senior UX Designer and Researcher specializing in enterprise UX, AI product thinking, and research-driven design.',
+    'UX Researcher and Product Designer specializing in enterprise UX, AI product thinking, and research-driven design.',
 };
 
 const skills = [
@@ -16,8 +16,8 @@ const skills = [
 ];
 
 const experience = [
-  { company: 'ShipDeez / Backhaul Direct', role: 'Lead Product Designer', period: '2026', type: 'Contract' },
-  { company: 'Union Pacific Railroad', role: 'UX Researcher & Design Strategist', period: '2023–2025', type: 'Contract · 2 years' },
+  { company: 'ShipDeez / Backhaul Direct', role: 'Lead Product Designer', period: 'Oct 2025 to present', type: 'Contract' },
+  { company: 'Union Pacific Railroad', role: 'UX Researcher & Product Designer', period: '2023–2025', type: 'Contract · 2 years' },
   { company: 'T-Mobile', role: 'UX Researcher, Enterprise Technology Solutions', period: '2022–2023', type: 'Contract · 13 months' },
 ];
 
@@ -34,7 +34,7 @@ export default function AboutPage() {
             Designing for the hard problems.
           </h1>
           <p className="text-[#555555] text-lg leading-relaxed mb-4">
-            I&apos;m Chris Michalak, a Senior UX Designer and Researcher who specializes in
+            I&apos;m Chris Michalak, a UX Researcher and Product Designer who specializes in
             enterprise complexity. My work lives in the space where business systems,
             human workflows, and organizational reality collide.
           </p>
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="relative w-64 h-72 rounded-2xl overflow-hidden border border-[#E5E5E5]">
             <Image
               src="/assets/profile/headshot.jpg"
-              alt="Chris Michalak, Senior UX Designer & Researcher"
+              alt="Chris Michalak, UX Researcher & Product Designer"
               fill
               className="object-cover object-top"
             />

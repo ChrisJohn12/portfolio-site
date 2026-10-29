@@ -2,7 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import NextImage from 'next/image';
+import ZoomableImage from './ZoomableImage';
 
 export default function MarkdownRenderer({ content }: { content: string }) {
   return (
@@ -18,13 +18,21 @@ export default function MarkdownRenderer({ content }: { content: string }) {
       <ReactMarkdown
         remarkPlugins={[remarkGfm]}
         components={{
-          img: ({ src, alt }: React.ImgHTMLAttributes<HTMLImageElement>) => {
+          // Images render as <figure>, which cannot sit inside <p>. Unwrap paragraphs that only hold an image.
+          p: ({ node, children }) => {
+            const kids = (node?.children ?? []) as Array<{ type: string; tagName?: string; value?: string }>;
+            const onlyImage = kids.length > 0 && kids.every(
+              (c) => (c.type === 'element' && c.tagName === 'img') || (c.type === 'text' && !(c.value ?? '').trim())
+            );
+            return onlyImage ? <>{children}</> : <p>{children}</p>;
+          },
+          img: ({ src, alt, title }: React.ImgHTMLAttributes<HTMLImageElement>) => {
             if (!src) return null;
             return (
               <figure className="not-prose my-10">
                 <div className="rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF]">
-                  <NextImage
-                    src={src}
+                  <ZoomableImage
+                    src={String(src)}
                     alt={alt ?? ''}
                     width={1200}
                     height={800}
@@ -32,9 +40,9 @@ export default function MarkdownRenderer({ content }: { content: string }) {
                     sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </div>
-                {alt && (
+                {title && (
                   <figcaption className="text-[#717171] text-sm mt-3 text-center">
-                    {alt}
+                    {title}
                   </figcaption>
                 )}
               </figure>

@@ -7,7 +7,7 @@ export default function Footer() {
         {/* Column 1: About blurb */}
         <div>
           <p className="text-[#1A1A1A] font-semibold text-lg">Chris Michalak</p>
-          <p className="text-[#717171] text-sm mt-1 mb-4">Senior UX Designer & Researcher</p>
+          <p className="text-[#717171] text-sm mt-1 mb-4">UX Researcher & Product Designer</p>
           <p className="text-[#717171] text-sm leading-relaxed">
             Specializing in enterprise UX, AI-enhanced research, and complex system design.
           </p>

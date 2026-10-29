@@ -105,7 +105,7 @@ Key decisions:
 
 This screen was built to keep a first-time shipper moving forward with as little friction as possible. By limiting the form to the essentials and pre-setting a balanced service choice, the design avoids decision paralysis and makes the next step feel fast and reliable.
 
-![Guest quick label form](/assets/shipdeez/Guest-Quick-Label-form.png)
+![Guest quick label form](/assets/shipdeez/Guest-Quick-Label-form.png "Guest quick label form")
 
 ### Rate Results
 
@@ -118,7 +118,7 @@ This is where ShipDeez's value proposition becomes tangible. Users see their act
 
 The rate results screen was designed to make savings obvious without requiring people to understand shipping jargon. By highlighting the best option and keeping the summary visible, the UI supports confident selection in a category that normally feels overwhelming.
 
-![Rate results comparison](/assets/shipdeez/rate-results.png)
+![Rate results comparison](/assets/shipdeez/rate-results.png "Rate results comparison")
 
 ### Payment
 
@@ -129,7 +129,7 @@ A first-time user entering card info on a brand they just discovered. Trust is t
 - 3D Secure note for high-risk transactions
 - Guest checkouts capped at $500/day — sets expectations and limits fraud exposure
 
-![Payment screen](/assets/shipdeez/payment.png)
+![Payment screen](/assets/shipdeez/payment.png "Payment screen")
 
 ### Success and Label Download
 
@@ -142,7 +142,7 @@ The payoff.
 
 Success had to feel immediate and earned. This screen makes the experience concrete with a dominant download action and instant tracking details, then uses that positive outcome as the right moment to invite users into a repeatable relationship.
 
-![Success and label download](/assets/shipdeez/success.png)
+![Success and label download](/assets/shipdeez/success.png "Success and label download")
 
 ## Design Decisions
 
@@ -150,7 +150,7 @@ Success had to feel immediate and earned. This screen makes the experience concr
 
 #### Screen 1 — Landing page
 
-![Landing page — dual entry point structure](/assets/shipdeez/landing-page.png)
+![Landing page — dual entry point structure](/assets/shipdeez/landing-page.png "Landing page — dual entry point structure")
 
 1. **Two entry points, separated from the first interaction**  
    The most important decision on the landing page was splitting guest and authenticated paths from the hero. Most shipping platforms funnel all users through account creation before showing any value. Guest shippers who hit a sign-up form before generating a label will leave. Separating the two paths removes that friction at the exact moment it would cause the most drop-off.
@@ -163,7 +163,7 @@ Success had to feel immediate and earned. This screen makes the experience concr
 
 #### Screen 2 — Rate results
 
-![Rate results — pre-selection and persistent total](/assets/shipdeez/rate-results.png)
+![Rate results — pre-selection and persistent total](/assets/shipdeez/rate-results.png "Rate results — pre-selection and persistent total")
 
 4. **Lowest price pre-selected, not fastest or most popular**  
    The product's value proposition is savings. Pre-selecting the lowest rate makes that promise tangible the moment the screen loads. Users who want faster delivery can opt up — but the default anchors to the core reason they chose ShipDeez over their carrier's website.
@@ -179,7 +179,7 @@ Success had to feel immediate and earned. This screen makes the experience concr
 
 #### Screen 3 — Payment
 
-![Payment — trust design and constraint disclosure](/assets/shipdeez/payment.png)
+![Payment — trust design and constraint disclosure](/assets/shipdeez/payment.png "Payment — trust design and constraint disclosure")
 
 8. **Order summary at the top, not the bottom**  
    A first-time user on a brand they discovered 90 seconds ago is entering card details on trust alone. Showing exactly what they're paying for before the card fields reaffirms the decision they just made and removes any moment of uncertainty before they commit.
@@ -192,7 +192,7 @@ Success had to feel immediate and earned. This screen makes the experience concr
 
 #### Screen 4 — Success
 
-![Success screen — primary action hierarchy and conversion timing](/assets/shipdeez/success.png)
+![Success screen — primary action hierarchy and conversion timing](/assets/shipdeez/success.png "Success screen — primary action hierarchy and conversion timing")
 
 11. **Download is the dominant action, not tracking**  
    The user came to print a label. Getting that label into their hands is the only thing that matters on this screen. Tracking information is present but secondary — it answers the natural follow-up question without competing with the primary action.
@@ -211,7 +211,7 @@ Success had to feel immediate and earned. This screen makes the experience concr
 
 The account creation screen had to feel low-friction while still establishing the customer relationship and wallet model. I kept the form short, surfaced the benefits of saved addresses and faster future shipments, and used simple language to explain why the account exists before asking for any payment or wallet details.
 
-![Create account screen](/assets/shipdeez/create-account.png)
+![Create account screen](/assets/shipdeez/create-account.png "Create account screen")
 
 ### Dashboard
 
@@ -224,7 +224,7 @@ For regular shippers, the dashboard is home base. Design decisions:
 
 The dashboard is built for repeat work rather than discovery. By making wallet status and shipment actions immediately visible, the design supports business users who need to move quickly through the next shipment without hunting for the controls they use every day.
 
-![Authenticated user dashboard](/assets/shipdeez/dashboard.png)
+![Authenticated user dashboard](/assets/shipdeez/dashboard.png "Authenticated user dashboard")
 
 ---
 
@@ -252,11 +252,11 @@ A 4px base unit was selected to support dense, data-rich interfaces like shipmen
 
 One constraint worth noting: the system had to work across both ShipDeez-owned screens and ShipBlink's white-label environment. That meant prioritizing legibility, contrast, and functional spacing over decorative detail. The tokens were built to be usable by engineers in an environment where not every style could be customized.
 
-![Design system style tile](/assets/shipdeez/Design-System.png)
+![Design system style tile](/assets/shipdeez/Design-System.png "Design system style tile")
 
 **Component library:** Buttons (primary, secondary, disabled), inputs with error states and validation messaging, selectable rate cards, status pills, shipment history table rows, navigation bar with wallet display, service preference dropdown.
 
-![Component library](/assets/shipdeez/Componenet-library.png)
+![Component library](/assets/shipdeez/Componenet-library.png "Component library")
 
 ---
 

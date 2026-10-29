@@ -41,15 +41,15 @@ const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'descr
     coverImage: '/assets/union-pacific/photos/FW-warehouse.jpg',
     tags: ['UX Research', 'Enterprise Design', 'SAP Fiori', 'AI Integration'],
     description:
-      'Research-led design across SAP ERP workflows, UP.com redesign, and supply chain transformation over 2 years.',
+      'How I moved UX into the decisions that shape SAP enterprise software, designed a contract workflow for 2,500+ line item contracts, and designed pages for UP.com.',
     stat: '2,500+ line item contracts redesigned',
   },
   tmobile: {
-    coverImage: '/assets/tmobile/CNV-wireframes-2.png',
-    tags: ['UX Research', 'Journey Mapping', 'Ethnographic Research'],
+    coverImage: '',
+    tags: ['UX Research', 'Enterprise Tools', 'Usability Testing'],
     description:
-      'Billing tools, customer notification visibility, and omni-channel journey mapping across CARE and retail.',
-    stat: '10.3M annual billing calls addressed',
+      'Research with care reps on how they compare bills, and the design direction it shaped for ATLAS.',
+    stat: '10.3M billing calls a year, 30% needing a bill comparison',
   },
 };
 
@@ -104,7 +104,7 @@ export function getNextCaseStudy(currentSlug: string): CaseStudy | null {
   return getCaseStudy(nextSlug);
 }
 
-export const projectImages: Record<string, { src: string; alt: string }[]> = {
+export const projectImages: Record<string, { src: string; alt: string; small?: boolean }[]> = {
   'first-step-ai': [
     { src: '/assets/first-step-ai/First Step AI logo design.png', alt: 'First Step AI logo' },
     { src: '/assets/first-step-ai/first_step_ai_userflow_1.png', alt: 'First Step AI user flow — intake questions' },
@@ -122,15 +122,10 @@ export const projectImages: Record<string, { src: string; alt: string }[]> = {
     { src: '/assets/union-pacific/Process-flow-mapping.png', alt: 'Supply chain process flow mapping' },
     { src: '/assets/union-pacific/TSD.png', alt: 'Technical specification document' },
     { src: '/assets/union-pacific/Fort Worth testing (1).png', alt: 'Fort Worth usability testing' },
-    { src: '/assets/union-pacific/Zebra-screenshot.png', alt: 'SAP Zebra interface screenshot' },
+    { src: '/assets/union-pacific/Zebra-screenshot.png', alt: 'SAP Zebra interface screenshot', small: true },
     { src: '/assets/union-pacific/Existing Supplier page.jpg', alt: 'Existing supplier page design' },
     { src: '/assets/union-pacific/Supplier-Advancement-Expansion.jpg', alt: 'Supplier advancement and expansion page' },
   ],
-  tmobile: [
-    { src: '/assets/tmobile/CNV-wireframes-2.png', alt: 'Customer notification visibility wireframes' },
-    { src: '/assets/tmobile/CNV-wireframes-3.png', alt: 'CNV prototype iteration' },
-    { src: '/assets/tmobile/Accessibility.png', alt: 'Accessibility journey map framework' },
-    { src: '/assets/tmobile/Ethnographic-research-Notes.jpg', alt: 'Ethnographic research field notes' },
-    { src: '/assets/tmobile/customer-upgrade-journey-map.jpg', alt: 'Customer upgrade journey map' },
-  ],
+  // T-Mobile case study covers bill comparison only; add images here once exported from the design file.
+  tmobile: [],
 };
