@@ -5,6 +5,8 @@ import ZoomableImage from '@/components/ZoomableImage';
 import { getCaseStudy, getAllCaseStudies, getNextCaseStudy, projectImages } from '@/lib/case-studies';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import StickyContact from '@/components/StickyContact';
+import SectionNav from '@/components/case-studies/SectionNav';
+import { parseHeading, slugifyHeading } from '@/lib/headings';
 
 export async function generateStaticParams() {
   return getAllCaseStudies().map((cs) => ({ slug: cs.slug }));
@@ -27,6 +29,12 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
   const coverImage = images[0];
   const galleryImages = images.slice(1);
   const next = getNextCaseStudy(params.slug);
+
+  // Jump links come from the page's own h2 headings (see lib/headings.ts for the label rules).
+  const navItems = Array.from(cs.content.matchAll(/^## (.+)$/gm)).map((m) => ({
+    label: parseHeading(m[1]).nav,
+    href: `#${slugifyHeading(m[1])}`,
+  }));
 
   const metaItems = [
     { label: 'Role', value: cs.role },
@@ -74,13 +82,14 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           {/* Cover image */}
           {coverImage && (
             <div className="max-w-4xl mx-auto px-6 mt-10">
-              <div className="relative w-full aspect-video rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm">
-                <Image
+              <div className="rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm">
+                <ZoomableImage
                   src={coverImage.src}
                   alt={coverImage.alt}
-                  fill
-                  className="object-cover object-top"
-                  priority
+                  width={1600}
+                  height={900}
+                  sizes="(max-width: 896px) 100vw, 896px"
+                  className="w-full aspect-video object-cover object-top"
                 />
               </div>
             </div>
@@ -103,6 +112,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             )}
           </div>
         </div>
+
+        {navItems.length > 2 && <SectionNav items={navItems} />}
 
         {/* ── Case Study Content ── */}
         <div className="max-w-4xl mx-auto px-6 mb-16">

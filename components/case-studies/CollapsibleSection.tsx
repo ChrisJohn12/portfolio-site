@@ -19,7 +19,7 @@ export default function CollapsibleSection({ id, label, children }: CollapsibleS
   }, [isOpen, children])
 
   return (
-    <div id={id} className="mb-16">
+    <div id={id} className="mb-16 scroll-mt-36">
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex items-center gap-3 w-full group mb-0"

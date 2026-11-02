@@ -6,7 +6,7 @@
 
 I joined Union Pacific's SAP migration as a UX researcher and ended up owning the design of two things: **a contract workflow for 2,500+ line item contracts**, and **the UX voice in decisions that had been made without any**.
 
-- **Context:** enterprise SAP S/4HANA migration with PwC as the implementation partner, plus a redesign of the public website, UP.com
+- **Context:** enterprise SAP S/4HANA migration with PwC as the implementation partner, plus a redesign of the public website, UP.com, with field visits to Union Pacific warehouses in Sacramento, Fort Worth and Chicago
 - **What I owned:** the contract workflow design, the case for SAP Personas on warehouse handhelds, UX involvement in fit-or-custom decisions, and page design for UP.com
 - **What I can show:** a service blueprint with the systems layer, a decision story for each major call, and before and after screens for UP.com
 
@@ -30,7 +30,9 @@ What we built was the custom Fiori application. I started from how the work actu
 
 *(SAP Personas is a layer on top of the standard SAP screens. It lets a design team change the interface without waiting on several teams to get engineering to rework SAP's original UI.)*
 
-Warehouse staff used handheld scanners that ran standard SAP screens. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
+Warehouse staff used handheld scanners that ran standard SAP screens. I visited three warehouses, in Sacramento, Fort Worth and Chicago, to watch the work where it happened. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
+
+![A standard SAP screen on a warehouse handheld](/assets/union-pacific/photos/SAP-erp-ui.jpg "A standard SAP screen on a warehouse handheld. Labels are abbreviated, fields are small, and most of the screen sits empty.")
 
 I raised it at the weekly meetings with both teams. Union Pacific wanted the information visible. The implementation partner pushed back: they said it was not feasible and would affect the timeline.
 
@@ -69,7 +71,7 @@ The supplier pages followed the same pattern, which is where the design system e
 
 ![The existing supplier page mockup beside the built Supplier Advancement and Expansion page, with the shared design system pieces called out](/assets/union-pacific/supplier-pages.png)
 
-## The systems layer
+## The systems layer {nav=Systems}
 
 A journey map shows what a person does. It does not show what each system does with it. For the order-to-cash flow I built a service blueprint with three extra rows: the systems touched at each step, the handoff between those systems, and the consequence of each decision.
 
@@ -79,19 +81,19 @@ One example: once an order is placed, the vendor is sent a work order and headqu
 
 Client system names are generalized in the version I show.
 
-## What came of it
+## What came of it {nav=Outcome}
 
 The personas, journey maps, and blueprints were **adopted by multiple business units**, which is the part I am most proud of. Work that only the project team uses tends to stay on the project.
 
 Users and stakeholders reported tasks taking **about 30% less time**. That number comes from their feedback, not from a measurement I ran, and I treat it that way.
 
-## AI in my research workflow
+## AI in my research workflow {collapsed} {nav=AI workflow}
 
 In my estimate, AI-assisted synthesis in Dovetail cut synthesis time by about 40% compared with tagging by hand, which is how I worked before those features existed. The speed mattered less to me than the consistency. The tool kept tags and groupings steady across sessions, so patterns I found in week one still held in week six.
 
 I also used Union Pacific's internal GPT tool, depending on the document, to synthesize information, draft responses, and test different ways to word content.
 
-## What I would do differently
+## What I would do differently {nav=Reflection}
 
 Three things, looking back.
 

@@ -45,10 +45,10 @@ const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'descr
     stat: '2,500+ line item contracts redesigned',
   },
   tmobile: {
-    coverImage: '',
-    tags: ['UX Research', 'Enterprise Tools', 'Usability Testing'],
+    coverImage: '/assets/tmobile/tmobile-cover-store.jpg',
+    tags: ['UX Research', 'Enterprise Tools', 'Field Research'],
     description:
-      'Research with care reps on how they compare bills, and the design direction it shaped for ATLAS.',
+      'Research with care reps and store staff on how they compare bills, read customer messages and work a device upgrade, and the design decisions it shaped.',
     stat: '10.3M billing calls a year, 30% needing a bill comparison',
   },
 };
@@ -126,6 +126,7 @@ export const projectImages: Record<string, { src: string; alt: string; small?: b
     { src: '/assets/union-pacific/Existing Supplier page.jpg', alt: 'Existing supplier page design' },
     { src: '/assets/union-pacific/Supplier-Advancement-Expansion.jpg', alt: 'Supplier advancement and expansion page' },
   ],
-  // T-Mobile case study covers bill comparison only; add images here once exported from the design file.
-  tmobile: [],
+  tmobile: [
+    { src: '/assets/tmobile/tmobile-cover-store.jpg', alt: 'A T-Mobile retail store entrance' },
+  ],
 };
