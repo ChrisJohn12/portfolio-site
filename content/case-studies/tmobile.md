@@ -53,7 +53,21 @@ A few things on that board stayed with me:
 - **Promotions were hard to compare in one conversation.** Experts jumped between screens to explain options, and the right promotion could change from one search to the next.
 - **A checkout crash could lock a device.** Without the product SKU, getting it unlocked took 30 minutes or more. Experts asked for the SKU to be shown at the crash so they could finish the sale in the older system.
 
+The upgrade itself ran on two paths. The designed one went through Pivot, one upgrade at a time, then handed off to mPOS for payment and the receipt. The one reps used went around it, because Pivot could not scan the new device.
+
+![Service blueprint for upgrading a phone in a T-Mobile store, across eight steps from the pre-visit research to the plan agreement](/assets/tmobile/instore-upgrade-blueprint.png "Customer and Mobile Expert actions and pain points come from my in-store observations. Backstage steps and systems come from our team's retail flow deep dive.")
+
+The blueprint shows where it cost something: if the upgrade is not done in Pivot, the promotion does not print on the receipt, and Pivot can crash on the handoff to mPOS, in the worst case sending the customer out without the phone.
+
 The journey maps that followed were a team effort across UX, customer experience, systems engineering, product and strategy. Mine was the observation, and the habit of pairing every observation with the question it should send us to answer.
+
+## The tools behind the call: one scenario as a service blueprint {nav=Blueprint}
+
+The store work showed me how much of the friction sat below what the customer sees. To make that visible I laid out one Care scenario, adding a line with a number port-in, as a service blueprint: what the customer does, what the Care expert does in front of them and behind the scenes, which tool is in use at each step, and where the customer felt a gap.
+
+Atlas, Samson and DASH show up at different steps. Add a Line only worked in DASH, so experts switched tools early, and DASH could crash on startup. The customer could not see the total bill change until the very end of the flow. The first bill is where they learn, the second is where bill shock lands, and the third is where they compare.
+
+![Service blueprint for adding a line with a number port-in through Care, across eight steps from the first call to the third bill](/assets/tmobile/care-port-in-blueprint.png "From the team's Care journey map and billing workshop (December 2022 to January 2023). Steps, pain points and system names are as the team described them. The handoffs line is my synthesis of the order the tools are used in.")
 
 ## What happened next
 

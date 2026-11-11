@@ -89,7 +89,7 @@ export function getCaseStudy(slug: string): CaseStudy | null {
   }
 }
 
-const slugOrder = ['first-step-ai', 'shipdeez', 'union-pacific', 'tmobile'] as const;
+const slugOrder = ['union-pacific', 'tmobile', 'first-step-ai', 'shipdeez'] as const;
 
 export function getAllCaseStudies(): CaseStudy[] {
   return [...slugOrder]
