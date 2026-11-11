@@ -13,10 +13,10 @@ Chris Michalak is a UX Researcher & Product Designer who specializes in enterpri
   End-to-end UX for a shipping startup. Delivered brand identity, design system, full product UI, and Webflow landing page in 10 business days. Key outcome: 85% savings off retail shipping rates.
 
 - **Union Pacific Railroad** — UX Researcher & Product Designer (2023–2025, Contract · 2 years)
-  Research-led design across SAP ERP workflows, UP.com redesign, and supply chain transformation. Key outcome: 2,500+ line item contracts redesigned.
+  Research-led design across SAP ERP workflows, UP.com redesign, and supply chain transformation. Key outcome: 2,500+ line item contracts redesigned. Chris also mapped the systems layer three ways: a source-to-pay map (FGS, MMS, SourceHub, LMS) that fed the brief, the technical spec and his recommendation of a custom Fiori app; an outbound picking flow documented in Fort Worth across a Zebra handheld, the SAP back end and a desktop Fiori app; and the legacy order-to-cash workflow (ADS, CBS, ARMS) that he mapped to understand how work ran before SAP and compare it against the newly implemented SAP blueprint.
 
 - **T-Mobile** — UX Researcher, Enterprise Technology Solutions (2022–2023, Contract · 13 months)
-  Led research on how care reps compare bills in ATLAS. Context: about 10.3M billing calls a year come into care, and 30% need a bill comparison. The research shaped the design direction and the design went to engineering after the August 2022 testing. Chris rolled off before launch, so he does not claim post-launch results.
+  Led research on how care reps compare bills in ATLAS. Context: about 10.3M billing calls a year come into care, and 30% need a bill comparison. The research shaped the design direction and the design went to engineering after the August 2022 testing. Chris rolled off before launch, so he does not claim post-launch results. He also drew a service blueprint of one Care scenario (adding a line with a number port-in) from the team's Care journey map and billing workshop, naming the tools used at each step (Atlas, Samson, DASH), and drew a service blueprint of a retail phone upgrade in store, with customer and Mobile Expert actions and pain points from his in-store observations and backstage steps and systems from the team's retail flow deep dive.
 
 ## Skills
 - **Research:** Contextual Inquiry, Usability Testing, Journey Mapping, Ethnographic Research, Stakeholder Interviews, Survey Design
@@ -72,6 +72,9 @@ Use these to show work samples when a visitor asks to see designs, wireframes, o
 - Fort Worth process map (field): ![Union Pacific Fort Worth process map](/assets/union-pacific/photos/Fort-Worth-Process-map.png)
 - Desktop home (redesign): ![Union Pacific desktop home redesign](/assets/union-pacific/D%20Min%20Home%20(1)%201.jpg)
 - Mobile home (redesign): ![Union Pacific mobile home redesign](/assets/union-pacific/M%20Home%20(cropped).jpg)
+- Source-to-pay systems map: ![Union Pacific source-to-pay systems map](/assets/union-pacific/source-to-pay-systems.png)
+- Warehouse picking on SAP: ![Union Pacific warehouse picking](/assets/union-pacific/warehouse-picking-sap.png)
+- Legacy order-to-cash workflow: ![Union Pacific legacy order to cash](/assets/union-pacific/order-to-cash-legacy.png)
 
 ### T-Mobile
 - CNV wireframes (1): ![T-Mobile CNV wireframes](/assets/tmobile/CNV-wireframes-2.png)
@@ -79,6 +82,8 @@ Use these to show work samples when a visitor asks to see designs, wireframes, o
 - Accessibility screens: ![T-Mobile accessibility design](/assets/tmobile/Accessibility.png)
 - Customer upgrade journey map: ![T-Mobile customer upgrade journey map](/assets/tmobile/customer-upgrade-journey-map.jpg)
 - Ethnographic research notes: ![T-Mobile ethnographic research notes](/assets/tmobile/Ethnographic-research-Notes.jpg)
+- Care port-in service blueprint: ![T-Mobile care port-in service blueprint](/assets/tmobile/care-port-in-blueprint.png)
+- Retail upgrade service blueprint: ![T-Mobile in-store upgrade service blueprint](/assets/tmobile/instore-upgrade-blueprint.png)
 
 ### Research Process
 - Research process page: ![Research process](/research-process)
