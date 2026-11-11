@@ -16,6 +16,22 @@ Two problems sat on top of each other. The first was the work itself. Contracts 
 
 The second was the process around the work. Design recommendations reached the team as a review of a finished spec, after the real decisions were made. Good ideas came too late to change anything.
 
+## The systems layer {nav=Systems}
+
+A journey map shows what a person does. It does not show which system holds the work at each step, or where a person has to bridge two of them. So I mapped the systems layer three ways, each from working boards I built with the people who run the work.
+
+**Source to pay.** The first map follows a part from a demand forecast to the field. Four named systems carry it: FGS for demand planning, MMS for requisitions and purchase orders, SourceHub for sourcing and contracts, and LMS for logistics. The manual work showed up where people bridged them: requests for new material filled out by hand, and inventory counts checked outside the main flow. This map fed the project brief, the technical spec, and my recommendation of a custom Fiori app.
+
+![Source-to-pay map: four named systems between a demand forecast and a part in the field, with the people who act at each step and the original working map beside it](/assets/union-pacific/source-to-pay-systems.png "Redrawn from my original working map, built from conversations with subject matter experts. The warehouse and invoicing systems were not named on the original, so they are labeled by function.")
+
+**One task on the warehouse floor.** The second map zooms into outbound picking, documented in Fort Worth with the warehouse staff who run it. One task crosses three surfaces: a Zebra handheld, the SAP warehouse back end, and a desktop Fiori app and print spool to get the label out. The friction was a small scanning screen, where long error messages get cut off, and a label step that leaves the handheld.
+
+![Warehouse picking on SAP across three surfaces, with the exception path for changing a handling unit label](/assets/union-pacific/warehouse-picking-sap.png "Redrawn from my original flow, where each step is paired with the actual handheld screen, the expected outcome and open questions.")
+
+**The workflow before SAP.** The third map is the existing order-to-cash workflow. I laid it out to understand what the legacy system provided, so we could compare how work and systems connected before SAP with how SAP connects them. These are different processes, so it is a comparison of structure and handoffs, not of matching flows. It ran across three legacy systems: ADS for orders, CBS as the billing connector, and ARMS for payment. The hard parts were where people bridged them. About 99% of orders pass approval (the team's estimate), and the rest wait in an error queue that someone corrects by hand. A discrepancy shows up in the payment system, but the fix is entered in the order system.
+
+![Legacy order-to-cash workflow across ADS, CBS and ARMS, with the handoffs between them and the four places it gets hard](/assets/union-pacific/order-to-cash-legacy.png "Built from process notes captured during discovery with the business team. Counts and percentages are as the team described them. The handoffs row is my synthesis.")
+
 ## Decision 1: Contract creation at scale
 
 The business team asked for an Excel upload. They had existing spreadsheets to bring into the new system during onboarding, and some customers still worked in spreadsheets. It was a reasonable request, and I took it seriously.
@@ -70,22 +86,6 @@ Each page I designed with the content team also got a content matrix, so the des
 The supplier pages followed the same pattern, which is where the design system earned its keep: new pages assembled from known pieces instead of being drawn from scratch.
 
 ![The existing supplier page mockup beside the built Supplier Advancement and Expansion page, with the shared design system pieces called out](/assets/union-pacific/supplier-pages.png)
-
-## The systems layer {nav=Systems}
-
-A journey map shows what a person does. It does not show which system holds the work at each step, or where a person has to bridge two of them. So I mapped the systems layer three ways, each from working boards I built with the people who run the work.
-
-**Source to pay.** The first map follows a part from a demand forecast to the field. Four named systems carry it: FGS for demand planning, MMS for requisitions and purchase orders, SourceHub for sourcing and contracts, and LMS for logistics. The manual work showed up where people bridged them: requests for new material filled out by hand, and inventory counts checked outside the main flow. This map fed the project brief, the technical spec, and my recommendation of a custom Fiori app.
-
-![Source-to-pay map: four named systems between a demand forecast and a part in the field, with the people who act at each step and the original working map beside it](/assets/union-pacific/source-to-pay-systems.png "Redrawn from my original working map, built from conversations with subject matter experts. The warehouse and invoicing systems were not named on the original, so they are labeled by function.")
-
-**One task on the warehouse floor.** The second map zooms into outbound picking, documented in Fort Worth with the warehouse staff who run it. One task crosses three surfaces: a Zebra handheld, the SAP warehouse back end, and a desktop Fiori app and print spool to get the label out. The friction was a small scanning screen, where long error messages get cut off, and a label step that leaves the handheld.
-
-![Warehouse picking on SAP across three surfaces, with the exception path for changing a handling unit label](/assets/union-pacific/warehouse-picking-sap.png "Redrawn from my original flow, where each step is paired with the actual handheld screen, the expected outcome and open questions.")
-
-**The workflow before SAP.** The third map is the existing order-to-cash workflow. I laid it out to understand what the legacy system provided, so we could compare how work and systems connected before SAP with how SAP connects them. These are different processes, so it is a comparison of structure and handoffs, not of matching flows. It ran across three legacy systems: ADS for orders, CBS as the billing connector, and ARMS for payment. The hard parts were where people bridged them. About 99% of orders pass approval (the team's estimate), and the rest wait in an error queue that someone corrects by hand. A discrepancy shows up in the payment system, but the fix is entered in the order system.
-
-![Legacy order-to-cash workflow across ADS, CBS and ARMS, with the handoffs between them and the four places it gets hard](/assets/union-pacific/order-to-cash-legacy.png "Built from process notes captured during discovery with the business team. Counts and percentages are as the team described them. The handoffs row is my synthesis.")
 
 ## What came of it {nav=Outcome}
 
