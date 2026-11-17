@@ -32,10 +32,10 @@ const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'descr
   },
   shipdeez: {
     coverImage: '/assets/shipdeez/landing-page.png',
-    tags: ['UX Design', 'Brand Identity', 'Design System', 'Webflow'],
+    tags: ['Product Design', 'Service Blueprint', 'Design System'],
     description:
-      'End-to-end UX for a shipping startup, from brand identity to live product in 10 business days.',
-    stat: '85% savings off retail shipping rates',
+      'Designing a shipping product on top of three platforms I did not control: the service blueprint, two entry paths, and the screens I handed off.',
+    stat: 'Design handed off ahead of the client deadline',
   },
   'union-pacific': {
     coverImage: '/assets/union-pacific/photos/FW-warehouse.jpg',
