@@ -40,9 +40,11 @@ For the structure of the whole site, I used a tree test in Optimal Workshop. I l
 
 > You want to register your marketing team for the CUNA Digital Marketing School, which they will attend virtually. Where would you go to register the team?
 
-![Optimal Workshop tree test results for the registration scenario, two structures side by side](/assets/cuna/treejack-results.png "Task success for the same scenario on two versions of the site's structure.")
+![Optimal Workshop tree test results comparing two versions of the site's structure](/assets/cuna/treejack-results.png "Optimal Workshop results for two versions of the tree, labeled V1 and V2.")
 
-Task success on that scenario was 81% on one tree and 31% on the other (measured) [CONFIRM: which tree was the existing sitemap and which was the proposed one, and how many participants took part]. A tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
+I tested two versions of the structure against each other. Across all tasks, 81% of completed tasks ended at a correct answer on the second version, against 31% on the first (measured). Each task had only about four participants per tree, so I read those percentages as direction, not proof. [CONFIRM: that 31% is the V1 overall score, which version was the existing sitemap and which was the proposed one, and the total participant count.]
+
+A tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
 
 ## Card sorting the advocacy section
 
