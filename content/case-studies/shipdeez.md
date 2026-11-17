@@ -76,6 +76,8 @@ The screens below are the designs I handed off in Feb 2026. Each caption says wh
 
 ![Design system style tile](/assets/shipdeez/Design-System.png "Design system style tile. Built to work on ShipDeez screens and next to ShipBlink's white-label screens.")
 
+![Component library: buttons, inputs, rate cards, status pills, table row, navigation](/assets/shipdeez/component-library.png "Component library. Reusable pieces behind the ShipDeez-owned screens.")
+
 ## Result {nav=Result}
 
 - Delivered the design handoff ahead of the client's deadline.
