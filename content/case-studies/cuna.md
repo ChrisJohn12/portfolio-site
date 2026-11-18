@@ -7,7 +7,7 @@
 CUNA is a national trade association for state and federally chartered credit unions. It gives its members regulatory advocacy, professional development and professional services. I was the UX designer and researcher on the team reworking cuna.org, and most of my work was research into one question: when someone arrives at the site with a job to do, can they find the thing?
 
 - **Context:** a large association site with several audiences and two heavy jobs, advocacy content and a store for training products and conferences. The site was slow, hard to navigate, and in the middle of a platform move
-- **What I owned:** the research. Stakeholder interviews, a 28-question survey and the personas that came from it, a heuristic evaluation, competitive analysis, user flows, a tree test and card sorts in Optimal Workshop, and test plans for the follow-up usability work. I also helped mock up designs with the team
+- **What I owned:** the research. Stakeholder interviews, a 28-question survey and the personas that came from it, a heuristic evaluation, competitive analysis, user flows, a tree test and card sorts in Optimal Workshop, a naming and metadata convention for the site's PDFs, and test plans for the follow-up usability work. I also helped mock up designs with the team
 - **Outcome:** the studies shaped how the team approached the site's structure and gave the team personas for eight areas of credit unions. I do not have post-launch numbers for the new structure, so I do not claim one
 
 ## The problem
@@ -89,6 +89,14 @@ Optimal Workshop's 3D cluster view was a clear way to see the results I had coll
 Training products and seminars were among CUNA's biggest revenue drivers, and the products page structure was a pain point in the survey. Before recommending changes, I made a clear list of what each product page contained, so decisions about grouping and naming could be made against an inventory and not a feeling.
 
 ![Inventory of the contents of CUNA product pages](/assets/cuna/products-page-inventory.png "A content inventory of the product pages, used to inform grouping and naming decisions.")
+
+## Naming PDFs so people could find them
+
+The site hosted a lot of PDFs, such as white papers, handouts, reports and presentations, and search could not tell them apart. I wrote a naming convention for them: a short code for the area or product, then the document type, then a short description, for example a white paper from the advocacy team on a tax issue. Codes covered areas like Advocacy, Compliance, the training bundle and webinars, and types like white paper, report and handout. The rules were practical: a 20-character limit so files synced cleanly, and no characters that break across operating systems.
+
+The convention also covered metadata, which helps search engines and site search decide what a document is about, so each file carried a title, author, description and keywords. One rule mattered more than the rest. Documents behind a login, such as training bundles, webinars and eSchools, should carry no metadata, because they are paid content and should not show up in a Google search.
+
+I do not have adoption numbers for it, so I count it as a working standard for the team, not a measured result.
 
 ## Planning the usability testing
 
