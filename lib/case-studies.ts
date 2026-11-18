@@ -45,7 +45,7 @@ const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'descr
     stat: '2,500+ line item contracts redesigned',
   },
   cuna: {
-    coverImage: '/assets/cuna/persona-board-member.png',
+    coverImage: '/assets/cuna/cuna-logo-cover.png',
     tags: ['UX Research', 'Information Architecture', 'Survey and Personas', 'Optimal Workshop'],
     description:
       'Research into why credit union staff could not find things on cuna.org: a 28-question survey, personas, a tree test, card sorts and test plans.',
@@ -137,6 +137,6 @@ export const projectImages: Record<string, { src: string; alt: string; small?: b
     { src: '/assets/tmobile/tmobile-cover-store.jpg', alt: 'A T-Mobile retail store entrance' },
   ],
   cuna: [
-    { src: '/assets/cuna/persona-board-member.png', alt: 'Persona card for a credit union board member, built from the CUNA survey' },
+    { src: '/assets/cuna/cuna-logo-cover.png', alt: 'CUNA, Credit Union National Association logo' },
   ],
 };
