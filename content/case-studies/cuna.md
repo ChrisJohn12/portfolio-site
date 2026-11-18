@@ -7,7 +7,7 @@
 CUNA is a national trade association for credit unions. I was the UX designer and researcher on the team reworking cuna.org, and most of my work was research into one question: when someone arrives with a job to do, can they find the thing?
 
 - **Context:** a large association site with several audiences, an advocacy section and a store for training and conferences. It was slow, hard to navigate, and moving from Ektron to Adobe Experience Manager
-- **What I owned:** the research and its design. Stakeholder interviews, a 28-question survey and its personas, tree tests and card sorts I designed and built in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs. I also created wireframes in the design system, to put the results into screens
+- **What I owned:** the research and its design. Stakeholder interviews, a 28-question survey and its personas, plus tree tests and card sorts, all designed and built in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs. I also created wireframes in the design system, to put the results into screens
 - **Outcome:** the studies shaped how the team approached the site structure and gave it personas for eight areas of credit unions
 
 ```stats
@@ -29,7 +29,7 @@ Analytics added a fourth, and it pointed elsewhere. Advocacy ranked 28th for mos
 
 ## Who we were designing for {nav=Audience}
 
-I started with stakeholder interviews, then sent a survey to credit union staff, board members and leagues. 537 people completed it (measured). 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
+I started with stakeholder interviews, then sent a 28-question survey, built in Optimal Workshop, to credit union staff, board members and leagues. 537 people completed it (measured). 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
 
 I used a net promoter score on three questions as a place to start looking.
 
@@ -55,7 +55,7 @@ When asked which area mattered most, 173 chose the training bundle and webinars,
 
 ## How I designed the studies {nav=Study design}
 
-I designed and built the studies in Optimal Workshop myself. For each question we needed answered, I chose the method that fit it: a survey for how people felt, including a net promoter score, a tree test for whether people could find something, and a card sort for how people group things and what they call them. I also set up branching answer logic, so a participant's answer decided which question the study asked next.
+I designed and built the studies in Optimal Workshop myself, including the 28-question survey and its net promoter score. For each question we needed answered, I chose the method that fit it: a survey for how people felt, a tree test for whether people could find something, and a card sort for how people group things and what they call them. I also set up branching answer logic, so a participant's answer decided which question the study asked next.
 
 ## Tree test: can people find where to register a team? {nav=Tree test}
 
