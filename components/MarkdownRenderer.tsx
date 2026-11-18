@@ -42,12 +42,15 @@ const components = {
   ),
   img: ({ src, alt, title }: React.ImgHTMLAttributes<HTMLImageElement>) => {
     if (!src) return null;
+    // Add {small} to the end of the alt text to render a narrow image, for tall phone screens.
+    const isSmall = /\{small\}\s*$/.test(alt ?? '');
+    const cleanAlt = (alt ?? '').replace(/\s*\{small\}\s*$/, '');
     return (
       <figure className="not-prose my-10">
-        <div className="rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF]">
+        <div className={`rounded-xl overflow-hidden border border-[#E5E5E5] shadow-sm bg-[#F3F2EF] ${isSmall ? 'max-w-[300px] mx-auto' : ''}`}>
           <ZoomableImage
             src={String(src)}
-            alt={alt ?? ''}
+            alt={cleanAlt}
             width={1200}
             height={800}
             className="w-full h-auto"
