@@ -4,7 +4,7 @@
 **Company:** T-Mobile (contract)
 **Duration:** March 2022 to April 2023
 
-I was the UX researcher on a team improving the tools T-Mobile's frontline staff use every day. This page follows three pieces of that work, each one a case where the question I was handed turned out to be narrower than the problem.
+I was the UX researcher on a team improving the tools T-Mobile's frontline staff use every day. This page follows several pieces of that work, most of them cases where the question I was handed turned out to be narrower than the problem.
 
 - **Context:** ATLAS, T-Mobile's main frontline CRM, plus the related tools SAMSON and DASH, used by care reps on calls and Mobile Experts in stores
 - **What I owned:** the research. I planned and ran the sessions, wrote the findings, and made the recommendations. UI designers on the team built the screens. I tested them and reported back, and they adjusted
@@ -43,7 +43,7 @@ That second decision is the part I care about. The project ended as a recommenda
 
 ## On the store floor: following an upgrade from both sides of the counter {nav=Store floor}
 
-The third piece took me out of the call center. In December 2022 I was one of three researchers visiting seven T-Mobile stores in Washington and Illinois. We observed 5 customers and interviewed 8 Mobile Experts, in locations ranging from mall flagships to neighborhood shops, and followed a device upgrade through eight phases from both sides of the counter.
+The third piece took me out of the call center. In December 2022 I was one of three researchers visiting seven T-Mobile stores in Washington and Illinois. I covered three of them, all in Chicago. Across the team we observed 5 customers and interviewed 8 Mobile Experts, in locations ranging from mall flagships to neighborhood shops, and followed a device upgrade through eight phases from both sides of the counter.
 
 ![Store observation board: eight phases of a device upgrade, with what we saw in each and the question it raised](/assets/tmobile/Ethnographic-research-Notes.jpg "Field notes from store visits, December 2022. Blue notes are observations, orange notes are the questions each phase sent us to answer. Zoom in to read them.")
 
@@ -61,6 +61,18 @@ The blueprint shows where it cost something: if the upgrade is not done in Pivot
 
 The journey maps that followed were a team effort across UX, customer experience, systems engineering, product and strategy. Mine was the observation, and the habit of pairing every observation with the question it should send us to answer.
 
+## From observations to a backlog: the retail design sprint {nav=Sprint}
+
+Back from the stores, the work moved into a retail design sprint. The three researchers' notes went onto one affinity map, grouped by theme with design, business and technology partners. Out of that the group wrote a problem statement: *How might we create a tool to help Mobile Experts efficiently right fit the customer, so that we can build trust while making everyone involved feel valued?*
+
+![Journey map of Dan, a Mobile Expert persona built from the store research, with the sprint's problem statement above it](/assets/tmobile/customer-upgrade-journey-map.jpg "Journey map for Dan, a Mobile Expert persona. Rows run from what he does and which tools he touches, to what he thinks, how he feels, where it hurts and where the opportunities are. Zoom in to read it.")
+
+From there the group ranked the pain points on an effort and impact matrix. Technical difficulties went to the engineering team working in the sprint. The rest became a prioritized backlog.
+
+The first thing the team took on came from something I saw in the stores. Some customers waited an hour or more for their data to move from the old phone to the new one. That is my observation from the visits, not a timed measurement. The wait can be avoided if the customer backs up their phone at home first. I brought that to the sprint team, and they agreed it was the lowest effort for the highest impact for the T-Mobile team. So the suggestion was to educate customers on backing up before they come in for an upgrade. As far as I know it was implemented. I do not have results for it.
+
+Two other parts of the sprint were mine. I mapped the stakeholders around an upgrade so product exploration began with the right people in the room. Once the team had storyboarded the concepts, I tested them in UserZoom and turned the results into user flows. The product design team used those flows to start wireframes.
+
 ## The tools behind the call: one scenario as a service blueprint {nav=Blueprint}
 
 The store work showed me how much of the friction sat below what the customer sees. To make that visible I laid out one Care scenario, adding a line with a number port-in, as a service blueprint: what the customer does, what the Care expert does in front of them and behind the scenes, which tool is in use at each step, and where the customer felt a gap.
@@ -69,8 +81,16 @@ Atlas, Samson and DASH show up at different steps. Add a Line only worked in DAS
 
 ![Service blueprint for adding a line with a number port-in through Care, across eight steps from the first call to the third bill](/assets/tmobile/care-port-in-blueprint.png "From the team's Care journey map and billing workshop (December 2022 to January 2023). Steps, pain points and system names are as the team described them. The handoffs line is my synthesis of the order the tools are used in.")
 
+## A customer who needed two devices to make a call {nav=Accessibility}
+
+A separate request asked how T-Mobile might simplify calling for deaf and hard of hearing customers. Those customers needed an additional device from Sorenson, a video relay service, to make phone calls, so a daily call meant two devices.
+
+I set out to capture the journey of an existing hearing-impaired T-Mobile customer and find what we did not yet know. I mapped how a customer onboards onto the video relay service, from first contact through set-up, follow-up and retention. I led stakeholder meetings, started user interviews with the right audience, and produced a journey map that gave the business and technology teams somewhere to raise their own gaps in knowledge. I do not have an outcome to report for this one.
+
+![Discovery board for the hearing-impaired customer project: the problem statement, notes on Sorenson's video relay service, open questions, and an onboarding flow for the service](/assets/tmobile/accessibility-names-removed.png "Discovery board for the project. The problem statement sits top left, with notes on Sorenson's service, questions for stakeholders and the video relay onboarding flow I mapped. Colleague names removed. Zoom in to read it.")
+
 ## What happened next
 
-The bill comparison research was finished by the end of summer 2022, and its recommendations shaped the design direction. The design went to engineering shortly after the August 2022 testing. If the project had allowed for it, my next step would have been to track ATLAS satisfaction scores and bill review call times after launch, to see whether reps spent less time on bill comparison calls.
+The bill comparison research was finished by the end of summer 2022, and its recommendations shaped the design direction. The design went to engineering shortly after the August 2022 testing. Across the care tools, the research focused on how reps thought about the information they needed to find mid-call, with the aim of cutting confusion and making the screens easier to use. Call resolution time was the metric the call center teams cared about. I did not measure what the work did to it. If the project had allowed for it, my next step would have been to track ATLAS satisfaction scores and bill review call times after launch, to see whether reps spent less time on bill comparison calls.
 
 What I took from all three is that the useful finding is rarely the answer to the question you were asked. A prototype test became a case for how reps investigate bills. A layout check became a decision about what to remove. A store visit became a map of where trust breaks before anyone touches a system.
