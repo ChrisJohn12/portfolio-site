@@ -20,7 +20,7 @@ Checkout was the sharpest example. In February 2021 a credit union CFO wrote to 
 
 The traffic data pointed at a different problem. In a March 2021 meeting about advocacy, the team noted that Advocacy ranked 28th for most visited in Google Analytics (measured, per the meeting notes). A section that central to CUNA's mission was close to invisible.
 
-## Who we were designing for
+## Who we were designing for {nav=Audience}
 
 I started with stakeholder interviews, built around a set of questions: how do your customers use the site, what do they complain about, and what would relieve some stress. The member experience director was the first interview, and it shaped the plan for the survey and testing that followed.
 
@@ -28,7 +28,7 @@ Then we sent a survey. It had 28 questions and went to credit union staff, board
 
 I used a net promoter score on selected questions as a place to start looking, and affinity mapped the written responses to see what was working and what was not. From that I built personas for the eight areas of credit unions that use CUNA: board members, compliance and risk, lending, marketing, operations and member experience, finance, human resources, and technology.
 
-![Persona card for a credit union board member, showing needs, frustrations, frequent site areas and how important the site is to the role](/assets/cuna/persona-board-member.png "One of eight persona cards, built from the survey. Stock photo.")
+![Persona card for a credit union board member, showing needs, frustrations, frequent site areas and how important the site is to the role](/assets/cuna/persona-board-member.png "One of eight persona cards, built from the survey.")
 
 The findings across the cards were consistent. People valued CUNA's resources and training. They said the site was slow, hard to navigate, and that training was too expensive for smaller credit unions. A representative comment: "I often spend an hour trying to sign up for a course and by then I don't have time to actually take it."
 
@@ -38,19 +38,15 @@ I also broke the results out by audience, which showed that the groups used the 
 
 ![Survey results broken out by audience segment, with panels for board, finance, compliance, HR, lending, marketing and operations](/assets/cuna/survey-synthesis-audience.png "Each panel shows one audience's age, education, most important area, how they reach the site, and average ratings. Zoom in to read the numbers.")
 
-## Starting with what was already broken
+## Starting with what was already broken {nav=Evaluation}
 
 Before testing anything new, I wanted a list of what the current site did wrong that we could name. I ran a heuristic evaluation of cuna.org against Nielsen's 10 usability heuristics, mapping issues to each heuristic on a Mural board. Alongside it I did a competitive analysis of four organizations with similar goals (NAFCU, the National Credit Union Foundation, the World Council of Credit Unions and CUES), looking at their checkout flows, how they organized shop and learn content, and their layouts.
-
-![Heuristic evaluation of cuna.org on a Mural board, one cluster per Nielsen heuristic](/assets/cuna/heuristic-evaluation.png "Each cluster collects the issues found against one of Nielsen's 10 heuristics. Zoom in to read the notes.")
 
 The evaluation gave the team a documented set of issues to work from before design and development were underway.
 
 ## User flows: getting the process out of people's heads
 
 It is easy to lose the user when a team is arguing about features and jargon. I mapped the main purchase paths on the site: conferences, eSchools and webinars on one side, and courses, books, PDFs and marketing products on the other, with the account creation, guest registration and login branches around them.
-
-![User flows for the CUNA purchase paths, from search through checkout, with login and registration branches](/assets/cuna/user-flows.png "Flows for conferences, eSchools and webinars, and for course, book and marketing products.")
 
 The flows turned up friction in the purchase path, including a missing payment confirmation and a connection error. They also became the thing I used to explain design decisions to the product manager, stakeholders and developers.
 
@@ -64,7 +60,7 @@ So for the structure of the whole site, I ran a tree test in Optimal Workshop co
 
 ![Optimal Workshop comparison of the registration task on two versions of the tree: 4 of 4 succeeded on one, 0 of 4 on the other](/assets/cuna/treejack-task3-comparison.png "Task 3, the registration scenario, on V1 and V2. In V2 the correct answer sat under Events & Training. In V1 it sat under Shop.")
 
-With four participants per tree on each task, all four found the right place in V2 (Events & Training, then Conferences & Schools). None of the four did in V1, where the correct answer was Shop, then eSchools (measured, small sample). Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1 (measured). [CONFIRM: that 31% is the V1 overall score.]
+With four participants per tree on each task, all four found the right place in V2 (Events & Training, then Conferences & Schools). None of the four did in V1, where the correct answer was Shop, then eSchools (measured, small sample). Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1 (measured).
 
 It did not split that cleanly on every task. On the Youth Month Design Bundle purchase, both versions came out at 50% success, with the same directness score of 75% (measured).
 
@@ -72,25 +68,19 @@ It did not split that cleanly on every task. On the Youth Month Design Bundle pu
 
 With four people per tree, I read these as direction and not proof. A tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
 
-## Card sorting the advocacy section
+## Card sorting the advocacy section {nav=Card sort}
 
 The advocacy section was the case where traffic and importance disagreed, so I ran an information architecture study on it. The March meeting had left several open questions. Should content be split into two audiences, members and lawmakers? Should the dropdown give better access to the advocacy main page? Do customers want past issues at all, and how far back?
 
 I met with stakeholders first to understand what they needed from the restructure, then ran a card sort in Optimal Workshop with cards such as Credit Union Powers, Regulatory Relief, Consumer Protection and Mortgage Lending & Housing. We also put the archive question into the survey. 44 respondents answered it, and 38 said yes, they wanted to read what CUNA had told regulators and lawmakers in the past (measured).
 
-![Mural board grouping advocacy content cards, with groups such as Priorities We're Fighting For and Actions You Can Take](/assets/cuna/card-sort-mural.png "Synthesis board for the advocacy card sort. The group labels are working names.")
-
 Optimal Workshop's 3D cluster view was a clear way to see the results I had collected, and its drill-down let me look at individual groups for deeper insight.
-
-![Optimal Workshop 3D cluster view of the advocacy card sort, with one group selected](/assets/cuna/card-sort-3d-cluster.png "The 3D cluster view with one suggested group open, listing the cards in it.")
 
 ## The products page
 
 Training products and seminars were among CUNA's biggest revenue drivers, and the products page structure was a pain point in the survey. Before recommending changes, I made a clear list of what each product page contained, so decisions about grouping and naming could be made against an inventory and not a feeling.
 
-![Inventory of the contents of CUNA product pages](/assets/cuna/products-page-inventory.png "A content inventory of the product pages, used to inform grouping and naming decisions.")
-
-## Naming PDFs so people could find them
+## Naming PDFs so people could find them {nav=PDF naming}
 
 The site hosted a lot of PDFs, such as white papers, handouts, reports and presentations, and search could not tell them apart. I wrote a naming convention for them: a short code for the area or product, then the document type, then a short description, for example a white paper from the advocacy team on a tax issue. Codes covered areas like Advocacy, Compliance, the training bundle and webinars, and types like white paper, report and handout. The rules were practical: a 20-character limit so files synced cleanly, and no characters that break across operating systems.
 
@@ -98,7 +88,7 @@ The convention also covered metadata, which helps search engines and site search
 
 I do not have adoption numbers for it, so I count it as a working standard for the team, not a measured result.
 
-## Planning the usability testing
+## Planning the usability testing {nav=Testing plans}
 
 The teams that owned parts of the site each had their own question, and I collected them. One said the mega menu's category text was clickable but people did not recognize it. Another wanted to test button names and whether the promo area should sit above or below browse. A third asked whether product cards should be clickable as a whole, not only through a link at the bottom. Others asked how people search for training, by format or by topic, and what they need before they register for a conference.
 
