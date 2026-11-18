@@ -4,100 +4,88 @@
 **Company:** CUNA (Credit Union National Association)
 **Duration:** February 2021 to February 2022
 
-CUNA is a national trade association for state and federally chartered credit unions. It gives its members regulatory advocacy, professional development and professional services. I was the UX designer and researcher on the team reworking cuna.org, and most of my work was research into one question: when someone arrives at the site with a job to do, can they find the thing?
+CUNA is a national trade association for credit unions. I was the UX designer and researcher on the team reworking cuna.org, and most of my work was research into one question: when someone arrives with a job to do, can they find the thing?
 
-- **Context:** a large association site with several audiences and two heavy jobs, advocacy content and a store for training products and conferences. The site was slow, hard to navigate, and in the middle of a platform move
-- **What I owned:** the research. Stakeholder interviews, a 28-question survey and the personas that came from it, a heuristic evaluation, competitive analysis, user flows, a tree test and card sorts in Optimal Workshop, a naming and metadata convention for the site's PDFs, and test plans for the follow-up usability work. I also helped mock up designs with the team
-- **Outcome:** the studies shaped how the team approached the site's structure and gave the team personas for eight areas of credit unions. I do not have post-launch numbers for the new structure, so I do not claim one
+- **Context:** a large association site with several audiences, an advocacy section and a store for training and conferences. It was slow, hard to navigate, and moving from Ektron to Adobe Experience Manager
+- **What I owned:** the research. Stakeholder interviews, a 28-question survey and its personas, a tree test and card sorts in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs
+- **Outcome:** the studies shaped how the team approached the site structure and gave it personas for eight areas of credit unions. I do not have post-launch numbers, so I do not claim one
 
 ## The problem
 
-Three things were already on the table when I started, and each pointed the same way.
+Three signals pointed the same way.
 
-The team's own digital SWOT, written in April 2021, named a slow site and difficult navigation as the top customer complaints, while the site moved from Ektron to Adobe Experience Manager. A member experience director I interviewed in February 2021 said the team's two wishes were speed and fewer errors, and estimated that fixing both would cut at least half of the support email the team received. That is an estimate from someone close to the inbox, not a measurement, and I treat it as a sense of scale.
+- **The team's own SWOT (April 2021)** named a slow site and difficult navigation as the top customer complaints
+- **Support email.** A member experience director estimated that fixing speed and errors would cut at least half of the support email the team received (an estimate from someone close to the inbox, not a measurement)
+- **Checkout.** In February 2021 a credit union CFO wrote that she could add a council to her cart, but the site errored at checkout every time, so staff registered her by hand
 
-Checkout was the sharpest example. In February 2021 a credit union CFO wrote to CUNA that she could add a council to her membership cart but the site errored every time she went to check out, so a staff member registered her by hand.
-
-The traffic data pointed at a different problem. In a March 2021 meeting about advocacy, the team noted that Advocacy ranked 28th for most visited in Google Analytics (measured, per the meeting notes). A section that central to CUNA's mission was close to invisible.
+Analytics added a fourth, and it pointed elsewhere. Advocacy ranked 28th for most visited in Google Analytics (measured, per March 2021 meeting notes). A section that central to CUNA's mission was close to invisible.
 
 ## Who we were designing for {nav=Audience}
 
-I started with stakeholder interviews, built around a set of questions: how do your customers use the site, what do they complain about, and what would relieve some stress. The member experience director was the first interview, and it shaped the plan for the survey and testing that followed.
+I started with stakeholder interviews, then sent a survey to credit union staff, board members and leagues. 537 people completed it (measured). 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
 
-Then we sent a survey. It had 28 questions and went to credit union staff, board members and leagues, and 537 people completed it (measured, from the response data). 493 of them worked at a credit union and 18 at a league. 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
-
-I used a net promoter score on selected questions as a place to start looking, and affinity mapped the written responses to see what was working and what was not. From that I built personas for the eight areas of credit unions that use CUNA: board members, compliance and risk, lending, marketing, operations and member experience, finance, human resources, and technology.
+From the survey and an affinity map of the written responses, I built personas for eight areas of credit unions: board members, compliance and risk, lending, marketing, operations and member experience, finance, HR, and technology.
 
 ![Persona card for a credit union board member, showing needs, frustrations, frequent site areas and how important the site is to the role](/assets/cuna/persona-board-member.png "One of eight persona cards, built from the survey.")
 
-The findings across the cards were consistent. People valued CUNA's resources and training. They said the site was slow, hard to navigate, and that training was too expensive for smaller credit unions. A representative comment: "I often spend an hour trying to sign up for a course and by then I don't have time to actually take it."
+People valued CUNA's resources and training. They said the site was slow, hard to navigate, and that training cost too much for smaller credit unions. One comment captured it: "I often spend an hour trying to sign up for a course and by then I don't have time to actually take it."
 
-The survey also told us where people actually went. When asked which area of the site mattered most, 173 respondents chose the training bundle and webinars, 125 compliance, 74 conferences and 56 CPD Online, against 44 for advocacy (measured). That fit the analytics.
+When asked which area mattered most, 173 chose the training bundle and webinars, 125 compliance, 74 conferences and 56 CPD Online, against 44 for advocacy (measured). That matched the analytics.
 
-I also broke the results out by audience, which showed that the groups used the site differently. In the compliance group, 60 respondents named compliance as the most important area, and 61 said they reach the site from a saved bookmark (measured). My reading, not something we tested, is that a bookmark skips the navigation, so the people who rely on the site most may be the ones least affected by its structure, and newer visitors are the ones who hit it.
+## Tree test: can people find where to register a team? {nav=Tree test}
 
-![Survey results broken out by audience segment, with panels for board, finance, compliance, HR, lending, marketing and operations](/assets/cuna/survey-synthesis-audience.png "Each panel shows one audience's age, education, most important area, how they reach the site, and average ratings. Zoom in to read the numbers.")
-
-## Starting with what was already broken {nav=Evaluation}
-
-Before testing anything new, I wanted a list of what the current site did wrong that we could name. I ran a heuristic evaluation of cuna.org against Nielsen's 10 usability heuristics, mapping issues to each heuristic on a Mural board. Alongside it I did a competitive analysis of four organizations with similar goals (NAFCU, the National Credit Union Foundation, the World Council of Credit Unions and CUES), looking at their checkout flows, how they organized shop and learn content, and their layouts.
-
-The evaluation gave the team a documented set of issues to work from before design and development were underway.
-
-## User flows: getting the process out of people's heads
-
-It is easy to lose the user when a team is arguing about features and jargon. I mapped the main purchase paths on the site: conferences, eSchools and webinars on one side, and courses, books, PDFs and marketing products on the other, with the account creation, guest registration and login branches around them.
-
-The flows turned up friction in the purchase path, including a missing payment confirmation and a connection error. They also became the thing I used to explain design decisions to the product manager, stakeholders and developers.
-
-## Tree test: can people find where to register a team?
-
-The IA study had started with a naming problem. In the IA study responses, staff who work with customers said "Learn" versus "Shop" was unclear, because many learning products also sit on shop pages, and that "school" versus "conference" meant little to members.
-
-So for the structure of the whole site, I ran a tree test in Optimal Workshop comparing two versions. V1 was the existing structure, with Shop and Learn as top-level branches. V2 reorganized around Events & Training and Products. I led a brainstorm with the UX team to choose the tasks, and we used scenarios drawn from how CUNA sells:
+Staff who work with customers had told us "Learn" versus "Shop" was unclear, because many learning products also sit on shop pages. So I ran a tree test in Optimal Workshop comparing two structures. V1 was the existing site, with Shop and Learn at the top level. V2 reorganized around Events & Training and Products. The UX team and I wrote tasks from how CUNA actually sells, such as this one:
 
 > You want to register your marketing team for the CUNA Digital Marketing School, which they will attend virtually. Where would you go to register the team?
 
 ![Optimal Workshop comparison of the registration task on two versions of the tree: 4 of 4 succeeded on one, 0 of 4 on the other](/assets/cuna/treejack-task3-comparison.png "Task 3, the registration scenario, on V1 and V2. In V2 the correct answer sat under Events & Training. In V1 it sat under Shop.")
 
-With four participants per tree on each task, all four found the right place in V2 (Events & Training, then Conferences & Schools). None of the four did in V1, where the correct answer was Shop, then eSchools (measured, small sample). Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1 (measured).
+On that task, all four participants found the right place in V2 and none of the four did in V1 (measured, small sample). Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1 (measured).
 
-It did not split that cleanly on every task. On the Youth Month Design Bundle purchase, both versions came out at 50% success, with the same directness score of 75% (measured).
+It did not split that cleanly everywhere. On the Youth Month Design Bundle purchase, both versions came out at 50% success with the same directness score of 75% (measured).
 
 ![Optimal Workshop comparison of the Youth Month Design Bundle task on V1 and V2, both at 50% success](/assets/cuna/treejack-task4-comparison.png "Task 4 compared across V1 and V2. Success was 50% on both.")
 
-With four people per tree, I read these as direction and not proof. A tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
+With four people per tree, I read this as direction, not proof. The tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
 
-## Card sorting the advocacy section {nav=Card sort}
+## What each method told us {nav=Takeaways}
 
-The advocacy section was the case where traffic and importance disagreed, so I ran an information architecture study on it. The March meeting had left several open questions. Should content be split into two audiences, members and lawmakers? Should the dropdown give better access to the advocacy main page? Do customers want past issues at all, and how far back?
+The survey said people were frustrated. The heuristic evaluation and user flows said where the current site broke. The tree test and card sort said where people expected things to be and what to call them. None was enough alone.
 
-I met with stakeholders first to understand what they needed from the restructure, then ran a card sort in Optimal Workshop with cards such as Credit Union Powers, Regulatory Relief, Consumer Protection and Mortgage Lending & Housing. We also put the archive question into the survey. 44 respondents answered it, and 38 said yes, they wanted to read what CUNA had told regulators and lawmakers in the past (measured).
+## Audience breakdown by segment {collapsed} {nav=By segment}
 
-Optimal Workshop's 3D cluster view was a clear way to see the results I had collected, and its drill-down let me look at individual groups for deeper insight.
+I also broke the survey out by audience, and the groups used the site differently. In the compliance group, 60 respondents named compliance as the most important area, and 61 said they reach the site from a saved bookmark (measured).
 
-## The products page
+My reading, not something we tested, is that a bookmark skips the navigation. The people who rely on the site most may be the ones least affected by its structure, and newer visitors are the ones who hit it.
 
-Training products and seminars were among CUNA's biggest revenue drivers, and the products page structure was a pain point in the survey. Before recommending changes, I made a clear list of what each product page contained, so decisions about grouping and naming could be made against an inventory and not a feeling.
+![Survey results broken out by audience segment, with panels for board, finance, compliance, HR, lending, marketing and operations](/assets/cuna/survey-synthesis-audience.png "Each panel shows one audience's age, education, most important area, how they reach the site, and average ratings. Zoom in to read the numbers.")
 
-## Naming PDFs so people could find them {nav=PDF naming}
+## Heuristic evaluation, competitors and user flows {collapsed} {nav=Evaluation}
 
-The site hosted a lot of PDFs, such as white papers, handouts, reports and presentations, and search could not tell them apart. I wrote a naming convention for them: a short code for the area or product, then the document type, then a short description, for example a white paper from the advocacy team on a tax issue. Codes covered areas like Advocacy, Compliance, the training bundle and webinars, and types like white paper, report and handout. The rules were practical: a 20-character limit so files synced cleanly, and no characters that break across operating systems.
+Before testing anything new, I wanted a list of what the current site did wrong that we could name. I evaluated cuna.org against Nielsen's 10 usability heuristics on a Mural board. I also compared four similar organizations (NAFCU, the National Credit Union Foundation, the World Council of Credit Unions and CUES) on checkout flow, how they organized shop and learn content, and layout.
 
-The convention also covered metadata, which helps search engines and site search decide what a document is about, so each file carried a title, author, description and keywords. One rule mattered more than the rest. Documents behind a login, such as training bundles, webinars and eSchools, should carry no metadata, because they are paid content and should not show up in a Google search.
+Then I mapped the main purchase paths: conferences, eSchools and webinars on one side, and courses, books, PDFs and marketing products on the other, with account creation, guest registration and login around them. The flows turned up friction, including a missing payment confirmation and a connection error. I also used them to explain design decisions to the product manager, stakeholders and developers.
 
-I do not have adoption numbers for it, so I count it as a working standard for the team, not a measured result.
+## Card sorting the advocacy section {collapsed} {nav=Card sort}
 
-## Planning the usability testing {nav=Testing plans}
+Advocacy was where traffic and importance disagreed. The March 2021 meeting left open questions: split content by audience (members and lawmakers), improve dropdown access to the main page, and whether people wanted past issues at all.
 
-The teams that owned parts of the site each had their own question, and I collected them. One said the mega menu's category text was clickable but people did not recognize it. Another wanted to test button names and whether the promo area should sit above or below browse. A third asked whether product cards should be clickable as a whole, not only through a link at the bottom. Others asked how people search for training, by format or by topic, and what they need before they register for a conference.
+I met stakeholders first, then ran a card sort in Optimal Workshop with cards like Credit Union Powers, Regulatory Relief and Consumer Protection. We also put the archive question in the survey. 44 respondents answered, and 38 wanted to read what CUNA had told regulators and lawmakers in the past (measured).
 
-From those I drafted a moderated A/B usability test on breadcrumbs, with a script and three scenarios: an HR lead signing up staff for a conference, a credit union employee going after a certification, and a board member checking the status of bills in Congress. Each one asked people to go back a step and talk through why. I raised mobile early, because too many breadcrumbs would crowd a small screen. I also kept a running list of mobile errors, such as a pre-requisite training link that did not work and a chart that was not centered. I do not have results from the breadcrumb test to report.
+## Products page and PDF naming {collapsed} {nav=Products and PDFs}
+
+Training products and seminars were among CUNA's biggest revenue drivers, and the products page structure was a survey pain point. Before recommending changes, I made an inventory of what each product page contained, so grouping and naming decisions rested on a list and not a feeling.
+
+The site also hosted many PDFs that search could not tell apart. I wrote a naming convention: a short code for the area or product, then document type, then a short description, capped at 20 characters so files synced cleanly. It also covered metadata (title, author, description, keywords). One rule mattered most: documents behind a login, like training bundles and webinars, carry no metadata, because they are paid content and should not appear in a Google search. I do not have adoption numbers, so I count it as a working standard, not a measured result.
+
+## Planning the usability tests {collapsed} {nav=Test plans}
+
+Each team that owned part of the site had its own question, and I collected them: whether mega menu category text was recognized as clickable, how button names and promo placement affected browsing, whether whole product cards should be clickable, and how people search for training.
+
+From those I drafted a moderated A/B test on breadcrumbs, with a script and three scenarios: an HR lead signing up staff for a conference, an employee going after a certification, and a board member checking bills in Congress. I raised mobile early, since too many breadcrumbs crowd a small screen, and kept a running list of mobile errors. I do not have results from the breadcrumb test to report.
 
 ## What happened next
 
-My research fed the team's decisions about the structure of cuna.org, and the personas gave the team a shared picture of eight audiences. I do not have measured post-launch results for the new structure, so I will not put a number on the outcome. The team's own retrospective named training on Adobe Experience Manager and documentation for CUNA staff as the main gaps.
+My research fed the team's decisions about the structure of cuna.org, and the personas gave the team a shared picture of eight audiences. I do not have measured post-launch results, so I will not put a number on the outcome. The team's own retrospective named training on Adobe Experience Manager and documentation for CUNA staff as the main gaps.
 
-If I were doing it again, I would plan the follow-up before the project ended. I started drafting a post go-live questionnaire to learn what people buy, what they think is not working and where they go for information. I would run that, re-run the same tree test scenarios on the shipped structure, and track checkout completion and support email volume against the figures the team already had. That would turn "we think this is better" into something we could measure.
-
-What I took from it is how the methods divide the work. The survey said people were frustrated. The heuristic evaluation and user flows said where the current site broke. The tree test and card sort said where people expected things to be and what to call them. None of them was enough alone.
+If I did it again, I would plan the follow-up before the project ended. I started drafting a post go-live questionnaire about what people buy and where they get stuck. I would run that, re-run the same tree test scenarios on the shipped structure, and track checkout completion and support email volume against the figures the team already had. That turns "we think this is better" into something measurable.
