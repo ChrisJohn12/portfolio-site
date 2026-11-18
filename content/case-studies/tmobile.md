@@ -85,9 +85,20 @@ Atlas, Samson and DASH show up at different steps. Add a Line only worked in DAS
 
 A separate request asked how T-Mobile might simplify calling for deaf and hard of hearing customers. Those customers needed an additional device from Sorenson, a video relay service, to make phone calls, so a daily call meant two devices.
 
-I set out to capture the journey of an existing hearing-impaired T-Mobile customer and find what we did not yet know. I mapped how a customer onboards onto the video relay service, from first contact through set-up. I led stakeholder meetings, started user interviews with the right audience, and produced a journey map that gave the business and technology teams somewhere to raise their own gaps in knowledge. I do not have an outcome to report for this one.
+I framed the work as one question: *How might we help the deaf and hard of hearing simplify their calling experience, while making their daily calls?* For scale, my notes put it at roughly 10 million hard of hearing Americans and about 1 million who are functionally deaf. Those are estimates from public sources I collected, not my own measurement.
 
-![Discovery board for the hearing-impaired customer project: the problem statement, notes on Sorenson's video relay service, open questions, and an onboarding flow for the service](/assets/tmobile/accessibility-names-removed.png "Discovery board for the project. The problem statement sits top left, with notes on Sorenson's service, questions for stakeholders and the first two phases of the video relay onboarding flow I mapped. Colleague names removed and empty space trimmed. Zoom in to read it.")
+I set out to capture the journey of an existing hearing-impaired T-Mobile customer and find what we did not yet know. I mapped how a customer onboards onto the video relay service, from first contact through set-up. I led stakeholder meetings, started user interviews with the right audience, and produced a journey map that gave the business and technology teams somewhere to raise their own gaps in knowledge.
+
+![The first two phases of the video relay onboarding flow I mapped: initial engagement, then set-up](/assets/tmobile/vrs-onboarding-flow.png "The first two phases of the video relay onboarding flow I mapped, from the customer discovering the service to using it. Zoom in to read it.")
+
+Some of the questions I wanted answered going in:
+
+- How does T-Mobile interact with Sorenson today?
+- Which services matter most to the customer, and what would a minimum viable version look like?
+- Video relay needs a live interpreter. Can T-Mobile access that, or would it need to find those resources?
+- What is the wait time for video relay?
+
+I do not have an outcome to report for this one.
 
 ## What happened next
 
