@@ -69,7 +69,7 @@ Back from the stores, the work moved into a retail design sprint. The three rese
 
 From there the group ranked the pain points on an effort and impact matrix. Technical difficulties went to the engineering team working in the sprint. The rest became a prioritized backlog.
 
-My suggestion, and where the team started, was educating customers on backing up their phones before they come in for an upgrade. As far as I know it was implemented. I do not have results for it.
+The first thing the team took on came from something I saw in the stores. Some customers waited an hour or more for their data to move from the old phone to the new one. That is my observation from the visits, not a timed measurement. The wait can be avoided if the customer backs up their phone at home first. I brought that to the sprint team, and they agreed it was the lowest effort for the highest impact for the T-Mobile team. So the suggestion was to educate customers on backing up before they come in for an upgrade. As far as I know it was implemented. I do not have results for it.
 
 Two other parts of the sprint were mine. I mapped the stakeholders around an upgrade so product exploration began with the right people in the room. Once the team had storyboarded the concepts, I tested them in UserZoom and turned the results into user flows. The product design team used those flows to start wireframes.
 
@@ -87,8 +87,10 @@ A separate request asked how T-Mobile might simplify calling for deaf and hard o
 
 I set out to capture the journey of an existing hearing-impaired T-Mobile customer and find what we did not yet know. I led stakeholder meetings, started user interviews with the right audience, and produced a journey map that gave the business and technology teams somewhere to raise their own gaps in knowledge. I do not have an outcome to report for this one.
 
+![Discovery board for the hearing-impaired customer project: the problem statement, notes on Sorenson's video relay service, open questions, and an onboarding flow for the service](/assets/tmobile/accessibility-names-removed.png "Discovery board for the project. The problem statement sits top left, with notes on Sorenson's service, questions for stakeholders and a video relay onboarding flow. Colleague names removed. Zoom in to read it.")
+
 ## What happened next
 
-The bill comparison research was finished by the end of summer 2022, and its recommendations shaped the design direction. The design went to engineering shortly after the August 2022 testing. If the project had allowed for it, my next step would have been to track ATLAS satisfaction scores and bill review call times after launch, to see whether reps spent less time on bill comparison calls.
+The bill comparison research was finished by the end of summer 2022, and its recommendations shaped the design direction. The design went to engineering shortly after the August 2022 testing. Across the care tools, the research focused on how reps thought about the information they needed to find mid-call, with the aim of cutting confusion and making the screens easier to use. Call resolution time was the metric the call center teams cared about. I did not measure what the work did to it. If the project had allowed for it, my next step would have been to track ATLAS satisfaction scores and bill review call times after launch, to see whether reps spent less time on bill comparison calls.
 
 What I took from all three is that the useful finding is rarely the answer to the question you were asked. A prototype test became a case for how reps investigate bills. A layout check became a decision about what to remove. A store visit became a map of where trust breaks before anyone touches a system.
