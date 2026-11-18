@@ -10,15 +10,23 @@ export const metadata = {
 const skills = [
   { category: 'Research', items: ['Contextual Inquiry', 'Usability Testing', 'Journey Mapping', 'Ethnographic Research', 'Stakeholder Interviews', 'Survey Design', 'Card Sorting & Tree Testing'] },
   { category: 'Design', items: ['UX Strategy', 'Information Architecture', 'Wireframing', 'High-Fidelity UI', 'Design Systems', 'Component Libraries'] },
-  { category: 'Tools', items: ['Figma', 'FigJam', 'UXPin', 'Dovetail', 'Webflow', 'Quantum Metrics', 'Miro', 'Adobe XD'] },
+  { category: 'Tools', items: ['Figma', 'FigJam', 'Miro', 'Mural', 'UXPin', 'Adobe XD', 'Optimal Workshop', 'UserTesting.com', 'Dovetail', 'Quantum Metrics', 'Jira', 'Webflow'] },
   { category: 'AI & Analytics', items: ['Claude', 'GPT', 'Dovetail AI', 'Google Analytics 4', 'Microsoft Clarity', 'Tableau'] },
   { category: 'Platforms', items: ['SAP Fiori', 'SAP S/4HANA', 'Adobe Experience Manager', 'Ariba', 'Icertis', 'EasyPost'] },
 ];
 
-const experience = [
-  { company: 'ShipDeez / Backhaul Direct', role: 'Lead Product Designer', period: 'Oct 2025 to present', type: 'Contract' },
-  { company: 'Union Pacific Railroad', role: 'UX Researcher & Product Designer', period: '2023–2025', type: 'Contract · 2 years' },
-  { company: 'T-Mobile', role: 'UX Researcher, Enterprise Technology Solutions', period: '2022–2023', type: 'Contract · 13 months' },
+const experience: { company: string; role: string; period: string; type?: string }[] = [
+  { company: 'First Step AI', role: 'Product Designer + Engineer', period: '2026', type: 'Independent project' },
+  { company: 'ShipDeez / Backhaul Direct', role: 'Lead Product Designer', period: 'Oct 2025 to Feb 2026', type: 'Contract' },
+  { company: 'Union Pacific Railroad', role: 'Senior Product Designer', period: 'May 2023 to May 2025', type: 'Contract · 2 years' },
+  { company: 'T-Mobile', role: 'UX Designer and Researcher, Enterprise Technology Solutions', period: 'Mar 2022 to Apr 2023', type: 'Contract · 13 months' },
+  { company: 'CUNA (Credit Union National Association)', role: 'UX Designer and Researcher', period: 'Feb 2021 to Feb 2022' },
+];
+
+const education = [
+  { title: 'BS in Psychology, cognitive concentration', detail: 'University at Buffalo' },
+  { title: 'UX Design Immersive', detail: 'General Assembly, Chicago, 2019' },
+  { title: 'Four Anthropic certifications', detail: 'Claude 101, Claude Code in Action, Introduction to Agent Skills, Building with the Claude API' },
 ];
 
 export default function AboutPage() {
@@ -39,12 +47,12 @@ export default function AboutPage() {
             human workflows, and organizational reality collide.
           </p>
           <p className="text-[#555555] text-base leading-relaxed mb-4">
-            Over the past 7+ years, I&apos;ve led research and design across Fortune 500 companies
+            Over six to seven years, I&apos;ve led research and design across Fortune 500 companies
             including T-Mobile and Union Pacific Railroad, and built products from zero
-            at early-stage startups — most recently shipping First Step AI, an onboarding agent built on the Claude API.
+            at early-stage startups. Most recently I shipped First Step AI, an onboarding agent built on the Claude API.
           </p>
           <p className="text-[#555555] text-base leading-relaxed">
-            Based in Salt Lake City. Available for UX research and product design roles at AI-native or AI-adjacent companies —
+            Based in Salt Lake City. Available for UX research and product design roles at AI-native or AI-adjacent companies,
             especially where research depth is treated as a product lever, not a support function.
           </p>
         </div>
@@ -79,14 +87,29 @@ export default function AboutPage() {
               </div>
               <div className="mt-2 md:mt-0 md:text-right">
                 <p className="text-[#2563EB] text-sm font-medium">{job.period}</p>
-                <p className="text-[#717171] text-xs mt-0.5">{job.type}</p>
+                {job.type && <p className="text-[#717171] text-xs mt-0.5">{job.type}</p>}
               </div>
             </div>
           ))}
         </div>
         <p className="text-[#717171] text-sm mt-4">
-          Earlier experience in service design, enterprise consulting, and digital strategy available on request.
+          Earlier roles at Wavicle Data Solutions and Base10 Genetics, and freelance work, are available on request.
         </p>
+      </section>
+
+      {/* Education */}
+      <section className="mb-20" aria-labelledby="education-heading">
+        <h2 id="education-heading" className="text-[32px] font-semibold mb-8 pb-4 border-b border-[#E5E5E5] text-[#1A1A1A]">
+          Education &amp; Certifications
+        </h2>
+        <div className="space-y-4">
+          {education.map((item) => (
+            <div key={item.title} className="p-6 rounded-xl bg-white border border-[#E5E5E5]">
+              <h3 className="text-[#1A1A1A] font-semibold">{item.title}</h3>
+              <p className="text-[#555555] text-sm mt-0.5">{item.detail}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Skills */}
@@ -117,7 +140,7 @@ export default function AboutPage() {
       <section className="rounded-xl border border-[#2563EB]/20 bg-[#EFF6FF] p-8 text-center" aria-labelledby="cta-heading">
         <h2 id="cta-heading" className="text-[32px] font-semibold mb-3 text-[#1A1A1A]">Let&apos;s work together.</h2>
         <p className="text-[#555555] mb-6 max-w-md mx-auto leading-relaxed">
-          I&apos;m open to UX research and product design roles at AI-native or AI-adjacent companies —
+          I&apos;m open to UX research and product design roles at AI-native or AI-adjacent companies,
           especially where research depth is treated as a product lever, not a support function.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">

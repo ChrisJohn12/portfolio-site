@@ -9,13 +9,13 @@ Chris Michalak is a UX Researcher & Product Designer who specializes in enterpri
 - **First Step AI** — Product Designer + Engineer (2026, Independent Project)
   Built an AI-powered onboarding agent for e-commerce sellers from scratch. Users answer 4 plain-language questions about their store and receive a personalized AI Action Plan with a specific tool recommendation, 3 setup steps, and ROI estimate. Full-stack implementation: React + Vite frontend, Express proxy server to manage CORS with Anthropic API, Claude API for recommendation engine, Vercel serverless deployment. Key decisions: reduced intake from 6 fields to 4 questions (one at a time), moved email capture post-recommendation to deliver value before asking, engineered system prompt to constrain Claude outputs to consistent, actionable format. Certifications earned alongside build: Claude 101, Claude Code in Action, Introduction to Agent Skills, Building with the Claude API. Live at https://first-step-ai-ten.vercel.app
 
-- **ShipDeez / Backhaul Direct** — Lead Product Designer (Oct 2025 to present, Contract)
+- **ShipDeez / Backhaul Direct** — Lead Product Designer (Oct 2025 to Feb 2026, Contract)
   End-to-end UX for a shipping startup. Delivered brand identity, design system, full product UI, and Webflow landing page in 10 business days. Key outcome: 85% savings off retail shipping rates.
 
-- **Union Pacific Railroad** — UX Researcher & Product Designer (2023–2025, Contract · 2 years)
+- **Union Pacific Railroad** — Senior Product Designer (May 2023 to May 2025, Contract · 2 years)
   Research-led design across SAP ERP workflows, UP.com redesign, and supply chain transformation. Key outcome: 2,500+ line item contracts redesigned. Chris also mapped the systems layer three ways: a source-to-pay map (FGS, MMS, SourceHub, LMS) that fed the brief, the technical spec and his recommendation of a custom Fiori app; an outbound picking flow documented in Fort Worth across a Zebra handheld, the SAP back end and a desktop Fiori app; and the legacy order-to-cash workflow (ADS, CBS, ARMS) that he mapped to understand how work ran before SAP and compare it against the newly implemented SAP blueprint.
 
-- **T-Mobile** — UX Researcher, Enterprise Technology Solutions (2022–2023, Contract · 13 months)
+- **T-Mobile** — UX Designer and Researcher, Enterprise Technology Solutions (Mar 2022 to Apr 2023, Contract · 13 months)
   Led research on how care reps compare bills in ATLAS. Context: about 10.3M billing calls a year come into care, and 30% need a bill comparison. The research shaped the design direction and the design went to engineering after the August 2022 testing. Chris rolled off before launch, so he does not claim post-launch results. He also drew a service blueprint of one Care scenario (adding a line with a number port-in) from the team's Care journey map and billing workshop, naming the tools used at each step (Atlas, Samson, DASH), and drew a service blueprint of a retail phone upgrade in store, with customer and Mobile Expert actions and pain points from his in-store observations and backstage steps and systems from the team's retail flow deep dive.
 
 - **CUNA** (Credit Union National Association), UX Designer & Researcher (Feb 2021 to Feb 2022)
@@ -34,7 +34,7 @@ Chris integrates AI tools throughout his research and design workflow, and build
 - **Claude Code:** Primary development tool for First Step AI — used custom skills to scaffold components, generate automation patterns, and accelerate build velocity.
 - **GPT:** UX flow stress-testing, failure-state scenario planning, UX rules documentation
 - **Dovetail AI:** Research synthesis at Union Pacific. Chris's own estimate is that it cut synthesis time by roughly 40%; this is not a measured figure
-- **Quantum Metrics:** Behavioral analytics to identify highest-impact usability issues
+- **Quantum Metrics:** Behavioral analytics Chris used to analyze usability metrics. He does not claim a measured result from it
 
 His AI principles: "AI compresses time, not judgment." Most recently demonstrated by shipping a full-stack AI product while learning the Anthropic API and completing certifications in parallel.
 
