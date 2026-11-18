@@ -6,7 +6,7 @@
 
 I joined Union Pacific's SAP migration as a UX researcher and ended up owning the design of two things: **a contract workflow for 2,500+ line item contracts**, and **the UX voice in decisions that had been made without any**.
 
-- **Context:** enterprise SAP S/4HANA migration with PwC as the implementation partner, plus a redesign of the public website, UP.com, with field visits to Union Pacific warehouses in Sacramento, Fort Worth and Chicago
+- **Context:** enterprise SAP S/4HANA migration with PwC as the implementation partner, plus a redesign of the public website, UP.com, with field visits to Union Pacific warehouses in Roseville, Fort Worth and Chicago
 - **What I owned:** the contract workflow design, the case for SAP Personas on warehouse handhelds, UX involvement in fit-or-custom decisions, and page design for UP.com
 - **What I can show:** system maps from the SAP program, a decision story for each major call, and before and after screens for UP.com
 
@@ -34,11 +34,25 @@ A journey map shows what a person does. It does not show which system holds the 
 
 ## Decision 1: Contract creation at scale
 
+*(This was a RICEF scenario, meaning a case where standard SAP did not fit and a custom build was needed. It was one of the other workflows I was tasked with under Project FAST, run with a different team from the warehouse work. RICEF stands for reports, interfaces, conversions, enhancements and forms.)*
+
 The business team asked for an Excel upload. They had existing spreadsheets to bring into the new system during onboarding, and some customers still worked in spreadsheets. It was a reasonable request, and I took it seriously.
 
-I weighed four options with engineering: Excel upload, a data load program, copy and paste from existing contracts, and a custom Fiori application. Excel upload won on convenience but carried a risk I could not get past. Each team or person records the same information a little differently, so unstructured data would enter the database and create confusion and inaccurate records. We considered it as an add-on and left it out because of that complexity.
+I weighed four options with engineering: Excel upload, a data load program, copy and paste from existing contracts, and a custom Fiori application. Excel upload won on convenience but carried a risk I could not get past. Each team or person records the same information a little differently, so unstructured data would enter the database and create confusion and inaccurate records. We considered it as an add-on and left it out because of that complexity. I made the final call.
+
+![Four options for entering 2,500 contract lines: Excel upload, data load at cutover, copy and paste, and a custom Fiori app](/assets/union-pacific/contract-four-options.png "Recreation. Client names and data removed. Options and findings are from the technical spec and the October 2024 discussion.")
+
+Before designing anything, I ran a research session with the subject matter expert and walked through the legacy tool with him, step by step. One finding stood out: users could do mass entry in the legacy tool, and that capability had not been carried over into SAP. I flagged the gap.
+
+![Six steps of the legacy asset disposition flow, with my notes from the session on the vendor email, release date, app overlap and rules engine](/assets/union-pacific/contract-legacy-review.png "Recreation. Client names and data removed. Notes are from my research session with the subject matter expert.")
 
 What we built was the custom Fiori application. I started from how the work actually flowed, then worked out how that workflow could live inside SAP's Fiori design system. I designed the screens, checked feasibility with engineering, and ran the result past the business team to confirm it was usable and held all the information they needed. Bulk entry kept the data structured as it went in, which answered the concern behind the upload request.
+
+![The line-item screen: required filters, Create, Copy and Delete actions, and a wide table that scrolls sideways](/assets/union-pacific/contract-line-item-screen.png "A screen from my design file. User avatar removed.")
+
+The table is wide because the expert needed to see more information per line than the screen could hold. My first push was to ask whether any of it could be cut. He needed all of it. I also looked at showing some of the data elsewhere on the screen, but it came as long lists, so there was nowhere else to put it. Horizontal scroll was the best option that was technically feasible. I steered away from truncating with an ellipsis, because a hidden value is easy to miss when someone is checking contract lines. The expert was happy with the result, and the app was built.
+
+What I would look at next: testing the scroll with a full 2,500-line contract instead of a handful of rows, keeping the item ID visible while scrolling sideways, and raising the vendor-notification gap earlier.
 
 ![The loop I ran on each design: the expert's goal, translate to Fiori, check feasibility with engineering, verify, hand off, with revise paths back](/assets/union-pacific/research-design-loop.png)
 
@@ -46,9 +60,15 @@ What we built was the custom Fiori application. I started from how the work actu
 
 *(SAP Personas is a layer on top of the standard SAP screens. It lets a design team change the interface without waiting on several teams to get engineering to rework SAP's original UI.)*
 
-Warehouse staff used handheld scanners that ran standard SAP screens. I visited three warehouses, in Sacramento, Fort Worth and Chicago, to watch the work where it happened. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
+Warehouse staff used handheld scanners that ran standard SAP screens. I visited three warehouses, in Roseville, Fort Worth and Chicago, to watch the work where it happened. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
 
 ![A standard SAP screen on a warehouse handheld](/assets/union-pacific/photos/SAP-erp-ui.jpg "A standard SAP screen on a warehouse handheld. Labels are abbreviated, fields are small, and most of the screen sits empty.")
+
+Two sets of evidence backed the case. PwC presented its handheld designs in recurring design review meetings, and I reviewed them before anything was built. In the December 2023 session I asked why the text fields were so small for long strings of digits, why screens showed F keys when our Zebra devices have none, and whether some screens carried more information than a handheld can display. PwC said it took note. Then in usability testing, I presented five findings from warehouse and transportation users working through real scenarios, kept separate from user acceptance testing, which only checks that the product meets functional requirements.
+
+![Three of the five usability findings, annotated: a cut-off error message, a mislabeled field and a duplicated label](/assets/union-pacific/handheld-usability-findings.png "Recreation. Client names and data removed. Screens are from the usability findings I presented.")
+
+The label finding is the one I would point to. A field called Goods Recipient actually takes the number of labels to print, and users stopped to ask what to enter. PwC said it could not change the field because it already existed in SAP. That is a fixable usability problem, a vendor limit, and a need for evidence strong enough to move it.
 
 I raised it at the weekly meetings with both teams. Union Pacific wanted the information visible. The implementation partner pushed back: they said it was not feasible and would affect the timeline.
 
@@ -56,7 +76,7 @@ So I looked for another route. Working with my project manager and an SAP repres
 
 ![Recreation of the SAP Personas case: the steps from floor recordings to the handoff to engineering](/assets/union-pacific/sap-personas.png)
 
-SAP Personas was accepted and handed to engineering, and it helped the project during the redesign. I rolled off before it was implemented.
+The Personas discussion opened the conversation about how to change the issues users were running into in the UI. SAP Personas was accepted and handed to engineering, and I was told it was being implemented when I rolled off. I do not know whether it shipped.
 
 ## Decision 3: Getting UX into the earlier decisions
 
