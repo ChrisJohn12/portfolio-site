@@ -22,6 +22,7 @@ export default function Footer() {
           <nav aria-label="Footer navigation" className="flex flex-col gap-3">
             <Link href="/work" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">Work</Link>
             <Link href="/research-process" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">Research Process</Link>
+            <Link href="/design-process" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">Design Process</Link>
             <Link href="/ai-fluency" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">AI Fluency</Link>
             <Link href="/about" className="text-[#555555] hover:text-[#2563EB] text-sm transition-colors">About</Link>
           </nav>
