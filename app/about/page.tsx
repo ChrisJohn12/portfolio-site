@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const skills = [
-  { category: 'Research', items: ['Contextual Inquiry', 'Usability Testing', 'Journey Mapping', 'Ethnographic Research', 'Stakeholder Interviews', 'Survey Design'] },
+  { category: 'Research', items: ['Contextual Inquiry', 'Usability Testing', 'Journey Mapping', 'Ethnographic Research', 'Stakeholder Interviews', 'Survey Design', 'Card Sorting & Tree Testing'] },
   { category: 'Design', items: ['UX Strategy', 'Information Architecture', 'Wireframing', 'High-Fidelity UI', 'Design Systems', 'Component Libraries'] },
   { category: 'Tools', items: ['Figma', 'FigJam', 'UXPin', 'Dovetail', 'Webflow', 'Quantum Metrics', 'Miro', 'Adobe XD'] },
   { category: 'AI & Analytics', items: ['Claude', 'GPT', 'Dovetail AI', 'Google Analytics 4', 'Microsoft Clarity', 'Tableau'] },

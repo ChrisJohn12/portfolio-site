@@ -31,7 +31,7 @@ const skills = [
     icon: '◎',
     title: 'UX Research',
     description: 'Mixed-methods research that turns complex data into clear design direction.',
-    items: ['Contextual Inquiry', 'Usability Testing', 'Journey Mapping', 'Stakeholder Interviews', 'Ethnographic Research', 'Survey Design'],
+    items: ['Contextual Inquiry', 'Usability Testing', 'Journey Mapping', 'Stakeholder Interviews', 'Ethnographic Research', 'Survey Design', 'Card Sorting & Tree Testing'],
   },
   {
     icon: '◇',
