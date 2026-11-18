@@ -29,7 +29,7 @@ Analytics added a fourth, and it pointed elsewhere. Advocacy ranked 28th for mos
 
 ## Who we were designing for {nav=Audience}
 
-I started with stakeholder interviews, then sent a 28-question survey, built in Optimal Workshop, to credit union staff, board members and leagues. 537 people completed it (measured). 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
+I started with stakeholder interviews, then sent a 28-question survey, built in Optimal Workshop, to credit union staff, board members and leagues. The survey ran from March 26 to April 6, 2021. 686 people started it and 537 finished (measured), about 78%, with a median completion time near six minutes (measured). Of the 537, 493 worked at credit unions and 18 at leagues (measured). 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
 
 I used a net promoter score on three questions as a place to start looking.
 
@@ -54,6 +54,8 @@ People valued CUNA's resources and training. They said the site was slow, hard t
 When asked which area mattered most, 173 chose the training bundle and webinars, 125 compliance, 74 conferences and 56 CPD Online, against 44 for advocacy (measured). That matched the analytics.
 
 ## How I designed the studies {nav=Study design}
+
+I ran the stakeholder interviews before anything else, working from a guide I wrote: how people use the site, where it hurts, and what success would look like to them. In the interview I have notes from, in February 2021, the Member Experience Director set the constraint I designed inside: "We cannot do a total redesign." She also asked why events and products live in separate places. The tree test later compared two structures that answer that question differently.
 
 I designed and built the studies in Optimal Workshop myself, including the 28-question survey and its net promoter score. For each question we needed answered, I chose the method that fit it: a survey for how people felt, a tree test for whether people could find something, and a card sort for how people group things and what they call them. I also set up branching answer logic, so a participant's answer decided which question the study asked next.
 
