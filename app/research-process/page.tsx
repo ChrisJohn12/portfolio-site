@@ -12,14 +12,14 @@ type Fig = { src: string; alt: string; caption: string; width: number; height: n
 
 function Figure({ src, alt, caption, width, height }: Fig) {
   return (
-    <figure className="mt-10 rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
+    <figure className="mt-10 mx-auto max-w-3xl rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
       <ZoomableImage
         src={src}
         alt={alt}
         width={width}
         height={height}
-        sizes="(min-width: 1280px) 1100px, 100vw"
-        className="w-full h-auto"
+        sizes="(min-width: 768px) 768px, 100vw"
+        className="mx-auto h-auto w-auto max-w-full max-h-[65vh]"
       />
       <figcaption className="px-5 py-4 text-sm text-[#717171]">{caption}</figcaption>
     </figure>
@@ -47,7 +47,7 @@ export default function ResearchProcessPage() {
       </header>
 
       <section className="space-y-16">
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">01. Scoping</span>
           </div>
@@ -61,7 +61,7 @@ export default function ResearchProcessPage() {
           </div>
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">02. Recruiting &amp; Access</span>
           </div>
@@ -75,7 +75,7 @@ export default function ResearchProcessPage() {
           </div>
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">03. Methods I Reach For</span>
           </div>
@@ -126,7 +126,7 @@ export default function ResearchProcessPage() {
           />
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">04. Synthesis &amp; Translation</span>
           </div>
@@ -159,7 +159,7 @@ export default function ResearchProcessPage() {
           />
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">05. Connecting to Design</span>
           </div>
@@ -190,7 +190,7 @@ export default function ResearchProcessPage() {
         </article>
       </section>
 
-      <section className="rounded-3xl border border-[#E5E5E5] bg-[#F8F8F7] p-10 shadow-sm">
+      <section className="rounded-3xl border border-[#E5E5E5] bg-[#F8F8F7] p-6 md:p-10 shadow-sm">
         <div className="max-w-3xl space-y-6 text-[#555555] leading-relaxed text-base">
           <p>
             If you want to see any of this in practice, the T-Mobile and Union Pacific case studies show the full arc from research question to design outcome, and the CUNA case study shows how I design and run information architecture studies. The working boards and raw notes behind these documents are available on request.
