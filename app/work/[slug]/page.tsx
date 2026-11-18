@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import ZoomableImage from '@/components/ZoomableImage';
-import { getCaseStudy, getAllCaseStudies, getNextCaseStudy, projectImages } from '@/lib/case-studies';
+import { getCaseStudy, getAllCaseStudies, getNextCaseStudy, projectImages, stripHeader } from '@/lib/case-studies';
 import MarkdownRenderer from '@/components/MarkdownRenderer';
 import StickyContact from '@/components/StickyContact';
 import SectionNav from '@/components/case-studies/SectionNav';
@@ -117,7 +117,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
         {/* ── Case Study Content ── */}
         <div className="max-w-4xl mx-auto px-6 mb-16">
-          <MarkdownRenderer content={cs.content} />
+          <MarkdownRenderer content={stripHeader(cs.content)} />
         </div>
 
         {/* ── Image Gallery — full width, stacked, with captions ── */}

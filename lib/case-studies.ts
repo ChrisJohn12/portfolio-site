@@ -44,6 +44,13 @@ const projectMeta: Record<string, Pick<CaseStudy, 'coverImage' | 'tags' | 'descr
       'How I moved UX into the decisions that shape SAP enterprise software, designed a contract workflow for 2,500+ line item contracts, and designed pages for UP.com.',
     stat: '2,500+ line item contracts redesigned',
   },
+  cuna: {
+    coverImage: '/assets/cuna/cuna-thumbnail.png',
+    tags: ['UX Research', 'Information Architecture', 'Survey and Personas', 'Optimal Workshop'],
+    description:
+      'Research into why credit union staff could not find things on cuna.org: a 28-question survey, personas, a tree test, card sorts and test plans.',
+    stat: '537 survey responses, 28 questions',
+  },
   tmobile: {
     coverImage: '/assets/tmobile/tmobile-cover-store.jpg',
     tags: ['UX Research', 'Enterprise Tools', 'Field Research'],
@@ -89,7 +96,14 @@ export function getCaseStudy(slug: string): CaseStudy | null {
   }
 }
 
-const slugOrder = ['union-pacific', 'tmobile', 'first-step-ai', 'shipdeez'] as const;
+const slugOrder = ['union-pacific', 'tmobile', 'cuna', 'first-step-ai', 'shipdeez'] as const;
+
+/** The page header already shows the title and the Role/Company/Duration pills, so the body starts after them. */
+export function stripHeader(content: string): string {
+  return content
+    .replace(/^#[^\n]*\n+/, '')
+    .replace(/^(?:\*\*(?:Role|Company|Client|Duration|Timeline|Tools):\*\*[^\n]*\n)+\n*/, '');
+}
 
 export function getAllCaseStudies(): CaseStudy[] {
   return [...slugOrder]
@@ -128,5 +142,8 @@ export const projectImages: Record<string, { src: string; alt: string; small?: b
   ],
   tmobile: [
     { src: '/assets/tmobile/tmobile-cover-store.jpg', alt: 'A T-Mobile retail store entrance' },
+  ],
+  cuna: [
+    { src: '/assets/cuna/cuna-banner.png', alt: 'CUNA, Credit Union National Association logo' },
   ],
 };

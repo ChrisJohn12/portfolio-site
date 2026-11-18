@@ -55,8 +55,10 @@ export default function SectionNav({ items }: { items: SectionNavItem[] }) {
     if (!target) return
     e.preventDefault()
     const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' })
     window.history.replaceState(null, '', href)
+    // Let a collapsed section open before we scroll to it.
+    window.dispatchEvent(new Event('case-study:jump'))
+    requestAnimationFrame(() => target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' }))
   }
 
   return (
