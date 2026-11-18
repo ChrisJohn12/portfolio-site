@@ -4,7 +4,7 @@ import Link from 'next/link';
 export const metadata = {
   title: 'How I Design, Chris Michalak',
   description:
-    'How Chris Michalak takes a problem from a real workflow to a screen: designing inside constraints, building with design systems, and making the case to engineering.',
+    'How Chris Michalak designs inside real systems: building and using design systems, and making the case to engineering.',
 };
 
 type Figure = {
@@ -45,15 +45,19 @@ export default function DesignProcessPage() {
           How I Design
         </h1>
         <p className="text-[#555555] text-lg md:text-xl leading-relaxed mb-6">
-          How I take a problem from a real workflow to a screen, and how I decide what to build
-          inside the limits I am given.
+          Two parts of my design work I can show: building with design systems, and making the case to engineering.
         </p>
-        <p className="text-[#555555] text-base leading-relaxed">
+        <p className="text-[#555555] text-base leading-relaxed mb-6">
           Most of my design work has happened inside systems I did not choose: SAP Fiori at Union
           Pacific, a three-platform shipping stack at ShipDeez, an existing design system at CUNA.
-          That shaped how I work. I use research to find out how the work really happens, then look for the
-          smallest design that fits the system it has to live in. The decision comes first, and the
-          research is the evidence behind it.
+          I use research to find out how the work really happens, then look for the smallest design
+          that fits the system it has to live in. The decision comes first, and the research is the
+          evidence behind it.
+        </p>
+        <p className="text-[#555555] text-base leading-relaxed">
+          At Union Pacific the business team asked for an Excel upload. I weighed four options with
+          engineering, and we built a custom Fiori application instead. Bulk entry kept the data
+          structured as it went in, which answered the concern behind the upload request.
         </p>
       </header>
 
@@ -61,71 +65,15 @@ export default function DesignProcessPage() {
         <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">
-              01. Starting from the work
-            </span>
-          </div>
-          <div className="space-y-6 text-[#555555] leading-relaxed text-base">
-            <p>
-              I try to design from how the work actually flows, not from the screen a request
-              implies. At Union Pacific I started from how the contract workflow ran, then worked
-              out how it could live inside SAP&apos;s Fiori design system.
-            </p>
-            <p>
-              At ShipDeez I spent time in ShipBlink&apos;s white-label screens, EasyPost&apos;s API
-              documentation and Forge&apos;s customization limits before I drew anything. You cannot
-              design within limits you have not read.
-            </p>
-          </div>
-        </article>
-
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">
-              02. Designing inside constraints
-            </span>
-          </div>
-          <div className="space-y-6 text-[#555555] leading-relaxed text-base">
-            <p>
-              At Union Pacific the business team asked for an Excel upload. It was a reasonable
-              request, so I weighed four options with engineering: Excel upload, a data load
-              program, copy and paste from existing contracts, and a custom Fiori application.
-              Excel upload won on convenience, but each team records the same information a little
-              differently, so unstructured data would have entered the database.
-            </p>
-            <p>
-              We built the custom Fiori application. Bulk entry kept the data structured as it went
-              in, which answered the concern behind the upload request. I designed the screens,
-              checked feasibility with engineering, and ran the result past the business team.
-            </p>
-            <p>
-              ShipDeez was the opposite kind of constraint. I was the sole designer, the deadline
-              was 10 business days, and there was no custom backend, so every design had to work
-              within what the existing APIs could do. EasyPost requires a daily cap on guest
-              checkouts, so I disclosed the cap as a note under the button instead of letting
-              someone discover it as an error after trying to pay.
-            </p>
-          </div>
-
-          <ProcessFigure
-            src="/assets/union-pacific/research-design-loop.png"
-            alt="The loop run on each Union Pacific design: the expert's goal, translate to Fiori, check feasibility with engineering, verify, hand off, with revise paths back"
-            caption="The loop I ran on each design at Union Pacific: the expert's goal, translate to Fiori, check feasibility with engineering, verify, hand off, with paths back to revise."
-            width={1800}
-            height={989}
-          />
-        </article>
-
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">
-              03. Design systems
+              01. Design systems
             </span>
           </div>
           <div className="space-y-6 text-[#555555] leading-relaxed text-base">
             <p>
               I have built a design system and I have worked inside existing ones, and they teach
               different things. At ShipDeez there was no brand at all, so I built the system
-              alongside the product: color, type, spacing and a component library.
+              alongside the product as the sole designer, in a 10 business day contract: color, type,
+              spacing and a component library.
             </p>
             <p>
               The semantic colors map to shipping states. Green marks a created or delivered label,
@@ -171,7 +119,7 @@ export default function DesignProcessPage() {
         <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">
-              04. Making the case
+              02. Making the case
             </span>
           </div>
           <div className="space-y-6 text-[#555555] leading-relaxed text-base">
@@ -205,34 +153,6 @@ export default function DesignProcessPage() {
           />
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
-          <div className="flex items-center gap-4 mb-6">
-            <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">
-              05. Decisions I can explain
-            </span>
-          </div>
-          <div className="space-y-6 text-[#555555] leading-relaxed text-base">
-            <p>
-              First Step AI is small, which makes it a good place to see the reasoning. I cut the
-              intake from six fields to four, asked one question at a time with a visible step
-              count, and moved email capture to after the recommendation so the user gets value
-              before I ask for anything. I also removed the word free from the interface, because it
-              anchors a product at zero before anyone has used it.
-            </p>
-            <p>
-              These are design decisions with reasons, not measured results. The case study says
-              what I plan to measure next.
-            </p>
-          </div>
-
-          <ProcessFigure
-            src="/assets/first-step-ai/first_step_ai_userflow_1.png"
-            alt="First Step AI landing screen with the headline, a Get Started button and three feature cards"
-            caption="First Step AI landing screen. The four-question promise is stated before the user starts."
-            width={1920}
-            height={992}
-          />
-        </article>
       </section>
 
       <section className="mt-16 rounded-3xl border border-[#E5E5E5] bg-[#F8F8F7] p-10 shadow-sm">
@@ -241,7 +161,7 @@ export default function DesignProcessPage() {
             Each of these has a full case study with the decisions, the trade-offs and what I would
             do next.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
             <Link href="/work/union-pacific" className={linkClass}>
               Union Pacific case study
             </Link>
@@ -250,9 +170,6 @@ export default function DesignProcessPage() {
             </Link>
             <Link href="/work/cuna" className={linkClass}>
               CUNA case study
-            </Link>
-            <Link href="/work/first-step-ai" className={linkClass}>
-              First Step AI case study
             </Link>
           </div>
         </div>
