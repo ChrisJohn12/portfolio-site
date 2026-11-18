@@ -62,9 +62,13 @@ What I would look at next: testing the scroll with a full 2,500-line contract in
 
 Warehouse staff used handheld scanners that ran standard SAP screens. I visited three warehouses, in Roseville, Fort Worth and Chicago, to watch the work where it happened. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
 
-![A standard SAP screen on a warehouse handheld](/assets/union-pacific/photos/SAP-erp-ui.jpg "A standard SAP screen on a warehouse handheld. Labels are abbreviated, fields are small, and most of the screen sits empty.")
+![A standard SAP screen on a warehouse handheld, with three problems marked {small}](/assets/union-pacific/sap-handheld-annotated.jpg "A standard SAP screen on a warehouse handheld, photographed in the field.")
 
-Two sets of evidence backed the case. PwC presented its handheld designs in recurring design review meetings, and I reviewed them before anything was built. In the December 2023 session I asked why the text fields were so small for long strings of digits, why screens showed F keys when our Zebra devices have none, and whether some screens carried more information than a handheld can display. PwC said it took note. Then in usability testing, I presented five findings from warehouse and transportation users working through real scenarios, kept separate from user acceptance testing, which only checks that the product meets functional requirements.
+1. **Small, cut-off fields.** Workers enter long strings of digits, and several fields show only part of the value.
+2. **A row of F-key buttons.** The cryptic labels take up room on the fields and buttons, and they were not needed on a screen where scanning fills the fields.
+3. **Most of the screen is empty.** The space was there. The layout just did not use it.
+
+Two sets of evidence backed the case. PwC presented its handheld designs in recurring design review meetings, and I reviewed them before anything was built. In the December 2023 session I asked why the text fields were so small for long strings of digits, why the F-key labels took up so much room on the text fields and buttons, and whether some screens carried more information than a handheld can display. PwC said it took note. Then in usability testing, I presented five findings from warehouse and transportation users working through real scenarios, kept separate from user acceptance testing, which only checks that the product meets functional requirements.
 
 ![Three of the five usability findings, annotated: a cut-off error message, a mislabeled field and a duplicated label](/assets/union-pacific/handheld-usability-findings.png "Recreation. Client names and data removed. Screens are from the usability findings I presented.")
 
@@ -95,7 +99,12 @@ From there I also designed the custom items, the cases where standard SAP did no
 
 The archived home page led with the company: a mosaic of employee portraits, a news carousel, then round icon buttons. Price My Shipment sat well below the fold. The new home page puts Ship With Us, Price My Shipment, Track My Shipment, and Rail Safety directly under the hero, and mobile shows them first. I designed the experience mobile first, then web.
 
-![Archived UP.com home page compared with the new home page and its mobile view](/assets/union-pacific/up-com-homepage.png)
+![Archived UP.com home page compared with the new home page and its mobile view, with four design decisions marked](/assets/union-pacific/up-com-homepage-annotated.png)
+
+1. **Before:** Price My Shipment was a small button well below the fold, under a mosaic of employee portraits and a news carousel.
+2. **After, desktop:** Price My Shipment, Track My Shipment and Rail Safety sit directly under the hero, with Ship With Us beside the welcome.
+3. **After, mobile:** the same tasks come first, as full-width rows a thumb can hit. I designed mobile first, then web.
+4. **Utility bar:** Investors, Careers and Contact Us moved up and out of the main path, and Customer Log-In became a button.
 
 The order came from the people who know the business. I asked the subject matter experts what goals they were trying to help customers accomplish. They knew the business needs and the documents customers have to fill out, and that set the priorities. I gave UX feedback on how to arrange those items on each page, and built the pages in the design system.
 
@@ -105,7 +114,13 @@ Each page I designed with the content team also got a content matrix, so the des
 
 The supplier pages followed the same pattern, which is where the design system earned its keep: new pages assembled from known pieces instead of being drawn from scratch.
 
-![The existing supplier page mockup beside the built Supplier Advancement and Expansion page, with the shared design system pieces called out](/assets/union-pacific/supplier-pages.png)
+![The existing supplier page mockup beside the built Supplier Advancement and Expansion page, with five design decisions marked](/assets/union-pacific/supplier-pages-annotated.png)
+
+1. **The mockup hero.** A layout and component test, mostly placeholder text.
+2. **Statistic tiles and a carousel.** The mockup used them. The program page did not need them, so I left them out. That is the point of a system: use the pieces the content calls for.
+3. **Hero band with a breadcrumb.** It places the page under About Us, Suppliers, New Supplier. The navigation path is what the content matrix asked for on every page.
+4. **Image and text rows.** They carry the program history and use the same row pattern as the mockup.
+5. **Contact Us band.** It gives suppliers one clear next step: connect with a supply representative.
 
 ## What came of it {nav=Outcome}
 

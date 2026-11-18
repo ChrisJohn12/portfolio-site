@@ -134,7 +134,7 @@ export const projectImages: Record<string, { src: string; alt: string; small?: b
     { src: '/assets/union-pacific/photos/FW-warehouse.jpg', alt: 'Fort Worth warehouse field research' },
     { src: '/assets/union-pacific/photos/Zebra-viewing.jpg', alt: 'Zebra handheld device research' },
     { src: '/assets/union-pacific/Process-flow-mapping.png', alt: 'Supply chain process flow mapping' },
-    { src: '/assets/union-pacific/TSD.png', alt: 'Technical specification document' },
+    { src: '/assets/union-pacific/TSD.png', alt: 'Technical specification document', small: true },
     { src: '/assets/union-pacific/Fort Worth testing (1).png', alt: 'Fort Worth usability testing' },
     { src: '/assets/union-pacific/Zebra-screenshot.png', alt: 'SAP Zebra interface screenshot', small: true },
     { src: '/assets/union-pacific/Existing Supplier page.jpg', alt: 'Existing supplier page design' },
