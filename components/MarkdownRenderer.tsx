@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import ZoomableImage from './ZoomableImage';
 import CollapsibleSection from './case-studies/CollapsibleSection';
+import StatGrid from './case-studies/StatGrid';
 import { parseHeading, slugifyHeading } from '@/lib/headings';
 
 function nodeText(node: ReactNode): string {
@@ -25,6 +26,15 @@ const components = {
       (c) => (c.type === 'element' && c.tagName === 'img') || (c.type === 'text' && !(c.value ?? '').trim())
     );
     return onlyImage ? <>{children}</> : <p>{children}</p>;
+  },
+  // A ```stats block becomes a row of key numbers; any other code block renders as usual.
+  pre: ({ children }: { children?: ReactNode }) => {
+    const code = Children.toArray(children)[0];
+    if (isValidElement(code)) {
+      const props = code.props as { className?: string; children?: ReactNode };
+      if (props.className?.includes('language-stats')) return <StatGrid text={nodeText(props.children)} />;
+    }
+    return <pre>{children}</pre>;
   },
   // Headings get ids so the jump-link bar can find them.
   h2: ({ children }: { children?: ReactNode }) => (
