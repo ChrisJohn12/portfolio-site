@@ -12,28 +12,28 @@ const tools = [
     use: 'Architecture planning, design system documentation, developer handoff specs, copy and microcopy drafting.',
     project: 'ShipDeez',
     projectSlug: 'shipdeez',
-    impact: 'Arrived at stakeholder reviews with complete platform integration mapping. Normally takes days of back-and-forth with engineering.',
+    impact: 'Arrived at the first stakeholder review with a draft platform integration map the team could validate, instead of starting from a blank page.',
   },
   {
     name: 'GPT',
-    use: 'UX flow stress-testing for edge cases, failure-state scenario planning, failure-state UX rules documentation.',
+    use: 'Stress-testing flows for edge cases and failure states before I designed them.',
     project: 'ShipDeez',
     projectSlug: 'shipdeez',
-    impact: 'Generated the failure-state UX rules document covering insufficient wallet funds, address verification failures, and mid-payment abandonment.',
+    impact: 'Helped me think through insufficient wallet funds, address verification failures and mid-payment abandonment. The failure-state UX rules document that came out of it was my deliverable.',
   },
   {
     name: 'Dovetail AI',
     use: 'Research synthesis: tagging, clustering, and surfacing patterns across interview transcripts and field notes.',
     project: 'Union Pacific',
     projectSlug: 'union-pacific',
-    impact: 'Cut research synthesis turnaround by ~40%, enabling faster decision cycles across multiple business units simultaneously.',
+    impact: 'In my estimate it cut synthesis time by about 40% compared with tagging by hand (my estimate, not measured). The consistency mattered more to me than the speed: tags and groupings stayed steady across sessions.',
   },
   {
     name: 'Quantum Metrics',
-    use: 'Behavioral analytics AI for identifying usage patterns across digital properties, prioritizing high-impact usability issues.',
+    use: 'Behavioral analytics for analyzing usability metrics across digital properties.',
     project: 'Union Pacific',
     projectSlug: 'union-pacific',
-    impact: 'Identified which pages and flows had the highest-impact usability issues, directing research effort to highest ROI areas.',
+    impact: 'An input I used to analyze usability metrics. I do not claim a measured result from it.',
   },
 ];
 
@@ -48,7 +48,7 @@ const principles = [
   },
   {
     title: 'Research synthesis is where AI earns its keep.',
-    body: 'The most tedious and time-sensitive part of research is turning raw notes into patterns. AI tools like Dovetail dramatically accelerate this, letting me run more research cycles in the same timeframe.',
+    body: 'The most tedious and time-sensitive part of research is turning raw notes into patterns. AI tools like Dovetail speed this up and keep tags consistent, so more of my time goes to what the patterns mean.',
   },
   {
     title: 'Documentation and handoff are underrated use cases.',
@@ -67,9 +67,9 @@ export default function AIFluencyPage() {
           AI as a multiplier,<br />not a replacement.
         </h1>
         <p className="text-[#555555] text-lg leading-relaxed">
-          I&apos;ve integrated AI tools into every phase of my design practice,
-          from architecture planning and research synthesis to documentation and
-          developer handoff. Here&apos;s how it actually works in my workflow.
+          I use AI tools across my design practice, from architecture planning and
+          research synthesis to documentation and developer handoff, and I build products
+          with them. Here&apos;s how it actually works.
         </p>
       </header>
 
@@ -122,6 +122,55 @@ export default function AIFluencyPage() {
         </div>
       </section>
 
+      {/* Building AI products */}
+      <section className="mb-20" aria-labelledby="building-heading">
+        <h2 id="building-heading" className="text-[32px] font-semibold mb-8 pb-4 border-b border-[#E5E5E5] text-[#1A1A1A]">
+          Designing AI Products, Not Only Using Them
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <div className="p-6 rounded-xl bg-white border border-[#E5E5E5]">
+            <h3 className="text-[#1A1A1A] font-medium text-[22px] leading-snug mb-2">The prompt is part of the product spec.</h3>
+            <p className="text-[#555555] leading-relaxed">
+              In First Step AI, the system prompt encodes the product logic: name one specific tool,
+              explain the problem in one sentence, give exactly three setup steps, estimate weekly
+              hours saved, state the monthly cost, and write for a busy owner. That constrained the
+              output enough that each field maps one to one onto the result card, so the interface
+              always has something consistent to show.
+            </p>
+          </div>
+          <div className="p-6 rounded-xl bg-white border border-[#E5E5E5]">
+            <h3 className="text-[#1A1A1A] font-medium text-[22px] leading-snug mb-2">Design the flow around the model.</h3>
+            <p className="text-[#555555] leading-relaxed">
+              I cut the intake from six fields to four questions, asked one at a time, and moved
+              email capture to after the recommendation so the user gets value before I ask for
+              anything. These are design decisions with reasons. The case study reports early
+              signals only, and says what I plan to measure next.
+            </p>
+          </div>
+          <div className="p-6 rounded-xl bg-white border border-[#E5E5E5]">
+            <h3 className="text-[#1A1A1A] font-medium text-[22px] leading-snug mb-2">Build with it, and keep the judgment.</h3>
+            <p className="text-[#555555] leading-relaxed">
+              I built First Step AI with Claude Code and wrote custom skills to scaffold components
+              and intake questions. This portfolio is built the same way, and its assistant runs on
+              the Anthropic API. The product decisions stayed mine.
+            </p>
+          </div>
+          <div className="p-6 rounded-xl bg-white border border-[#E5E5E5]">
+            <h3 className="text-[#1A1A1A] font-medium text-[22px] leading-snug mb-2">Four Anthropic certifications.</h3>
+            <p className="text-[#555555] leading-relaxed">
+              Claude 101, Claude Code in Action, Introduction to Agent Skills, and Building with
+              the Claude API, completed alongside the build.
+            </p>
+          </div>
+        </div>
+        <Link
+          href="/work/first-step-ai"
+          className="inline-flex items-center gap-2 bg-[#2563EB] hover:bg-[#1D4ED8] text-white font-medium px-5 py-2.5 rounded-lg text-sm transition-colors min-h-[44px]"
+        >
+          Read the First Step AI case study →
+        </Link>
+      </section>
+
       {/* The bigger point */}
       <section className="rounded-xl border border-[#2563EB]/20 bg-[#EFF6FF] p-8 md:p-12" aria-labelledby="summary-heading">
         <h2 id="summary-heading" className="text-[32px] font-semibold mb-4 text-[#1A1A1A]">
@@ -130,7 +179,7 @@ export default function AIFluencyPage() {
         <p className="text-[#555555] leading-relaxed mb-6 max-w-2xl">
           In a 10-day product sprint, AI compression is the difference between
           shipping everything and cutting scope. In a long-running enterprise engagement,
-          it&apos;s the difference between one research cycle per quarter and three.
+          it frees time for the work that needs judgment.
           I use AI to do more research, not less, and to document that research
           well enough that it actually drives decisions.
         </p>
