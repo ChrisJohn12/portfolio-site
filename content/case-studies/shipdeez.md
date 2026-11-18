@@ -29,9 +29,15 @@ The client also set a day-one definition of success: a visitor with zero context
 
 I built a service blueprint to answer a question the screens alone could not: for each step a customer takes, which system or person is doing the work, and where can it break?
 
-![Service blueprint for both ShipDeez paths, with risk points marked in pink](/assets/shipdeez/service-blueprint.png "Service blueprint for the Quick Label and Commercial paths. Pink cells are failure or risk points. Recreation. Client names and data removed.")
+The blueprint has two paths. Quick Label has no login, a one-page form and a per-label Stripe charge. Commercial has login, an organization profile, a warehouse, carrier rules and a billing plan. For each path it shows the customer's actions, what ShipDeez shows on screen, the systems behind it (ShipBlink, EasyPost, Stripe), and the Backhaul people who step in when something goes wrong.
 
-The blueprint has two paths. Quick Label has no login, a one-page form and a per-label Stripe charge. Commercial has login, an organization profile, a warehouse, carrier rules and a billing plan. For each path it shows the customer's actions, what ShipDeez shows on screen, the systems behind it (ShipBlink, EasyPost, Stripe), and the Backhaul people who step in when something goes wrong. Lines mark where the customer interacts with ShipDeez, what the customer can see, and where internal teams hand off.
+**Path A, Quick Label.** The thing to notice is the pink cell in the systems row. A label purchase debits Backhaul's master wallet, so a failed auto-reload would break labels after the customer has already paid.
+
+![Service blueprint for the Quick Label path, with risk points marked in pink](/assets/shipdeez/service-blueprint-quick-label.png "Quick Label path. Pink cells are failure or risk points. Recreation. Client names and data removed.")
+
+**Path B, Commercial.** The thing to notice is how much of the setup sits with people, not screens. Backhaul provisions the sub-account, sets the billing plan and sets the wallet reload threshold, and the Forge invite was still marked coming soon.
+
+![Service blueprint for the Commercial path, with risk points marked in pink](/assets/shipdeez/service-blueprint-commercial.png "Commercial path. Pink cells are failure or risk points. Recreation. Client names and data removed.")
 
 What the blueprint surfaced:
 
@@ -62,11 +68,13 @@ The screens below are the designs I handed off in Feb 2026. Each caption says wh
 
 ![Landing page with two entry points](/assets/shipdeez/landing-page.png "Landing page. ShipDeez-owned.")
 
-![Guest quick label form](/assets/shipdeez/Guest-Quick-Label-form.png "Quick label form. ShipDeez-owned.")
-
 ![Rate results with the lowest rate pre-selected](/assets/shipdeez/rate-results.png "Rate results. ShipDeez-owned, with rates from ShipBlink.")
 
 ![Payment screen with trust copy and the daily cap note](/assets/shipdeez/payment.png "Payment. ShipDeez-owned, with the card charge run by Stripe.")
+
+## More screens and the design system {collapsed}
+
+![Guest quick label form](/assets/shipdeez/Guest-Quick-Label-form.png "Quick label form. ShipDeez-owned.")
 
 ![Success screen with download as the main action](/assets/shipdeez/success.png "Success and label download. ShipDeez-owned. Tracking pages after this step are ShipBlink-branded.")
 
@@ -85,10 +93,10 @@ The screens below are the designs I handed off in Feb 2026. Each caption says wh
 - The client's marketing position is up to 85% savings against retail rates through negotiated carrier programs. That is their claim, not something I measured.
 - No post-launch data. My work ended at design handoff.
 
-## What I would do differently
+## What I would do differently {collapsed}
 
 I designed the rate cards with placeholder data and could not check how real carrier responses look until after handoff. I would also run at least one usability session on the guest form, which has many fields, and test a stepped version for mobile. And I would put the blueprint in front of the team in week one, since the platform limits were clearest there.
 
-## How I used AI
+## How I used AI {collapsed}
 
 I used Claude to draft the platform mapping before the first stakeholder review, so the team could correct a draft and not start from nothing. I used GPT to stress-test failure states. Both were drafting aids. Deciding what to cut and what the product needed stayed with me.
