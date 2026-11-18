@@ -85,9 +85,9 @@ Atlas, Samson and DASH show up at different steps. Add a Line only worked in DAS
 
 A separate request asked how T-Mobile might simplify calling for deaf and hard of hearing customers. Those customers needed an additional device from Sorenson, a video relay service, to make phone calls, so a daily call meant two devices.
 
-I set out to capture the journey of an existing hearing-impaired T-Mobile customer and find what we did not yet know. I led stakeholder meetings, started user interviews with the right audience, and produced a journey map that gave the business and technology teams somewhere to raise their own gaps in knowledge. I do not have an outcome to report for this one.
+I set out to capture the journey of an existing hearing-impaired T-Mobile customer and find what we did not yet know. I mapped how a customer onboards onto the video relay service, from first contact through set-up, follow-up and retention. I led stakeholder meetings, started user interviews with the right audience, and produced a journey map that gave the business and technology teams somewhere to raise their own gaps in knowledge. I do not have an outcome to report for this one.
 
-![Discovery board for the hearing-impaired customer project: the problem statement, notes on Sorenson's video relay service, open questions, and an onboarding flow for the service](/assets/tmobile/accessibility-names-removed.png "Discovery board for the project. The problem statement sits top left, with notes on Sorenson's service, questions for stakeholders and a video relay onboarding flow. Colleague names removed. Zoom in to read it.")
+![Discovery board for the hearing-impaired customer project: the problem statement, notes on Sorenson's video relay service, open questions, and an onboarding flow for the service](/assets/tmobile/accessibility-names-removed.png "Discovery board for the project. The problem statement sits top left, with notes on Sorenson's service, questions for stakeholders and the video relay onboarding flow I mapped. Colleague names removed. Zoom in to read it.")
 
 ## What happened next
 
