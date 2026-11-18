@@ -34,6 +34,10 @@ The findings across the cards were consistent. People valued CUNA's resources an
 
 The survey also told us where people actually went. When asked which area of the site mattered most, 173 respondents chose the training bundle and webinars, 125 compliance, 74 conferences and 56 CPD Online, against 44 for advocacy (measured). That fit the analytics.
 
+I also broke the results out by audience, which showed that the groups used the site differently. In the compliance group, 60 respondents named compliance as the most important area, and 61 said they reach the site from a saved bookmark (measured). My reading, not something we tested, is that a bookmark skips the navigation, so the people who rely on the site most may be the ones least affected by its structure, and newer visitors are the ones who hit it.
+
+![Survey results broken out by audience segment, with panels for board, finance, compliance, HR, lending, marketing and operations](/assets/cuna/survey-synthesis-audience.png "Each panel shows one audience's age, education, most important area, how they reach the site, and average ratings. Zoom in to read the numbers.")
+
 ## Starting with what was already broken
 
 Before testing anything new, I wanted a list of what the current site did wrong that we could name. I ran a heuristic evaluation of cuna.org against Nielsen's 10 usability heuristics, mapping issues to each heuristic on a Mural board. Alongside it I did a competitive analysis of four organizations with similar goals (NAFCU, the National Credit Union Foundation, the World Council of Credit Unions and CUES), looking at their checkout flows, how they organized shop and learn content, and their layouts.
