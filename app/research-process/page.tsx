@@ -1,11 +1,32 @@
-import Image from 'next/image';
 import Link from 'next/link';
+import ZoomableImage from '@/components/ZoomableImage';
 
 export const metadata = {
   title: 'How I Research, Chris Michalak',
   description:
     'A look at how Chris Michalak scopes, runs, synthesizes, and connects research to product decisions.',
 };
+
+
+type Fig = { src: string; alt: string; caption: string; width: number; height: number };
+
+function Figure({ src, alt, caption, width, height }: Fig) {
+  return (
+    <figure className="mt-10 mx-auto max-w-3xl rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
+      <ZoomableImage
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        sizes="(min-width: 768px) 768px, 100vw"
+        className="mx-auto h-auto w-auto max-w-full max-h-[65vh]"
+      />
+      <figcaption className="px-5 py-4 text-sm text-[#717171]">{caption}</figcaption>
+    </figure>
+  );
+}
+
+const REC = ' Recreation. Client names and data removed.';
 
 export default function ResearchProcessPage() {
   return (
@@ -26,7 +47,7 @@ export default function ResearchProcessPage() {
       </header>
 
       <section className="space-y-16">
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">01. Scoping</span>
           </div>
@@ -40,7 +61,7 @@ export default function ResearchProcessPage() {
           </div>
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">02. Recruiting &amp; Access</span>
           </div>
@@ -54,7 +75,7 @@ export default function ResearchProcessPage() {
           </div>
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">03. Methods I Reach For</span>
           </div>
@@ -72,34 +93,40 @@ export default function ResearchProcessPage() {
             </div>
           </div>
 
-          <figure className="mt-10 rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
-            <Image
-              src="/assets/union-pacific/photos/FW-warehouse.jpg"
-              alt="Contextual inquiry at Union Pacific's Fort Worth facility"
-              width={1400}
-              height={840}
-              className="w-full h-full object-cover"
-            />
-            <figcaption className="px-5 py-4 text-sm text-[#717171]">
-              Contextual inquiry at Union Pacific&apos;s Fort Worth facility
-            </figcaption>
-          </figure>
+          <Figure
+            src="/assets/union-pacific/photos/FW-warehouse.jpg"
+            alt="Contextual inquiry at Union Pacific&apos;s Fort Worth facility"
+            caption={'Contextual inquiry at Union Pacific\u2019s Fort Worth facility.'}
+            width={2856}
+            height={2142}
+          />
 
-          <figure className="mt-10 rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
-            <Image
-              src="/assets/union-pacific/photos/Zebra-viewing.jpg"
-              alt="Observing Zebra handheld workflows in an active warehouse environment"
-              width={1400}
-              height={840}
-              className="w-full h-full object-cover"
-            />
-            <figcaption className="px-5 py-4 text-sm text-[#717171]">
-              Observing Zebra handheld workflows in an active warehouse environment
-            </figcaption>
-          </figure>
+          <Figure
+            src="/assets/union-pacific/warehouse-picking-sap.png"
+            alt="Warehouse picking on SAP across three surfaces, with the exception path for changing a handling unit label"
+            caption={'Warehouse picking on SAP, one task across three surfaces. Redrawn from my original flow, where each step is paired with the handheld screen, the expected outcome and open questions.' + REC}
+            width={3704}
+            height={2800}
+          />
+
+          <Figure
+            src="/assets/tmobile/instore-upgrade-blueprint.png"
+            alt="Service blueprint for upgrading a phone in a T-Mobile store, across eight steps from the pre-visit research to the plan agreement"
+            caption={'Service blueprint for a phone upgrade in store. Customer and Mobile Expert actions and pain points come from my in-store observations.' + REC}
+            width={3704}
+            height={2460}
+          />
+
+          <Figure
+            src="/assets/cuna/treejack-task3-comparison.png"
+            alt="Optimal Workshop comparison of the registration task: all 4 participants succeeded on the new structure on the left, none of 4 on the existing structure on the right"
+            caption={'CUNA tree test, the registration task. Left is the new structure, right is the existing one. Optimal Workshop results (measured).'}
+            width={1920}
+            height={1980}
+          />
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">04. Synthesis &amp; Translation</span>
           </div>
@@ -115,34 +142,24 @@ export default function ResearchProcessPage() {
             </p>
           </div>
 
-          <figure className="mt-10 rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
-            <Image
-              src="/assets/tmobile/customer-upgrade-journey-map.jpg"
-              alt="Omni-channel billing transparency journey map for T-Mobile"
-              width={1400}
-              height={840}
-              className="w-full h-full object-cover"
-            />
-            <figcaption className="px-5 py-4 text-sm text-[#717171]">
-              Omni-channel billing transparency journey map, T-Mobile
-            </figcaption>
-          </figure>
+          <Figure
+            src="/assets/tmobile/bill-comparison-findings.png"
+            alt="What care reps did, what got in the way, and what was recommended, traced from the August 2022 sessions"
+            caption={'What reps did, what got in the way, and what I recommended, traced from the August 2022 sessions. Prototype screens are not shown.' + REC}
+            width={2400}
+            height={1606}
+          />
 
-          <figure className="mt-10 rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
-            <Image
-              src="/assets/union-pacific/Process-flow-mapping.png"
-              alt="Supply chain process flow mapping at Union Pacific"
-              width={1400}
-              height={840}
-              className="w-full h-full object-cover"
-            />
-            <figcaption className="px-5 py-4 text-sm text-[#717171]">
-              Supply chain process flow mapping, Union Pacific
-            </figcaption>
-          </figure>
+          <Figure
+            src="/assets/union-pacific/source-to-pay-systems.png"
+            alt="Source-to-pay map: four named systems between a demand forecast and a part in the field, with the people who act at each step"
+            caption={'Source-to-pay map, redrawn from my original working map, which came from conversations with subject matter experts.' + REC}
+            width={3704}
+            height={3040}
+          />
         </article>
 
-        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-10 shadow-sm">
+        <article className="rounded-3xl border border-[#E5E5E5] bg-white p-6 md:p-10 shadow-sm">
           <div className="flex items-center gap-4 mb-6">
             <span className="text-[#2563EB] text-xs font-semibold tracking-widest uppercase">05. Connecting to Design</span>
           </div>
@@ -155,25 +172,28 @@ export default function ResearchProcessPage() {
             </p>
           </div>
 
-          <figure className="mt-10 rounded-3xl overflow-hidden border border-[#E5E5E5] bg-[#F8F8F7]">
-            <Image
-              src="/assets/union-pacific/Fort Worth testing (1).png"
-              alt="Usability testing findings feeding directly into SAP Fiori design decisions"
-              width={1400}
-              height={840}
-              className="w-full h-full object-cover"
-            />
-            <figcaption className="px-5 py-4 text-sm text-[#717171]">
-              Usability testing findings feeding directly into SAP Fiori design decisions
-            </figcaption>
-          </figure>
+          <Figure
+            src="/assets/union-pacific/research-design-loop.png"
+            alt="The loop run on each Union Pacific design: the expert goal, translate to Fiori, check feasibility with engineering, verify, hand off, with revise paths back"
+            caption={'The loop I ran on each design at Union Pacific, from the expert\u2019s goal to the handoff, with paths back to revise.' + REC}
+            width={1800}
+            height={989}
+          />
+
+          <Figure
+            src="/assets/union-pacific/upstream-ux.png"
+            alt="Where UX entered the process: before, a review of finished specs; after, a seat in the early fit-or-custom conversations"
+            caption={'Where UX entered the process: before, a review of finished specs; after, a seat in the early fit-or-custom conversations.' + REC}
+            width={1800}
+            height={902}
+          />
         </article>
       </section>
 
-      <section className="rounded-3xl border border-[#E5E5E5] bg-[#F8F8F7] p-10 shadow-sm">
+      <section className="rounded-3xl border border-[#E5E5E5] bg-[#F8F8F7] p-6 md:p-10 shadow-sm">
         <div className="max-w-3xl space-y-6 text-[#555555] leading-relaxed text-base">
           <p>
-            If you want to see any of this in practice, the T-Mobile and Union Pacific case studies show the full arc from research question to design outcome, and the CUNA case study shows how I design and run information architecture studies.
+            If you want to see any of this in practice, the T-Mobile and Union Pacific case studies show the full arc from research question to design outcome, and the CUNA case study shows how I design and run information architecture studies. The working boards and raw notes behind these documents are available on request.
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
             <Link
