@@ -117,6 +117,10 @@ Then I mapped the main purchase paths: conferences, eSchools and webinars on one
 
 ![User flows for two purchase paths, color coded by system: AEM in blue and Nimble in green](/assets/cuna/user-flows.png "Purchase flows. Conferences, eSchools and webinars on top; courses, books, PDFs, marketing products and reports below.")
 
+I mapped the account side of the site the same way: creating an account, registering for an event, updating a profile, paying an invoice, adding a payment method, donating, and buying a product.
+
+![Eight flows for the account side of the site, drawn as sticky notes with the screens behind each step blurred](/assets/cuna/account-flows.png "Account flows. Recreation. Client names and data removed. Screens blurred. Zoom in to read the steps.")
+
 ## Card sorting the advocacy section {collapsed} {nav=Advocacy sort}
 
 Advocacy was where traffic and importance disagreed. The March 2021 meeting left open questions: split content by audience (members and lawmakers), improve dropdown access to the main page, and whether people wanted past issues at all.
