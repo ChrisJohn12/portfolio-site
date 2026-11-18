@@ -40,11 +40,15 @@ For the structure of the whole site, I used a tree test in Optimal Workshop. I l
 
 > You want to register your marketing team for the CUNA Digital Marketing School, which they will attend virtually. Where would you go to register the team?
 
-![Optimal Workshop tree test results comparing two versions of the site's structure](/assets/cuna/treejack-results.png "Optimal Workshop results for two versions of the tree, labeled V1 and V2.")
+![Optimal Workshop comparison of the registration task on two versions of the tree: 4 of 4 succeeded on one, 0 of 4 on the other](/assets/cuna/treejack-task3-comparison.png "Task 3, the registration scenario, side by side. In V2 the target sat under Events & Training. In V1 it sat under Shop.")
 
-I tested two versions of the structure against each other. Across all tasks, 81% of completed tasks ended at a correct answer on the second version, against 31% on the first (measured). Each task had only about four participants per tree, so I read those percentages as direction, not proof. [CONFIRM: that 31% is the V1 overall score, which version was the existing sitemap and which was the proposed one, and the total participant count.]
+I tested two versions of the structure against each other, with four participants per tree on each task. On the registration scenario, all four found the right place in V2 (Events & Training, then Conferences & Schools). None of the four did in V1, where the same page sat under Shop, then eSchools (measured, small sample). Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1 (measured). [CONFIRM: V1 is the existing structure, V2 is the one I proposed, and 31% is V1's overall score.]
 
-A tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
+It did not split that cleanly on every task. On the Youth Month Design Bundle purchase, both versions came out at 50% success, with the same directness score of 75% (measured).
+
+![Optimal Workshop comparison of the Youth Month Design Bundle task on V1 and V2, both at 50% success](/assets/cuna/treejack-task4-comparison.png "Task 4 compared across V1 and V2. Success was 50% on both.")
+
+With four people per tree, I read these as direction and not proof. The paths people took were the more useful part: a tree test shows where someone went instead of where we expected, which is what pointed us at labels like Shop and Learn.
 
 ## Card sorting the advocacy section
 
