@@ -2,7 +2,7 @@
 
 **Role:** Lead Product Designer (freelance)
 **Company:** Backhaul Direct, LLC
-**Duration:** Oct 2025 to Feb 2026
+**Duration:** Oct 2025 to Mar 2026
 **Tools:** Figma, EasyPost, ShipBlink, Stripe
 
 **The problem.** Small shippers overpay for postage because they cannot reach negotiated carrier rates. Backhaul Direct had those rates and wanted to pass them through a simple product, ShipDeez, built on ShipBlink (white-label, via EasyPost's Forge) and the EasyPost API.
@@ -11,7 +11,7 @@
 
 **Outcome.** I handed off the design package ahead of the client's deadline, and the client called the layouts generally solid with a few tweaks. I rolled off the project after handoff, so I do not have launch or post-launch results.
 
-> I handed off the design in Feb 2026 and was no longer on the project when it launched. This case study covers the design as delivered, not the shipped site.
+> I handed off the design in Mar 2026 and was no longer on the project when it launched. This case study covers the design as delivered, not the shipped site.
 
 ## My role {nav=Role}
 
@@ -64,7 +64,7 @@ The login and account screens I designed are for small shippers, the mom and pop
 
 ## Screens
 
-The screens below are the designs I handed off in Feb 2026. Each caption says which system owns the screen.
+The screens below are the designs I handed off in Mar 2026. Each caption says which system owns the screen.
 
 ![Landing page with two entry points](/assets/shipdeez/landing-page.png "Landing page. ShipDeez-owned.")
 
