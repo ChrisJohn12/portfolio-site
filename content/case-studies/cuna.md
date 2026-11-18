@@ -7,12 +7,12 @@
 CUNA is a national trade association for credit unions. I was the UX designer and researcher on the team reworking cuna.org, and most of my work was research into one question: when someone arrives with a job to do, can they find the thing?
 
 - **Context:** a large association site with several audiences, an advocacy section and a store for training and conferences. It was slow, hard to navigate, and moving from Ektron to Adobe Experience Manager
-- **What I owned:** the research. Stakeholder interviews, a 28-question survey and its personas, a tree test and card sorts in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs
-- **Outcome:** the studies shaped how the team approached the site structure and gave it personas for eight areas of credit unions.
+- **What I owned:** the research. Stakeholder interviews, a 28-question survey and its personas, a tree test and card sorts in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs. I also helped wireframe pages and components with the team
+- **Outcome:** the studies shaped how the team approached the site structure and gave it personas for eight areas of credit unions
 
 ```stats
-38 of 44 | wanted to read what CUNA told regulators and lawmakers in the past | Measured
 325 of 530 | visit the site seven or more times a year | Measured
+65.7% | had bought training or other products on cuna.org | Measured
 28th | Advocacy's rank for most visited in Google Analytics | Measured
 81% vs 31% | tree test success, new structure vs existing | Measured
 ```
@@ -30,6 +30,16 @@ Analytics added a fourth, and it pointed elsewhere. Advocacy ranked 28th for mos
 ## Who we were designing for {nav=Audience}
 
 I started with stakeholder interviews, then sent a survey to credit union staff, board members and leagues. 537 people completed it (measured). 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
+
+I used a net promoter score on three questions as a place to start looking.
+
+```stats
+27 | net promoter score: how well CUNA.org supports their job | Measured
+41 | net promoter score: the online purchase experience | Measured
+47 | net promoter score: recommending the site to a colleague | Measured
+```
+
+348 of the 530, or 65.7%, had bought training or other products on the site (measured), so the store was a core part of the experience, not a side feature.
 
 I affinity mapped the written responses, sorting them by how people felt about the site: negative, neutral because they need it for their job, neutral because they do not really need CUNA, and positive.
 
@@ -49,27 +59,27 @@ Staff who work with customers had told us "Learn" versus "Shop" was unclear, bec
 
 > You want to register your marketing team for the CUNA Digital Marketing School, which they will attend virtually. Where would you go to register the team?
 
-![Optimal Workshop comparison of the registration task on two versions of the tree: 4 of 4 succeeded on one, 0 of 4 on the other](/assets/cuna/treejack-task3-comparison.png "Task 3, the registration scenario, on V1 and V2. In V2 the correct answer sat under Events & Training. In V1 it sat under Shop.")
+![Optimal Workshop comparison of the registration task: all 4 participants succeeded on the new structure on the left, none of 4 on the existing structure on the right](/assets/cuna/treejack-task3-comparison.png "Task 3, the registration scenario. Left is V2, where the correct answer sat under Events & Training. Right is V1, where it sat under Shop.")
 
-On that task, all four participants found the right place in V2 and none of the four did in V1 (measured, small sample). Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1 (measured).
+On that task, all four participants found the right place in V2 and none of the four did in V1 (measured, small sample). In V1, three of the four went to Learn, and the fourth went to Shop but chose Schools & Conferences instead of eSchools (measured). That is the Learn versus Shop confusion showing up in behavior.
 
-It did not split that cleanly everywhere. On the Youth Month Design Bundle purchase, both versions came out at 50% success with the same directness score of 75% (measured).
+Across all tasks, 81% of completed tasks ended at a correct answer in V2, against 31% in V1, and 88% of V2 answers were chosen without backtracking (measured).
 
-![Optimal Workshop comparison of the Youth Month Design Bundle task on V1 and V2, both at 50% success](/assets/cuna/treejack-task4-comparison.png "Task 4 compared across V1 and V2. Success was 50% on both.")
+![Optimal Workshop overall results for the new structure: 81% average success, 88% directness, and a bar for each of the four tasks](/assets/cuna/treejack-v2-overall.png "Overall results for V2 across the four tasks.")
+
+It did not split that cleanly everywhere. On the Youth Month Design Bundle purchase, both versions came out at 50% success with the same directness score of 75% (measured). In V2, both people who missed started under Events & Training (measured).
+
+![Optimal Workshop path view for the Youth Month Design Bundle task, existing structure on the left and new structure on the right, showing where participants went and where they went back](/assets/cuna/treejack-task4-paths.png "Task 4 path view. Left is V1, right is V2. Green is the right path, red the wrong one, teal is going back.")
 
 With four people per tree, I read this as direction, not proof. The tree test also records the paths people took, so a failed task shows where they went instead of where we expected.
 
-![Optimal Workshop path view for the Youth Month Design Bundle task, showing most participants going from Home to Shop and some choosing Learn or going back](/assets/cuna/treejack-task4-paths.png "Task 4 path view on the structure with Shop and Learn at the top. Green is the right path, red the wrong one, teal is going back.")
-
 ## Card sort: how people group our products {nav=Card sort}
 
-The tree test checked the structure. The card sort checked the language. In Optimal Workshop, participants grouped 13 product cards, from eSchools, Course and Book to Webinars, Reports and the Credit Union Compliance Management System, and labeled the groups themselves. 17 of 20 participants finished it (measured).
+The tree test checked the structure. The card sort checked the language. In Optimal Workshop, participants grouped 13 product cards, from eSchools, Course and Book to Webinars, Reports and the Credit Union Compliance Management System, and labeled the groups themselves. The study ran from March 5 to March 10, 2021, and 17 of 20 participants finished it (measured).
 
-![The 13 cards in the product card sort and its completion: 17 of 20 participants finished, 3 abandoned](/assets/cuna/card-sort-products.png "The 13 cards, and completion: 17 of 20 (85%).")
+![Optimal Workshop dendrogram from the product card sort, showing which cards participants grouped together](/assets/cuna/card-sort-dendrogram.png "Dendrograms from the product card sort. Cards that join further left were grouped together more often.")
 
-The 3D cluster view showed which cards people put together. Book, Reports and Research landed in one suggested group, and the labels people gave that group included Resources and Research. My reading, not something we tested, is that people grouped by what the content is, not by how CUNA sells it, which fits the staff comments that Learn versus Shop was unclear.
-
-![Optimal Workshop 3D cluster view, with Book, Reports and Research in one group and similar category labels Resources and Research](/assets/cuna/card-sort-3d-cluster.png "3D cluster view of the product card sort. One suggested group held Book, Reports and Research.")
+Under the strictest method, participants agreed on three clusters: the Member Celebrations items with Marketing Tools, the training products (Training Bundle, CPD Online, Course, eSchools and Webinars), and Book, Research and Reports. My reading, not something we tested, is that people grouped by what the content is, not by how CUNA sells it, which fits the staff comments that Learn versus Shop was unclear.
 
 ## What each method told us {nav=Takeaways}
 
@@ -85,9 +95,17 @@ My reading, not something we tested, is that a bookmark skips the navigation. Th
 
 ## Heuristic evaluation, competitors and user flows {collapsed} {nav=Evaluation}
 
-Before testing anything new, I wanted a list of what the current site did wrong that we could name. I evaluated cuna.org against Nielsen's 10 usability heuristics on a Mural board. I also compared four similar organizations (NAFCU, the National Credit Union Foundation, the World Council of Credit Unions and CUES) on checkout flow, how they organized shop and learn content, and layout.
+Before testing anything new, I wanted a list of what the current site did wrong that we could name. I evaluated cuna.org against Nielsen's 10 usability heuristics on a Mural board, with an issues column and a recommendation column for each, and scored each heuristic from 0 to 4 for severity. My highest score, a 3 (major usability problem), went to consistency and standards.
 
-Then I mapped the main purchase paths: conferences, eSchools and webinars on one side, and courses, books, PDFs and marketing products on the other, with account creation, guest registration and login around them. The flows turned up friction, including a missing payment confirmation and a connection error. I also used them to explain design decisions to the product manager, stakeholders and developers.
+![Mural board with Nielsen's 10 heuristics for cuna.org, each with issues, recommendations, a severity score from 0 to 4, and annotated screenshots](/assets/cuna/heuristic-evaluation.jpg "Heuristic evaluation board. Zoom in to read the issues and recommendations.")
+
+I also compared four similar organizations (NAFCU, the National Credit Union Foundation, the World Council of Credit Unions and CUES) on checkout flow, how they organized shop and learn content, and layout. For the words we use to sell learning, I looked at five learning platforms: Udemy, Skillshare, Coursera, edX and Udacity.
+
+![Competitive analysis board with annotated home pages of Udemy, Skillshare, Coursera, edX and Udacity, and the words each uses for its educational offerings](/assets/cuna/competitive-analysis-learning.jpg "Competitive analysis of five learning platforms, with the language each uses for what it sells.")
+
+Then I mapped the main purchase paths: conferences, eSchools and webinars on one side, and courses, books, PDFs and marketing products on the other, with login and registration branches around them. The flows are color coded by system, AEM for browsing and Nimble for login, registration and checkout. They turned up friction, including a missing payment confirmation and a connection error, and I used them to explain design decisions to the product manager, stakeholders and developers.
+
+![User flows for two purchase paths, color coded by system: AEM in blue and Nimble in green](/assets/cuna/user-flows.png "Purchase flows. Conferences, eSchools and webinars on top; courses, books, PDFs, marketing products and reports below.")
 
 ## Card sorting the advocacy section {collapsed} {nav=Advocacy sort}
 
@@ -95,11 +113,21 @@ Advocacy was where traffic and importance disagreed. The March 2021 meeting left
 
 I met stakeholders first, then ran a card sort in Optimal Workshop with cards like Credit Union Powers, Regulatory Relief and Consumer Protection. We also put the archive question in the survey. 44 respondents answered, and 38 wanted to read what CUNA had told regulators and lawmakers in the past (measured).
 
+In the 3D cluster view, one suggested group held 12 of the issue cards. The labels participants gave that group included Priorities We're Fighting for and Advocacy resources.
+
+![Optimal Workshop 3D cluster view of the advocacy card sort, with one group of 12 issue cards selected and the labels participants gave it](/assets/cuna/card-sort-advocacy-3d.png "3D cluster view of the advocacy card sort, with one suggested group selected.")
+
 ## Products page and PDF naming {collapsed} {nav=Products and PDFs}
 
 Training products and seminars were among CUNA's biggest revenue drivers, and the products page structure was a survey pain point. Before recommending changes, I made an inventory of what each product page contained, so grouping and naming decisions rested on a list and not a feeling.
 
 The site also hosted many PDFs that search could not tell apart. I wrote a naming convention: a short code for the area or product, then document type, then a short description, capped at 20 characters so files synced cleanly. It also covered metadata (title, author, description, keywords). One rule mattered most: documents behind a login, like training bundles and webinars, carry no metadata, because they are paid content and should not appear in a Google search.
+
+## Wireframes: marketing solutions page and promo components {collapsed} {nav=Wireframes}
+
+With the team, I helped wireframe a Marketing & Business Development Solutions page and a set of reusable promo components. The page grouped CUNA's products by the job a credit union marketer is doing, with sections such as Essentials, Strategic Planning and Career Advancement. The promo components covered cards for eSchools, podcasts, white papers and on-demand webinars.
+
+![Wireframes of the marketing solutions page on the left and promo components on the right](/assets/cuna/wireframes.jpg "Wireframes. Placeholder copy and names. Top of each page shown.")
 
 ## Planning the usability tests {collapsed} {nav=Test plans}
 

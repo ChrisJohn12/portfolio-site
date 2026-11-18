@@ -12,7 +12,7 @@ export default function StatGrid({ text }: { text: string }) {
   if (!stats.length) return null;
 
   return (
-    <ul className="not-prose my-10 grid list-none grid-cols-2 gap-3 p-0 md:grid-cols-4">
+    <ul className={`not-prose my-10 grid list-none grid-cols-2 gap-3 p-0 ${stats.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-4'}`}>
       {stats.map((stat) => (
         <li
           key={`${stat.value}-${stat.label}`}
