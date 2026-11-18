@@ -17,7 +17,7 @@ const skills = [
 
 const experience: { company: string; role: string; period: string; type?: string }[] = [
   { company: 'First Step AI', role: 'Product Designer + Engineer', period: '2026', type: 'Independent project' },
-  { company: 'ShipDeez / Backhaul Direct', role: 'Lead Product Designer', period: 'Oct 2025 to Feb 2026', type: 'Contract' },
+  { company: 'ShipDeez / Backhaul Direct', role: 'Lead Product Designer', period: 'Oct 2025 to Mar 2026', type: 'Contract' },
   { company: 'Union Pacific Railroad', role: 'Senior Product Designer', period: 'May 2023 to May 2025', type: 'Contract · 2 years' },
   { company: 'T-Mobile', role: 'UX Designer and Researcher, Enterprise Technology Solutions', period: 'Mar 2022 to Apr 2023', type: 'Contract · 13 months' },
   { company: 'CUNA (Credit Union National Association)', role: 'UX Designer and Researcher', period: 'Feb 2021 to Feb 2022' },

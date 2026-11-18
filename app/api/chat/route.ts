@@ -9,7 +9,7 @@ Chris Michalak is a UX Researcher & Product Designer who specializes in enterpri
 - **First Step AI** — Product Designer + Engineer (2026, Independent Project)
   Built an AI-powered onboarding agent for e-commerce sellers from scratch. Users answer 4 plain-language questions about their store and receive a personalized AI Action Plan with a specific tool recommendation, 3 setup steps, and ROI estimate. Full-stack implementation: React + Vite frontend, Express proxy server to manage CORS with Anthropic API, Claude API for recommendation engine, Vercel serverless deployment. Key decisions: reduced intake from 6 fields to 4 questions (one at a time), moved email capture post-recommendation to deliver value before asking, engineered system prompt to constrain Claude outputs to consistent, actionable format. Certifications earned alongside build: Claude 101, Claude Code in Action, Introduction to Agent Skills, Building with the Claude API. Live at https://first-step-ai-ten.vercel.app
 
-- **ShipDeez / Backhaul Direct** — Lead Product Designer (Oct 2025 to Feb 2026, Contract)
+- **ShipDeez / Backhaul Direct** — Lead Product Designer (Oct 2025 to Mar 2026, Contract)
   End-to-end UX for a shipping startup. Delivered brand identity, design system, full product UI, and Webflow landing page in 10 business days. Key outcome: 85% savings off retail shipping rates.
 
 - **Union Pacific Railroad** — Senior Product Designer (May 2023 to May 2025, Contract · 2 years)
