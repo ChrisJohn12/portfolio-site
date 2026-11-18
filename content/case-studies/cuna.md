@@ -22,7 +22,7 @@ The traffic data pointed at a different problem. In a March 2021 meeting about a
 
 ## Who we were designing for
 
-I started with stakeholder interviews, using one question set across product, advocacy and compliance owners: how do your customers use the site, what do they complain about, and what would relieve some stress. The interview with the member experience director was the first, and the rest of the plan came out of those conversations.
+I started with stakeholder interviews, built around a set of questions: how do your customers use the site, what do they complain about, and what would relieve some stress. The member experience director was the first interview, and it shaped the plan for the survey and testing that followed.
 
 Then we sent a survey. It had 28 questions and went to credit union staff, board members and leagues, and 537 people completed it (measured, from the response data). 493 of them worked at a credit union and 18 at a league. 325 of the 530 who answered the visit-frequency question said they visit seven or more times a year (measured), so these were people who knew the site well. The frustration was not coming from newcomers.
 
@@ -52,7 +52,7 @@ The flows turned up friction in the purchase path, including a missing payment c
 
 ## Tree test: can people find where to register a team?
 
-The IA study had started with a naming problem. In the card sorting and interview notes, staff who work with customers said "Learn" versus "Shop" was unclear, because many learning products also sit on shop pages, and that "school" versus "conference" meant little to members.
+The IA study had started with a naming problem. In the IA study responses, staff who work with customers said "Learn" versus "Shop" was unclear, because many learning products also sit on shop pages, and that "school" versus "conference" meant little to members.
 
 So for the structure of the whole site, I ran a tree test in Optimal Workshop comparing two versions. V1 was the existing structure, with Shop and Learn as top-level branches. V2 reorganized around Events & Training and Products. I led a brainstorm with the UX team to choose the tasks, and we used scenarios drawn from how CUNA sells:
 
