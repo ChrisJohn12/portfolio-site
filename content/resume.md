@@ -25,5 +25,5 @@ date: 2026-04-14
 ## Selected outcomes
 
 - Reduced manual task time and error rates through enterprise workflow redesigns
-- Built ShipDeez end-to-end product in a 10-business-day sprint and shipped a Webflow landing page
+- Led product design for ShipDeez, a shipping product built on ShipBlink and EasyPost: service blueprint, guest and account flows, and a design system, handed off Mar 2026
 - Shipped a working AI onboarding prototype (First Step AI) integrating the Claude API and Supabase
