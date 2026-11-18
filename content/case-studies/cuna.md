@@ -7,7 +7,7 @@
 CUNA is a national trade association for credit unions. I was the UX designer and researcher on the team reworking cuna.org, and most of my work was research into one question: when someone arrives with a job to do, can they find the thing?
 
 - **Context:** a large association site with several audiences, an advocacy section and a store for training and conferences. It was slow, hard to navigate, and moving from Ektron to Adobe Experience Manager
-- **What I owned:** the research. Stakeholder interviews, a 28-question survey and its personas, a tree test and card sorts in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs. I also helped wireframe pages and components with the team
+- **What I owned:** the research and its design. Stakeholder interviews, a 28-question survey and its personas, tree tests and card sorts I designed and built in Optimal Workshop, a heuristic evaluation, competitive analysis, user flows, and a naming convention for the site's PDFs. I also created wireframes in the design system, to put the results into screens
 - **Outcome:** the studies shaped how the team approached the site structure and gave it personas for eight areas of credit unions
 
 ```stats
@@ -53,6 +53,10 @@ People valued CUNA's resources and training. They said the site was slow, hard t
 
 When asked which area mattered most, 173 chose the training bundle and webinars, 125 compliance, 74 conferences and 56 CPD Online, against 44 for advocacy (measured). That matched the analytics.
 
+## How I designed the studies {nav=Study design}
+
+I designed and built the studies in Optimal Workshop myself. For each question we needed answered, I chose the method that fit it: a survey for how people felt, including a net promoter score, a tree test for whether people could find something, and a card sort for how people group things and what they call them. I also set up branching answer logic, so a participant's answer decided which question the study asked next.
+
 ## Tree test: can people find where to register a team? {nav=Tree test}
 
 Staff who work with customers had told us "Learn" versus "Shop" was unclear, because many learning products also sit on shop pages. So I ran a tree test in Optimal Workshop comparing two structures. V1 was the existing site, with Shop and Learn at the top level. V2 reorganized around Events & Training and Products. The UX team and I wrote tasks from how CUNA actually sells, such as this one:
@@ -81,9 +85,15 @@ The tree test checked the structure. The card sort checked the language. In Opti
 
 Under the strictest method, participants agreed on three clusters: the Member Celebrations items with Marketing Tools, the training products (Training Bundle, CPD Online, Course, eSchools and Webinars), and Book, Research and Reports. My reading, not something we tested, is that people grouped by what the content is, not by how CUNA sells it, which fits the staff comments that Learn versus Shop was unclear.
 
+## From results to wireframes {nav=Wireframes}
+
+Research only matters if it changes a screen, so I took the results into wireframes. Using CUNA's design system, I created screens for a Marketing & Business Development Solutions page and a set of reusable promo components. The navigation uses the V2 structure from the tree test, with Events & Training and Products at the top level. The page groups CUNA's products by the job a credit union marketer is doing, with sections such as Essentials, Strategic Planning and Career Advancement. The promo components cover cards for eSchools, podcasts, white papers and on-demand webinars.
+
+![Wireframes of the marketing solutions page on the left and promo components on the right](/assets/cuna/wireframes.jpg "Wireframes built with the design system. Placeholder copy and names. Top of each page shown.")
+
 ## What each method told us {nav=Takeaways}
 
-The survey said people were frustrated. The heuristic evaluation and user flows said where the current site broke. The tree test and card sort said where people expected things to be and what to call them. None was enough alone.
+The survey said people were frustrated. The heuristic evaluation and user flows said where the current site broke. The tree test and card sort said where people expected things to be and what to call them. None was enough alone, and the wireframes are where I put them to work.
 
 ## Audience breakdown by segment {collapsed} {nav=By segment}
 
@@ -122,12 +132,6 @@ In the 3D cluster view, one suggested group held 12 of the issue cards. The labe
 Training products and seminars were among CUNA's biggest revenue drivers, and the products page structure was a survey pain point. Before recommending changes, I made an inventory of what each product page contained, so grouping and naming decisions rested on a list and not a feeling.
 
 The site also hosted many PDFs that search could not tell apart. I wrote a naming convention: a short code for the area or product, then document type, then a short description, capped at 20 characters so files synced cleanly. It also covered metadata (title, author, description, keywords). One rule mattered most: documents behind a login, like training bundles and webinars, carry no metadata, because they are paid content and should not appear in a Google search.
-
-## Wireframes: marketing solutions page and promo components {collapsed} {nav=Wireframes}
-
-With the team, I helped wireframe a Marketing & Business Development Solutions page and a set of reusable promo components. The page grouped CUNA's products by the job a credit union marketer is doing, with sections such as Essentials, Strategic Planning and Career Advancement. The promo components covered cards for eSchools, podcasts, white papers and on-demand webinars.
-
-![Wireframes of the marketing solutions page on the left and promo components on the right](/assets/cuna/wireframes.jpg "Wireframes. Placeholder copy and names. Top of each page shown.")
 
 ## Planning the usability tests {collapsed} {nav=Test plans}
 
