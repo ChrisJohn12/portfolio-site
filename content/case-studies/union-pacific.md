@@ -6,7 +6,7 @@
 
 I joined Union Pacific's SAP migration as a UX researcher and ended up owning the design of two things: **a contract workflow for 2,500+ line item contracts**, and **the UX voice in decisions that had been made without any**.
 
-- **Context:** enterprise SAP S/4HANA migration with PwC as the implementation partner, plus a redesign of the public website, UP.com, with field visits to Union Pacific warehouses in Sacramento, Fort Worth and Chicago
+- **Context:** enterprise SAP S/4HANA migration with PwC as the implementation partner, plus a redesign of the public website, UP.com, with field visits to Union Pacific warehouses in Roseville, Fort Worth and Chicago
 - **What I owned:** the contract workflow design, the case for SAP Personas on warehouse handhelds, UX involvement in fit-or-custom decisions, and page design for UP.com
 - **What I can show:** system maps from the SAP program, a decision story for each major call, and before and after screens for UP.com
 
@@ -60,7 +60,7 @@ What I would look at next: testing the scroll with a full 2,500-line contract in
 
 *(SAP Personas is a layer on top of the standard SAP screens. It lets a design team change the interface without waiting on several teams to get engineering to rework SAP's original UI.)*
 
-Warehouse staff used handheld scanners that ran standard SAP screens. I visited three warehouses, in Sacramento, Fort Worth and Chicago, to watch the work where it happened. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
+Warehouse staff used handheld scanners that ran standard SAP screens. I visited three warehouses, in Roseville, Fort Worth and Chicago, to watch the work where it happened. I connected a handheld to a laptop and recorded real sessions on the floor, then broke each recording into steps in FigJam. I presented those findings to the warehouse leads in a working session, and they placed their own notes on the board as we reviewed it. The gap was clear: the standard screens left out information the workers needed to do the job.
 
 ![A standard SAP screen on a warehouse handheld](/assets/union-pacific/photos/SAP-erp-ui.jpg "A standard SAP screen on a warehouse handheld. Labels are abbreviated, fields are small, and most of the screen sits empty.")
 
@@ -76,7 +76,7 @@ So I looked for another route. Working with my project manager and an SAP repres
 
 ![Recreation of the SAP Personas case: the steps from floor recordings to the handoff to engineering](/assets/union-pacific/sap-personas.png)
 
-SAP Personas was accepted and handed to engineering. When I rolled off, PwC and Union Pacific's development teams were looking into how to implement it, and I do not know whether it was built.
+The Personas discussion opened the conversation about how to change the issues users were running into in the UI. SAP Personas was accepted and handed to engineering, and I was told it was being implemented when I rolled off. I do not know whether it shipped.
 
 ## Decision 3: Getting UX into the earlier decisions
 
